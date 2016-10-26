@@ -1,0 +1,62 @@
+/**
+*	基础样式表
+*
+*	@包括：样式表重置，宽高度，边距，颜色，文字，定位
+*	@创建:伍继友
+*	@日期:2014-03-03
+*
+*	@修改日期：		修改人：
+**/
+
+/* 样式表重置 */
+body,html,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse; border-spacing:0;}
+body,button,input,select,textarea{font: 12px/1.5 arial,宋体b8b\4f53;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,strong,em,var,i{font-style:normal; font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+q:before,q:after{content:''}
+hr{clear:both; font-size:0; border:none; height:1px; line-height:0;}
+.block_span{display:inline-block; vertical-align:middle;}
+.hide {display: none;}
+
+/* 定位 */
+.tl{text-align:left;} .tc{text-align:center;} .tr{text-align:right;} .bc{margin-left:auto; margin-right:auto;} .fl{float:left; display:inline;}
+.fr{float:right; display:inline;} .clear{font-size:0; line-height:0; height:0; clear:both;}  .cb{clear:both; overflow:hidden; *zoom:1;}
+.pa{position:absolute;} .pr{position:relative;} .none{display:none;}
+
+/* 宽高度 */
+.w180{width:180px;} .w220{width:220px;} .w750{width:750px;} .w790{width:790px;} .w980{width:980px;} .h100{ height: 100px;} .h80{height: 80px;} .h300{height: 300px;} .h90{height: 90px;}
+
+/* 边距 */
+.m5{margin:5px;} .m10{margin:10px;} .m12{margin:12px;} .m20{margin:20px;}
+.p5{padding:5px;} .p10{padding:10px;} .p12{padding:12px;} .p20{padding:20px;}
+.mt5{margin-top:5px;} .mt10{margin-top:10px;} .mt12{margin-top:12px;} .mt20{margin-top:20px;}
+.mr5{margin-right:5px;} .mr10{margin-right:10px;} .mr12{margin-right:12px;} .mr20{margin-right:20px;} .mr70{margin-right:70px;}.mr100{margin-right:100px;}
+.mb5{margin-bottom:5px;} .mb10{margin-bottom:10px;} .mb12{margin-bottom:12px;} .mb20{margin-bottom:20px;} 
+.ml5{margin-left:5px;} .ml10{margin-left:10px;} .ml12{margin-left:12px;} .ml20{margin-left:20px;}.ml30{margin-left:30px;}
+.pt5{padding-top:5px;} .pt10{padding-top:10px;} .pt12{padding-top:12px;} .pt20{padding-top:20px;} .pt30{padding-top:30px;} 
+.pr5{padding-right:5px;} .pr10{padding-right:10px;} .pr12{padding-right:12px;} .pr20{padding-right:20px;}
+.pb5{padding-bottom:5px;} .pb10{padding-bottom:10px;} .pb12{padding-bottom:12px;} .pb20{padding-bottom:5px;} 
+.pl5{padding-left:5px;} .pl10{padding-left:10px;} .pl12{padding-left:12px;} .pl20{padding-left:20px;} .pl100{padding-left: 100px;} .pl130{padding-left: 130px;}
+
+/* 文字 */
+body{color:#404040;}
+.f12{font-size:12px;} .f14{font-size:14px;} .f16{font-size:16px;} .f18{font-size: 18px;} .f22{font-size:22px;}.f27{font-size:27px;} .f30{font-size:30px;} .t_underline{text-decoration:underline;}
+h1{font-size:16px;} h2{font-size:14px;} h3{ font-size:12px;} 
+.bold{font-weight:bold;}
+a{color:#2776c5; text-decoration:none;}
+a:hover{ color: #ff6600;}
+.price{color:#ff6601; font-family:arial, sans-serif;display: inline-block; vertical-align: middle;}
+.songti,.songti a{ font-family:"宋体";} 
+.yahei{font-family: "Microsoft Yahei","微软雅黑";}
+.lh20{line-height:20px;} .lh30{line-height:30px;}
+
+/* 颜色 */
+.c404040{color:#404040;} .c2776c5,.blue1{color:#1470c1;} .cff6601,.orange{color:#ff6601;} .c666{color:#666666;} .c999{color:#999999;} .cfff{color:#ffffff;} .red{color:#ff0000;}.c333{color:#333333;}.red1{ color:#ce2e11;}
+.orange1{ color:#f19c17;} .green1{ color:#3a9403;}
+
+/* radio 标签*/
+.radio_cs{vertical-align:text-bottom; margin-bottom:1px; margin-bottom:-2px\9;}

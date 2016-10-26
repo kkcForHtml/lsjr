@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/LoanSettleQuery.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="current">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu">
+						<!-- <span class="icon_info_company"></span> -->
+						与我有关
+					</a>
+					<ul>
+						<li class="">
+							<a href="EntprInfo.html"><span class="icon_sub"></span> 企业信息
+							</a>
+						</li>
+						<li class="">
+							<a href="myapply.html"><span class="icon_sub"></span> 我的申请
+							</a>
+						</li>
+						<li class="">
+							<a href="MyApproval.html"><span class="icon_sub"></span> 我的单据
+							</a>
+						</li>
+						<li class="current">
+							<a href="LoanSettleQuery.html"><span class="icon_sub"></span> 贷款结清管理
+							</a>
+						</li>
+						<li class="">
+							<a href="AccountInfo.html"><span class="icon_sub"></span> 账号信息
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>与我有关</em></li>
+					<li><em>与我有关</em></li>
+					<li class="noarrow"><em>贷款结清管理</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<section class="content_wrap cf">
+					<form onsubmit="javascript:return Tapestry.waitForPage(event);" action="http://www.htefol.org/mgnt/loan/settlequery.myquery" method="post" id="myQuery">
+						<div style="display: none;" class=""><input value="kYKeSfEBtHURmjscxsa+q7Smr7k=:H4sIAAAAAAAAAJWSzUrDQBSFbwsFbXaCGzdaf7aJBbvRVUEEIfhDcC2TyW0cnczEmRubbrrVtQ/gE4gv0YU738EHcOtKxKSiFSw2bg/3u+dwz71/gUa/BctJrMiTmikvQCKJxxmawTZhTj2BMrIGOtrELksZP0OXWIqWzKDjcm1QitANmUW3GxYi47RXIuvFoizdOBk5z4uPb3Wo+eBwrchoecASJFjwz9kV8yRTsReQESreyVOC+W/Tarm6/811ZDRHa4MsTIS1QqvRQ7TVe717qgPkaX8NWjNMTzftJQwBCJwfWiWw5BpVJttTLNqVwE+LVViZPokqSyxK5PTl0JxIVbAZ+6VQF7Y8LRXd7P7ZDddJqhUqsq5fUONC6Hc9h+Lm9n3pWo1faI5LURD7URmjVv5Lc+L4AdxWXIfNAgAA" name="t:formdata" type="hidden"></div>
+						<div class="search_condition">
+							<div class="search_simple"><label>主合同号：</label><input value="" class="text_input w_100" id="textfield" name="textfield" type="text"><img style="display: none;" id="textfield_icon" class="t-error-icon" alt="" src="spacer.gif"><label>合作机构：</label><input value="" class="text_input w_100" id="textfield_0" name="textfield_0" type="text"><img style="display: none;" id="textfield_0_icon" class="t-error-icon" alt="" src="spacer.gif"><label>贷款产品：</label><input value="" class="text_input w_100" id="textfield_1" name="textfield_1" type="text"><img style="display: none;" id="textfield_1_icon" class="t-error-icon" alt="" src="spacer.gif"><label>单据状态：</label>
+								<select class="text_input w_140" enum="com.zte.rate.biz.model.CommonEnum$BillStatus" id="enumselect" name="enumselect">
+									<option value=""></option>
+									<option value="APPRING">审核</option>
+									<option value="PASSED">通过</option>
+									<option value="REJECTED">驳回</option>
+								</select><img style="display: none;" id="enumselect_icon" class="t-error-icon" alt="" src="spacer.gif">
+								<a href="#" class="search_btn" id="linksubmit">查询</a>
+							</div>
+						</div>
+					</form>
+					<div class="content-box">
+						<div class="content-box-content">
+							<table class="mb10">
+								<thead>
+									<tr>
+										<th>系统编号</th>
+										<th>主合同号</th>
+										<th>贷款产品</th>
+										<th>合作机构</th>
+										<th>贷款金额</th>
+										<th>贷款期限(月)</th>
+										<th>贷款时间</th>
+										<th>单据状态</th>
+										<th>审核状态</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<!--tbody -->
+								<tbody class="trbg"></tbody>
+							</table>
+							<div class="pagination">
+								<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/loan/settlequery.pager.actionlink/1"><span>首页</span></a>
+								<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/loan/settlequery.pager.actionlink_0/0"><span>上一页</span></a><span class="page-cur">1</span>
+								<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/loan/settlequery.pager.actionlink_1/2"><span>下一页</span></a>
+								<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/loan/settlequery.pager.actionlink_2/1"><span>尾页</span></a><span class="page-skip">
+共0条记录
+</span></div>
+						</div>
+					</div>
+				</section>
+				<div class="pop div-box" id="sp"><input id="billIdLink" asyn="false" uri="/mgnt/loan/settlequery.wfrbilllogview.billidlink" ajax="billIdLink" type="hidden">
+					<div class="title"><strong class="font14">审批记录</strong></div>
+					<div class="clear"></div>
+					<div class="box">
+						<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+							<tbody>
+								<tr class="background_th" id="replaceId">
+									<th width="120">审批节点</th>
+									<th width="120">操作人</th>
+									<th width="120">操作时间</th>
+									<th>处理意见</th>
+									<!-- <th width="40">得分</th> -->
+									<!-- <th width="50">状态</th> -->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div align="center">
+						<div class="client_button mt_10"><span class="align-left"><a class="button mr_20" href="http://www.htefol.org/mgnt/loan/.close">关闭</a></span></div>
+					</div>
+					<div class="clear"></div>
+					<a onclick="closepop(this)" class="close"></a>
+				</div>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/loan/settlequery.mgnt.chgpswd" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

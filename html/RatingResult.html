@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>绿色金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/RatingResult.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../css/ssi-uploader.css"/>
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="current">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu" data-flag='1'>
+						<!-- <span class="icon_info_company"></span> -->
+						企业评价
+					</a>
+					<ul>
+						<li class="current">
+							<a href="RatingResult.html"><span class="icon_sub"></span> 评价结果
+							</a>
+						</li>
+						<li class="">
+							<a href="CreditApply1.html"><span class="icon_sub"></span> 发起评价
+							</a>
+						</li>
+						<li class="">
+							<a href="MyDraftQuery.html"><span class="icon_sub"></span> 我的草稿
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>评价管理</em></li>
+					<li><em>企业评价</em></li>
+					<li class="noarrow"><em>评价结果</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<section class="content_wrap cf">
+					<div class="content-box">
+						<div class="content-box-header">
+							<h3>评价结果(<span style="font-size: 14px; color: red;">本年度最高融资额度以生效的评价单据为准</span>)</h3></div>
+						<div class="content-box-content">
+							<table class="mb10">
+								<!--thead -->
+								<thead>
+									<tr>
+										<th style="text-align: center;">申请编号</th>
+										<th style="text-align: center;">企业名称</th>
+										<th style="text-align: center;">发起时间</th>
+										<th style="text-align: center;">等级</th>
+										<th style="text-align: center;">最高融资额度(万元)</th>
+										<th style="text-align: center;">评价状态</th>
+										<th style="text-align: center;">评价类型</th>
+										<th style="text-align: center;">财务期间</th>
+										<th title="最高融资额度以本年度授信单据为准" style="text-align: center;">是否生效</th>
+										<th style="text-align: center;">有效期间</th>
+										<th style="text-align: center;">操作</th>
+										<th></th>
+									</tr>
+								</thead>
+								<!--tbody -->
+								<tbody class="trbg" style="text-align: center;" id="list">
+									<!-- 循环遍历 -->
+									<!--<tr title="最高融资额度以本年度授信单据为准" class="">
+										<td>
+											<a style="cursor:pointer" onclick="showNodeLog(2293001)" herf="javascript:void(0)">
+												PJ20160815006
+											</a>
+										</td>
+										<td>深圳市汇碳科技有限公司</td>
+										<td></td>
+										<td>B</td>
+										<td align="center"></td>
+										<td>
+											用户撤销
+										</td>
+										<td>
+											企业评价
+										</td>
+										<td>2016年第二季度</td>
+										<td title="最高融资额度以本年度授信单据为准"></td>
+										<td></td>
+										<td>
+											<a class="mr_10" href="http://www.htefol.org/mgnt/rating/result.draft/4676001">
+												修改
+											</a>
+											<a href="http://www.htefol.org/mgnt/rating/entprview/4676001">
+												详情
+											</a><span class="ml_10">撤销</span></td>
+									</tr>-->
+								</tbody>
+							</table>
+							<div class="pagination">
+								<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/rating/result.pager.actionlink/1"><span>首页</span></a>
+								<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/rating/result.pager.actionlink_0/0"><span>上一页</span></a><span class="page-cur">1</span>
+								<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/rating/result.pager.actionlink_1/2"><span>下一页</span></a>
+								<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/rating/result.pager.actionlink_2/1"><span>尾页</span></a><span class="page-skip">
+共<b id="totolNum"></b>条记录
+</span></div>
+							<!--<div class="client_info">
+								<h4 class="mb_10 mt_30 tip_icon">各级别适用贷款产品如下</h4>
+								<table class="mt_10 mb_30">
+									<tbody>
+										<tr>
+											<td width="50">级别</td>
+											<td>可贷产品</td>
+										</tr>
+										<tr class="">
+											<td>AAAA</td>
+											<td><span class="mr_20">孵化贷</span><span class="mr_20">成长贷</span><span class="mr_20">创新研发贷</span><span class="mr_20">知识产权质押贷</span></td>
+										</tr>
+										<tr class="">
+											<td>AAA</td>
+											<td><span class="mr_20">孵化贷</span><span class="mr_20">成长贷</span><span class="mr_20">创新研发贷</span><span class="mr_20">知识产权质押贷</span></td>
+										</tr>
+										<tr class="">
+											<td>AA</td>
+											<td><span class="mr_20">孵化贷</span><span class="mr_20">成长贷</span><span class="mr_20">创新研发贷</span><span class="mr_20">知识产权质押贷</span></td>
+										</tr>
+										<tr class="">
+											<td>A</td>
+											<td><span class="mr_20">孵化贷</span><span class="mr_20">成长贷</span><span class="mr_20">创新研发贷</span><span class="mr_20">知识产权质押贷</span></td>
+										</tr>
+										<tr class="">
+											<td>B</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>-->
+						</div>
+					</div>
+					<div class="pop div-box" id="sp"><input id="billIdLink" asyn="false" uri="/mgnt/rating/result.wfrbilllogview.billidlink" ajax="billIdLink" type="hidden">
+						<div class="title"><strong class="font14">审批记录</strong></div>
+						<div class="clear"></div>
+						<div class="box">
+							<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+								<tbody>
+									<tr class="background_th" id="replaceId">
+										<th width="120">审批节点</th>
+										<th width="120">操作人</th>
+										<th width="120">操作时间</th>
+										<th>处理意见</th>
+										<!-- <th width="40">得分</th> -->
+										<!-- <th width="50">状态</th> -->
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div align="center">
+							<div class="client_button mt_10"><span class="align-left"><a class="button mr_20" href="http://www.htefol.org/mgnt/rating/.close">关闭</a></span></div>
+						</div>
+						<div class="clear"></div>
+						<a onclick="closepop(this)" class="close"></a>
+					</div>
+				</section>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/rating/result.mgnt.chgpswd" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+		<!--确认额度-->
+		<div class="bgbox" id="awardMoney">
+			<div class="pop div-box awardMoney" style="display: block;">
+				<div class="title"><strong class="font14">请输入授予的融资额度</strong></div>
+				<div class="clear"></div>
+				<div class="box">
+					<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+						<tbody id="replacePwd">
+							<tr class="background_th">
+								<th>人民币（万元）：</th>
+								<td><input onblur="tofixed2(this,true)" class="text_input w_200" id="money" type="text"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changeAward()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop(this)" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+				</div>
+				<div class="clear"></div>
+				<a onclick="closepop(this)" class="close"></a>
+			</div>
+		</div>
+		<!--撤销-->
+		<div class="bgbox" id="deleteData" style="display: none; overflow: hidden;">
+			<div class="pop div-box awardMoney" style="display: block; width: 300px; height: 60px;">
+				<div class="clear"></div>
+				<div style="text-align: center;font-size: 16px;">撤销后不可恢复，你确定要撤销吗？</div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changefe()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop(this)" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<!--其他确认弹出窗-->
+		<div class="bgbox" id="comfirm" style="display: none; overflow: hidden;">
+			<div class="pop div-box awardMoney" style="display: block; width: 300px; height: 60px;">
+				<div class="clear"></div>
+				<div style="text-align: center;font-size: 16px;" class="font"></div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changeState()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop(this)" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<!--警告弹窗-->
+		<div class="bgbox" id="warning" style="display: none; overflow: hidden; z-index: 9998;">
+			<div class="pop div-box awardMoney" style="display: block; width: 300px; height: 60px; z-index: 9999;">
+				<div class="clear"></div>
+				<div style="text-align: center;font-size: 16px;" class="font">111</div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="closepop(this)" class="button" href="javascript:void(0);">确认</a></span></div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<!--上传弹窗-->
+		<div class="bgbox" id="file" style="display: none; overflow: hidden;">
+			<div class="pop div-box awardMoney" style="display: block; width: 800px; height: 400px;">
+				<div class="clear"></div>
+				<input type="file" multiple="multiple" name="" id="fileUpload" value="" />
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changeState()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop(this)" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+		</div>		
+		
+		<!--加载中-->
+		<div id="loading" style="display: none;">
+			<img src="../img/loading-0.gif" />
+		</div>
+
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/ssi-uploader.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//保留两位小数
+		function tofixed2(ele, flag) {
+			var $e = flag ? $(ele) : ele;
+			var val = $e.val() * 1;
+			if(isNaN(val)) {
+				val = 0;
+				errorTips($e);
+			}
+			$e.val(val.toFixed(2));
+		}
+
+		//json日期格式转换为正常格式
+		function jsonDateFormat(jsonDate) {
+			try {
+				var date = new Date(parseInt(jsonDate.replace("/Date(", "").replace(")/", ""), 10));
+				var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+				var day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+				var hours = date.getHours();
+				var minutes = date.getMinutes();
+				var seconds = date.getSeconds();
+				var milliseconds = date.getMilliseconds();
+				return date.getFullYear() + "年" + month + "月" + day + '日';
+			} catch(ex) {
+				return "";
+			}
+		}
+		//null转空字符串
+		function changeNull(str) {
+			str = str === null ? '' : str;
+			return str
+		}
+		//改变额度
+		function changeAward() {
+			$('#limit').remove();
+			var otd = $('<a class="mr_10" id="limit" href="javascript:;" title="点击可修改额度">' + $('#money').val() + '</a>');
+			$('#list tr td:eq(4)').append(otd)
+			$('.bgbox').fadeOut();
+		}
+		//渲染数据
+		var userifos = JSON.parse(sessionStorage.getItem('userName_lsjr'));
+		$(function() {
+				loading(true);
+				var data = {
+					compId: userifos.ID,
+					userType: userifos.UserType,
+				}
+				$.ajax({
+					type: "get",
+					url: "http://www.webtest.com/Rating/RatingList",
+					async: true,
+					data: data,
+					success: function(n) {
+						console.log(n);
+						if(n.Data !== null) {
+							$('#totolNum').html(n.Data.length)
+							for(var i = 0; i < n.Data.length; i++) {
+								var obj = n.Data[i];
+								console.log(obj);
+								var otr = $('<tr title="最高融资额度以本年度授信单据为准" class="" data-ifos = "' + obj.ID + '"}">' +
+									'<td><a href="http://www.mytask.com/html/creditapply2.html?CompID=' + obj.CompID + '&isChange=0">' + obj.IDCode + '</a></td>' +
+									'<td>' + obj.CompName + '</td>' +
+									'<td>' + jsonDateFormat(obj.CreateTime) + '</td>' +
+									'<td>' + changeNull(obj.ScoreResult) + '</td>' +
+									'<td align="center"></td>' +
+									'<td>' + obj.AssessStateStr + '</td>' +
+									'<td>企业评价</td>' +
+									'<td>' + obj.DataVersion + '</td>' +
+									'<td title="最高融资额度以本年度授信单据为准"></td>' +
+									'<td></td>' +
+									'<td class="controls">' +
+									'<a href="http://www.mytask.com/html/creditapply2.html?CompID=' + obj.CompID + '&isChange=0">详情</a>' +
+									'</td>' +
+									'</tr>');
+								$('#list').append(otr);
+								var pp = encodeURIComponent(obj.Product)
+								console.log(pp);
+								console.log(JSON.parse(decodeURIComponent(pp)));
+							
+								//额度控制
+								if(userifos.UserType === 1 && obj.MaxMoney == 0) {
+									otr.find('td:eq(4)').append($('<button class="limit" id="limit" title="点击可修改额度">点击授予额度</button>'))
+								} else if(userifos.UserType === 1) {
+									otr.find('td:eq(4)').html('<a class="mr_10" id="limit" href="javascript:;" title="点击可修改额度">' + obj.MaxMoney + '</a>')
+								} else {
+									otr.find('td:eq(4)').html(obj.MaxMoney)
+
+								}
+								//权限控制
+								var arr = obj.Operate||[];
+								var ary = [
+									'<a class="ml_10" href="http://www.mytask.com/html/creditapply2.html?CompID=' + obj.CompID + '&isChange=1">修改</a>',
+									'<a onclick="fe(this)" href="javascript:;" class="ml_10">撤销</a>',
+									'<a onclick="state(this)" title="确认审批通过？" href="javascript:;" class="ml_10">审批</a>',
+									'<a href="http://www.mytask.com/html/bankSel.html?CompID='+obj.ID+'&Product='+encodeURIComponent(obj.Product)+'" title="确认审批通过？" class="ml_10">意向申请</a>',
+									'<a onclick="state(this)" title="确认向企业放款？" href="javascript:;" class="ml_10">放款</a>',
+									'<a onclick="state(this)" title="确认已收款？" href="javascript:;" class="ml_10">确认收款</a>',
+									'<a onclick="state(this)" title="确认还款？" href="javascript:;" class="ml_10">还款</a>',
+									'<a onclick="state(this)" title="确认企业已还款？" href="javascript:;" class="ml_10">确认还款</a>',
+								];
+								for(var j = 0; j < arr.length; j++) {
+									if(arr[j] * 1) {
+										otr.find('.controls').append(ary[j]);
+									}
+								}
+
+							}
+							//console.log(eval('('+otr.attr('data-ifos')+')'));						
+						}
+						loading(false);
+
+					}
+				});
+				$('#list').on('click', '#limit', function() {
+					$('#awardMoney').fadeIn();
+				})
+			})
+			//撤销
+		var $otr = {};
+
+		function fe(ele) {
+			$('#deleteData').fadeIn();
+			$otr = $(ele).parents('tr');
+		}
+
+		function changefe() {
+			$('#deleteData').fadeOut();
+			var data = {
+				opName: '撤销',
+				ID: $otr.attr('data-ifos'),
+			}
+			$.ajax({
+				type: "get",
+				url: "http://www.webtest.com/Rating/Operate",
+				async: true,
+				data: data,
+				success: function(n) {
+					console.log(n);
+					window.location.href = '';
+
+				},
+			});
+		}
+		//确认框
+		var $str = '';
+
+		function state(ele) {
+			var $e = $(ele);
+			$otr = $e.parents('tr');
+			var txt = $e.attr('title');
+			$str = $e.html();
+			if($str == '审批' && userifos.UserType == 1 && ($otr.find('#limit').html() * 1 <= 0 || isNaN($otr.find('#limit').html() * 1))) {
+				showWarning('请先填写融资额度');
+				return false;
+			}
+			if ($str=='确认收款') {
+				$('#file').fadeIn();
+				return
+			}
+			$('#comfirm').fadeIn().find('.font').html(txt);
+		}
+		var $flag = false;
+		function changeState() {
+			$('#comfirm').fadeOut();
+			var data = $str == '审批' && userifos.UserType == 1 ? {
+				id: $otr.attr('data-ifos'),
+				money: $otr.find('#limit').html()
+			} : {
+				opName: $str,
+				id: $otr.attr('data-ifos'),
+			};
+			var $url = $str == '审批' && userifos.UserType == 1 ? 'http://www.webtest.com/Rating/ZFOperate' : 'http://www.webtest.com/Rating/Operate';
+			if ($str=='确认收款') {
+				if (!$flag) {
+					showWarning('上传未完成');
+					return;
+				}
+				$('#file').fadeOut();
+			}
+			$.ajax({
+				type: "get",
+				url: $url,
+				async: true,
+				data: data,
+				success: function(n) {
+					console.log(n);
+					window.location.href = '';
+				},
+			});
+		}
+		//文件上传
+		$('#fileUpload').ssi_uploader({
+			url: 'http://www.webtest.com/FileUpload/FileUpload',
+			locale:'cn',
+			maxNumberOfFiles:9,
+			onUpload:function () {
+				$flag = true;
+			}
+		})
+	</script>
+
+</html>

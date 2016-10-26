@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="Apache Tapestry Framework (version 5.3.6)" name="generator"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><title>南山科技金融在线平台</title><link type="image/x-icon" href="/asset/ifp/img/favicon.ico" rel="shortcut icon"/><link href="/asset/ifp/css/home/css/base.css" type="text/css" rel="stylesheet"/><link href="/asset/ifp/css/home/css/css.css" type="text/css" rel="stylesheet"/><link href="/asset/ifp/css/home/css/index.css" type="text/css" rel="stylesheet"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/core/default.css"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/jquery/themes/ui-lightness/jquery-ui.css"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/core/tapestry-console.css"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/core/t5-alerts.css"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/core/tree.css"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/ctx/asset/base/js/easyui/themes/easyui.css"/><link type="text/css" rel="stylesheet" href="/assets/2fac4509424c714f/jquery/form.css"/><script src="/assets/2fac4509424c714f/tap-jquery/tapestry.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/jquery_core/jquery-1.8.2.min.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/ui_1_8_24/jquery.ui.core.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/ui_1_8_24/jquery.ui.position.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/ui_1_8_24/jquery.ui.widget.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/ui_1_8_24/jquery.effects.core.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/jquery.json-2.2.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/ui_1_8_24/jquery.effects.highlight.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/jquery.effects.show.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/underscore_1_3_3.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/t5-core.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/t5-spi.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/t5-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/t5-init.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/t5-pubsub.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/t5-events.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/t5-dom-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/t5-console-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/t5-ajax-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/t5-formfragment.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/t5-alerts-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/tapestry-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/tapestry-console.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/t5-tree-jquery.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/core/tapestry-messages.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/jquery/validation.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/ctx/asset/base/js/easyui/jquery.easyui.min.js" type="text/javascript"></script><script src="/assets/2fac4509424c714f/ctx/asset/ifp/js/t5_cmp.js" type="text/javascript"></script></head><body><!--头部 --><div class="head"><div class="containCon"><a href="/" class="logoMain"><h1 title="南山科技金融在线平台"><img alt="南山科技金融在线平台" src="/asset/ifp/css/home/images/logoNC.png"/></h1></a><ul class="navMain"><li class="current"><a href="/">首页</a></li><li><a href="/home/type/0">债权融资</a></li><li><a href="/home/type/1">股权融资</a></li><li class=""><a href="/home/NewsType/POLICY"><span>融资政策 </span></a></li><li class=""><a href="/home/NewsType/TECH"><span>科技动态</span></a></li><li class=""><a href="/home/NewsType/ACTIVITY"><span>活动通知</span></a></li></ul></div></div><!--头部结束 --><!--BANNER+登录 --><div class="bannerMain"><div class="containCon"><div class="bannerLeft"><a href="/home/type/1"><img alt="强强联合" class="img1" src="/assets/2fac4509424c714f/ctx/asset/ifp/css/home/images/banner02.jpg"/></a><img class="hid img2" alt="助力企业成长" src="/assets/2fac4509424c714f/ctx/asset/ifp/css/home/images/banner01.jpg"/><input class="index" value="0" type="hidden"></input></div><script><!-- 
+				var timeInterval=5000;
+				$(function(){
+					setInterval(jpgChange,timeInterval); 
+					$(".login_input").keydown(function (e){
+					if(e.keyCode!=13)
+						return;
+					var next=$("#"+$(e.srcElement).attr("next"));
+					if(next.length==0)
+						$(".login_input").closest("form").submit();
+					else
+						next.focus();
+					});
+				});
+				
+				function jpgChange(){
+					var index = $(".index").val();
+					if(index==0){
+						$(".img1").addClass("hid");
+						$(".img2").removeClass("hid");
+						$(".index").val("1");
+					}else{
+						$(".img2").addClass("hid");
+						$(".img1").removeClass("hid");
+						$(".index").val("0");
+					}
+				}
+			 --></script><style>
+.hid{display:none;}
+</style><div class="loginCon"><h2> 用户登录 </h2><form autocomplete="off" onsubmit="javascript:return Tapestry.waitForPage(event);" action="/index.loginform" method="post" id="loginForm"><div class="t-invisible"><input value="mz1ngrA3+FzXBYAXy3/jp5H37BA=:H4sIAAAAAAAAAFvzloG1XICBzzMvJbXCKic9L760OLWouIjBNL8oXS+xIDE5I1WvJLEgtbikqNJULzm/KDUnM0kvKbE4Vc8xCSiYmFzilpmak6ISnFpSWqAaepj7oejxP0wMjD4M3Mn5eSVF+Tl+ibmpJQxCPlmJZYn6OYl56frBJUWZeenWFQUlDBwwO7G6wpFUVwQU5SenFhcHlyblZhYXZ+bnHV6XYpL2bd45JgaGigJUOwqKy1OKCxnqGBigzgAJYCoBqWAtF2IQgApn5mUXg4wvAbrPBa/7kvNzC/LzUvNKivV8gLrAjirBdKJ/Zsekf1LteeBA40jOyQTq8ARbywgKIS6EjQD3ck/MrgEAAA==" name="t:formdata" type="hidden"></input></div><p class="username"><input hint-editor="1" next="lgn_pswd" class="input_text login_input login_name" id="lgn_user" name="lgn_user" type="text"></input><img id="lgn_user_icon" class="t-error-icon t-invisible" alt="" src="/assets/2fac4509424c714f/core/spacer.gif"/><span hint-editor="1" class="loginIcon hint-editor-text" data="帐号"></span></p><p class="password hint-editor"><input hint-editor="2" next="lgn_rand" class="input_text login_input login_pswd" value="" id="lgn_pswd" name="lgn_pswd" type="password"></input><img id="lgn_pswd_icon" class="t-error-icon t-invisible" alt="" src="/assets/2fac4509424c714f/core/spacer.gif"/><span hint-editor="2" class="loginIcon" data="密码"></span></p><p class="loginBtn"><span id="linksubmit">登 录</span></p><p class="registerP songti"><a target="_blank" href="home/Register">注册 &gt;</a></p><p class="registerF songti"><a href="home/ForgetPassword">忘记密码？</a></p></form></div><div class="clear"></div></div></div><!--BANNER+登录 结束 --><!--产品中心 --><!-- <div class="aboutCon">
+		<div class="containCon">
+			<ul>
+				<t:loop source="prodTypes" value="prodType" index="prodTypeIndex">
+					<li>
+						<span class="${prodTypeClass}">
+							<t:pageLink page="home/ProductDetail" context="prodType.ptypeId">
+								<img src="${ProdType.ptypeUri}" width="75" height="75"
+									alt="${prodType.name}" />
+							</t:pageLink>
+						</span>
+						<h3>${prodType.name}</h3>
+						<t:pageLink page="home/ProductDetail" context="prodType.ptypeId">
+							<t:OutputRaw value="prodType.summary" />
+						</t:pageLink>
+					</li>
+				</t:loop>
+				<div class=" clear"></div>
+			</ul>
+		</div>
+	</div> --><!--产品中心结束 --><div class="centerCon"><div class="containCon"><!--左边新闻中心 --><div class="cenConLeft"><div class="newsCon newsConFirst"><a class="more" href="/home/newstype/POLICY">更多
+&gt;</a><h3><span>融资政策 </span></h3><ul><li><a title="南山科技金融政策解读会走进前海瑞智创业园" href="/home/newstext/POLICY/43001">·南山科技金融政策解读会走进前海瑞智创业园
+</a></li><li><a title="南山科技金融政策解读会走进国高企业" href="/home/newstext/POLICY/42001">·南山科技金融政策解读会走进国高企业
+</a></li><li><a title="深圳市高新技术企业认定管理办法" href="/home/newstext/POLICY/6001">·深圳市高新技术企业认定管理办法
+</a></li><li><a title="国家重点支持的高新技术领域" href="/home/newstext/POLICY/5001">·国家重点支持的高新技术领域
+</a></li><li><a title="企业研究开发费用税前扣除管理办法（试行）" href="/home/newstext/POLICY/4001">·企业研究开发费用税前扣除管理办法（试行）
+</a></li></ul></div><div class="newsCon newsConSecond"><a class="more" href="/home/newstype/TECH">更多
+&gt;</a><h3><span>科技动态</span></h3><ul><li><a title="南山科技金融宣讲会走进智恒产业园" href="/home/newstext/TECH/35001">·南山科技金融宣讲会走进智恒产业园
+</a></li><li><a title="对话南山，助推发展—为科技金融平台护航" href="/home/newstext/TECH/32001">·对话南山，助推发展—为科技金融平台护航
+</a></li><li><a title="南山高交会活动简约有分量" href="/home/newstext/TECH/27001">·南山高交会活动简约有分量
+</a></li><li><a title="深圳市南山区科技金融在线平台上线" href="/home/newstext/TECH/26001">·深圳市南山区科技金融在线平台上线
+</a></li><li><a title="广东涌现122家新型研发机构 孵化高新企业上千家" href="/home/newstext/TECH/23001">·广东涌现122家新型研发机构 孵化高新企业上千家
+</a></li></ul></div><div class="newsCon newsConThird"><a class="more" href="/home/newstype/GTEE">更多
+&gt;</a><h3><span>信用担保</span></h3><ul><li><a title="P2P网贷中关于担保的再认识" href="/home/newstext/GTEE/21001">·P2P网贷中关于担保的再认识
+</a></li><li><a title="上海发起试水“完片担保”制度" href="/home/newstext/GTEE/19001">·上海发起试水“完片担保”制度
+</a></li><li><a title="中国担保业因何凋落" href="/home/newstext/GTEE/20001">·中国担保业因何凋落
+</a></li><li><a title="2014年中国中小企业投融资交易会召开在即" href="/home/newstext/GTEE/18001">·2014年中国中小企业投融资交易会召开在即
+</a></li></ul></div><div class="newsCon newsConLast"><a class="more" href="/home/newstype/ACTIVITY">更多
+&gt;</a><h3><span>活动通知</span></h3><ul><li><a title="德勤-深圳高科技高成长20强，暨德勤-深圳明日之星评选项目邀请函" style="color:red;" href="/home/newstext/ACTIVITY/51001">·德勤-深圳高科技高成长20强，暨德勤-深圳明日之星评选项目邀请函
+</a></li><li><a title="关于召开南山区科技金融、创新服务券和科技金融服务活动政策宣讲会的通知" href="/home/newstext/ACTIVITY/47001">·关于召开南山区科技金融、创新服务券和科技金融服务活动政策宣讲会的通知
+</a></li></ul></div></div><!--左边新闻中心结束 --><div class="cenConRight"><!--动态开始 --><div class="noticeR"><div class="titleNotice"><a style="text-decoration:none" href="/home/newstype/NOTICE"><h4>公告</h4></a></div><div class="noticeText"><ul><li><a title="第三届“国际信誉品牌”暨  第十四届“深圳知名品牌”评价发布活动  启动公告" style="color:red;" href="/home/newstext/NOTICE/49001">
+·第三届“国际信誉品牌”暨  第十四届“深圳知名品牌”评价发布活动  启动公告
+</a></li><li><a title="国家发展改革委办公厅关于建立部分地区企业申请企业债券“直通车”机制的通知" href="/home/newstext/NOTICE/50001">
+·国家发展改革委办公厅关于建立部分地区企业申请企业债券“直通车”机制的通知
+</a></li><li><a title="!!!严正申明!!!" href="/home/newstext/NOTICE/34001">
+·!!!严正申明!!!
+</a></li><li><a title="关于召开南山区科技金融，创新服务券和科技金融服务活动政策宣讲会的通知" href="/home/newstext/NOTICE/48001">
+·关于召开南山区科技金融，创新服务券和科技金融服务活动政策宣讲会的通知
+</a></li><li><a title="关于南山区2016年度科技服务活动备案的通知" href="/home/newstext/NOTICE/46001">
+·关于南山区2016年度科技服务活动备案的通知
+</a></li></ul></div></div><!--动态结束 --><div class="helpR"><div class="titleHelp"><h4>帮助(0755-66601548)</h4></div><div class="helpText"><dl><dt class="songti"><a href="/home/helpcenter/PLM_HELPME">·寻求帮助
+</a></dt><dt class="songti"><a href="/home/helpcenter/PLM_FAQ">·常见问题
+</a></dt><dt class="songti"><a href="/home/helpcenter/SVR_AGREEMENT">·服务协议
+</a></dt></dl></div></div></div></div><div class="clear"></div></div><!--合作机构开始 --><div class="mt20"><div class="containCon"><div style="padding-left:10px;padding-right:10px;" class="linkCon"><h4> 合作机构</h4><table cellspadding="50" width="100%"><tr><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="南山区科技创新局" href="http://www.szns.gov.cn/publish/kjj/index.html"><img alt="南山区科技创新局" src="/http_files/partner/20140708/846adfdb8ef04d66ad37b1bb47217c92.PNG"/></a></td><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="南山区科技创业服务中心" href="http://www.sznsibi.org/index.aspx"><img alt="南山区科技创业服务中心" src="/http_files/partner/20140708/0a887eef90c7433db6fd80808c566973.PNG"/></a></td><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="南山区产业发展综合服务平台" href="http://sfms.szns.gov.cn/egrantweb/"><img alt="南山区产业发展综合服务平台" src="/http_files/partner/20140708/996bd5dd8d45430fb4286bf88fb9b9fd.PNG"/></a></td><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="中国邮政储蓄银行" href="http://www.psbc.com/portal/zh_CN/"><img alt="中国邮政储蓄银行" src="/http_files/partner/20160309/d1aa6984e861427b9823d5c81d66dd98.png"/></a></td></tr><tr><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="中国建设银行" href="http://www.ccb.com/cn/home/index.html"><img alt="中国建设银行" src="/http_files/partner/20150401/6f3ef33dbca44606bb6b948490876f70.png"/></a></td><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="广发银行" href="http://www.cgbchina.com.cn/"><img alt="广发银行" src="/http_files/partner/20140708/88e36e7cc3be4ca091d8505d80d3be57.PNG"/></a></td><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="兴业银行" href="http://www.cib.com.cn/cn/index.html"><img alt="兴业银行" src="/http_files/partner/20140708/2464351dc28f4c428c11c8a0034da281.PNG"/></a></td><td align="center"><a style="width:100%;height:100%;display:block" target="_blank" title="杭州银行" href="http://www.hzbank.com.cn/"><img alt="杭州银行" src="/http_files/partner/20160309/8d72c8dd2a484d45954bc0cb29161716.jpg"/></a></td></tr></table></div></div></div><!--合作机构结束 --><style><!-- 
+		.registerF{ text-align:right;  position:absolute; right:75px; top:15px; font-size:14px;}
+	 --></style><div class="foot"><div class="containCon"><div class="Copyright"><p class="fLeftLinka mb10"><a href="/home/NewsType/POLICY"><span>融资政策 </span></a><a href="/home/NewsType/TECH"><span>科技动态</span></a><a href="/home/NewsType/ACTIVITY"><span>活动通知</span></a><a href="/home/helpcenter/PLM_STATEMENT">平台声明</a></p><p class="tc">
+深圳南北互联网金融有限公司版权所有 Copyright 2014
+<br/><a class="tc Copyright" target="_bank" href="http://www.miibeian.gov.cn">粤ICP备16006876号</a><br/>技术支持电话 0755-66601548
+</p></div></div></div><script type="text/javascript">var $ = jQuery; Tapestry.DEBUG_ENABLED = true; var selector = new Array(); Tapestry.JQUERY=true;
+Tapestry.onDOMLoaded(function() {
+Tapestry.init({
+  "linkSubmit" : [
+    {
+      "form" : "loginForm",
+      "clientId" : "linksubmit",
+      "mode" : "normal"
+    }
+  ],
+  "formEventManager" : [
+    {
+      "formId" : "loginForm",
+      "validate" : {
+        "submit" : true,
+        "blur" : true
+      }
+    }
+  ]
+});
+Tapestry.init({
+  "activate" : [
+    "lgn_user"
+  ]
+});
+});
+</script></body></html>

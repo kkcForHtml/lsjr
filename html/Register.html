@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="../css/Register.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../css/jedate.css"/>
+	</head>
+
+	<body>
+		<!--头部 -->
+		<div class="head">
+			<div class="containCon">
+				<a href="http://www.htefol.org/" class="logoMain">
+					<h1 title="南山科技金融在线平台"><img alt="南山科技金融在线平台" src="../img/logoNC.png"></h1></a>
+				<ul class="navMain">
+					<li class="">
+						<a href="http://www.htefol.org/">首页</a>
+					</li>
+					<li>
+						<a href="http://www.htefol.org/home/type/0">债权融资</a>
+					</li>
+					<li>
+						<a href="http://www.htefol.org/home/type/1">股权融资</a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/home/NewsType/POLICY"><span>融资政策 </span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/home/NewsType/TECH"><span>科技动态</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/home/NewsType/ACTIVITY"><span>活动通知</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部结束 -->
+		<div class="mt20"></div>
+		<div class="container">
+			<div id="regedit">
+				<div class="hTitle">
+					<a class="fr songti pt5" href="http://www.htefol.org/">已有帐号，现在登录 &gt;</a><span class="box_title">企业注册</span>
+					<a style="display:none" class="box_title2" href="#">金融机构注册</a>
+					<a style="display:none" class="box_title2" href="#">政府注册</a>
+				</div>
+				<form autocomplete="off" action="http://www.htefol.org/home/register.form1" method="post" id="form1">
+					<div style="display: none;" class=""><input value="bdPMyNwYeQtF4Mr/xO22I/4/7rM=:H4sIAAAAAAAAAJVUvW4UMRAeTjpd4IKQgCNcfkQD7R5CSQMN0QFSpANFOVEjr202Bq9tbC8XmlR5CRqeAFHBE6Sg4x14ABoKKgq89t7mLhfviW7nm2++GY+93+df0J5sQP9Q5nRwQDNmLNUPEcayEFagnBoNO1JnCVIIH9LEIkWN1R92Eiw15SxNUmRosps6EGH7jFFO7o6pLdS9l6fdn73vf1twaQRdLIXVkr9wihauj96g92jAkcgGY6uZyB4dKQvdqm1JWjbT7v/OtK8lpsaMizRnxjApTr+Q7dd/Pv1oARypaDtlJsS8g2OAs/n2HdZYUPLbkz6szTMUMmYiNXkwFbxcIw3kiBh1rbRfxlTMI353cXIQW5hd04xLjKxbS31Yh40qrLEgSK5Bb57BBCkMq3fX8fEeiRKDTA9unGtUcHdrlUjbRxFSZA43KUG23lLHxU9cHCUGmXW4vZDFSDGL+FTpioOGAWqiB71NWJ8ncCnfFspQTrGdKq7Ogs0lTY8CS3LuUQwd0kAOYndg66K8poTZWclrQdLjXnhZYeRiSkdAZ4fvVHGUGFlklaU5YvXVrFbg0xJsLgmqW7BxISWXKeP1ya9W6HOPLimKPUckZpfZcbFfYowYZG7BzfmsKW3MOh983OiDWOZKCncfJvHGZxdt8OP4d//b15NhC1ojWMGcOfae/xtL23aPLafBkT1U2vRKaP7q/sznP9TVCFxHBgAA" name="t:formdata" type="hidden"></div>
+					<table class="regTable" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td class="tr" width="120">登录账号</td>
+								<td class="red" width="10">*</td>
+								<td><input value="" class="input_text validate" id="accountName" name="accountName" type="text"><span style="display: none;" max="10" min="2" req="1" id="accountName_msg" vmeta="1" class="">请输入不小于2位帐号！</span></td>
+							</tr>
+							<tr>
+								<td class="tr">登录密码</td>
+								<td class="red">*</td>
+								<td><input class="input_text validate" value="" id="accountPswd" name="accountPswd" type="password"><span max="20" min="6" req="1" id="accountPswd_msg" vmeta="1" class="font_nc">6~20位。</span></td>
+							</tr>
+							<tr>
+								<td class="tr">确认密码</td>
+								<td class="red">*</td>
+								<td><input class="input_text validate" value="" id="password2" name="password2" type="password"><span max="20" min="6" req="1" id="password2_msg" vmeta="1" class="font_nc">请再次输入密码</span></td>
+							</tr>
+							<tr>
+								<td class="tr">公司名称</td>
+								<td class="red">*</td>
+								<td><input value="" style="width: 400px;" class="input_text validate" id="entprName" name="entprName" type="text"><span max="128" req="1" id="entprName_msg" vmeta="1" class="font_nc">请按营业执照填写</span></td>
+							</tr>
+							<tr>
+								<td class="tr">公司地址</td>
+								<td class="red">*</td>
+								<td><input value="" style="width: 400px;" class="input_text validate" id="regLocation" name="regLocation" type="text"><span max="256" req="1" id="regLocation_msg" vmeta="1" class="font_nc">请按营业执照填写</span></td>
+							</tr>
+							<tr>
+								<td class="tr">所属产业</td>
+								<td class="red">*</td>
+								<td>
+									<select class="input_text validate" onchange="onchangeVal(this)" id="indusId" name="indusId">
+										<option value=""></option>
+										<option value="600100">新一代信息技术</option>
+										<option value="200100">互联网</option>
+										<option value="100100">生物</option>
+										<option value="300100">新能源</option>
+										<option value="400100">新材料</option>
+										<option value="1201001">节能环保</option>
+										<option value="700100">高端装备</option>
+										<option value="900100">生命健康</option>
+										<option value="1000100">海洋</option>
+										<option value="1100100">航空航天</option>
+									</select><span req="1" id="lookupType_msg" vmeta="1" class="font_nc"></span></td>
+							</tr>
+							<tr>
+								<td class="tr">应用领域</td>
+								<td class="red">*</td>
+								<td>
+								<table id="domainSpan600100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="光通信设备与器件" onchange="checkedVal(this)" class="radio_cs"><label for="光通信设备与器件" style="cursor:pointer;">光通信设备与器件</label><input type="text" value="1001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="移动通信" onchange="checkedVal(this)" class="radio_cs"><label for="移动通信" style="cursor:pointer;">移动通信</label><input type="text" value="2001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="无线宽带路由" onchange="checkedVal(this)" class="radio_cs"><label for="无线宽带路由" style="cursor:pointer;">无线宽带路由</label><input type="text" value="3001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="移动智能终端" onchange="checkedVal(this)" class="radio_cs"><label for="移动智能终端" style="cursor:pointer;">移动智能终端</label><input type="text" value="4001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="集群通信终端" onchange="checkedVal(this)" class="radio_cs"><label for="集群通信终端" style="cursor:pointer;">集群通信终端</label><input type="text" value="5001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="物联网设备" onchange="checkedVal(this)" class="radio_cs"><label for="物联网设备" style="cursor:pointer;">物联网设备</label><input type="text" value="6001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="物联网应用" onchange="checkedVal(this)" class="radio_cs"><label for="物联网应用" style="cursor:pointer;">物联网应用</label><input type="text" value="7001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="云计算平台" onchange="checkedVal(this)" class="radio_cs"><label for="云计算平台" style="cursor:pointer;">云计算平台</label><input type="text" value="8001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="云计算应用" onchange="checkedVal(this)" class="radio_cs"><label for="云计算应用" style="cursor:pointer;">云计算应用</label><input type="text" value="9001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="大数据应用" onchange="checkedVal(this)" class="radio_cs"><label for="大数据应用" style="cursor:pointer;">大数据应用</label><input type="text" value="10001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="云存储设备与解决方案" onchange="checkedVal(this)" class="radio_cs"><label for="云存储设备与解决方案" style="cursor:pointer;">云存储设备与解决方案</label><input type="text" value="11001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="系统解决方案" onchange="checkedVal(this)" class="radio_cs"><label for="系统解决方案" style="cursor:pointer;">系统解决方案</label><input type="text" value="12001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="终端设备" onchange="checkedVal(this)" class="radio_cs"><label for="终端设备" style="cursor:pointer;">终端设备</label><input type="text" value="14001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="信息安全与移动支付芯片" onchange="checkedVal(this)" class="radio_cs"><label for="信息安全与移动支付芯片" style="cursor:pointer;">信息安全与移动支付芯片</label><input type="text" value="16001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="移动存储芯片" onchange="checkedVal(this)" class="radio_cs"><label for="移动存储芯片" style="cursor:pointer;">移动存储芯片</label><input type="text" value="17001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="触摸屏控制芯片" onchange="checkedVal(this)" class="radio_cs"><label for="触摸屏控制芯片" style="cursor:pointer;">触摸屏控制芯片</label><input type="text" value="18001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="智能电网芯片" onchange="checkedVal(this)" class="radio_cs"><label for="智能电网芯片" style="cursor:pointer;">智能电网芯片</label><input type="text" value="20001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="电源管理与LED驱动芯片" onchange="checkedVal(this)" class="radio_cs"><label for="电源管理与LED驱动芯片" style="cursor:pointer;">电源管理与LED驱动芯片</label><input type="text" value="22001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="物联网芯片" onchange="checkedVal(this)" class="radio_cs"><label for="物联网芯片" style="cursor:pointer;">物联网芯片</label><input type="text" value="23001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="通信芯片" onchange="checkedVal(this)" class="radio_cs"><label for="通信芯片" style="cursor:pointer;">通信芯片</label><input type="text" value="24001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="国防军工领域芯片" onchange="checkedVal(this)" class="radio_cs"><label for="国防军工领域芯片" style="cursor:pointer;">国防军工领域芯片</label><input type="text" value="26001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="SOA中间件软件" onchange="checkedVal(this)" class="radio_cs"><label for="SOA中间件软件" style="cursor:pointer;">SOA中间件软件</label><input type="text" value="27001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="ERP软件" onchange="checkedVal(this)" class="radio_cs"><label for="ERP软件" style="cursor:pointer;">ERP软件</label><input type="text" value="28001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="金融软件" onchange="checkedVal(this)" class="radio_cs"><label for="金融软件" style="cursor:pointer;">金融软件</label><input type="text" value="29001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="知识与研发管理软件" onchange="checkedVal(this)" class="radio_cs"><label for="知识与研发管理软件" style="cursor:pointer;">知识与研发管理软件</label><input type="text" value="30001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="信息安全软件" onchange="checkedVal(this)" class="radio_cs"><label for="信息安全软件" style="cursor:pointer;">信息安全软件</label><input type="text" value="32001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="3D显示" onchange="checkedVal(this)" class="radio_cs"><label for="3D显示" style="cursor:pointer;">3D显示</label><input type="text" value="33001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="激光显示" onchange="checkedVal(this)" class="radio_cs"><label for="激光显示" style="cursor:pointer;">激光显示</label><input type="text" value="35001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td><span class="tr_rules"><input type="radio" name="chk" id="新型平板显示" onchange="checkedVal(this)" class="radio_cs"><label for="新型平板显示" style="cursor:pointer;">新型平板显示</label><input type="text" value="36001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span>
+								</td>
+							</tr>
+							</table> 
+							<table id="domainSpan200100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="互联网服务" onchange="checkedVal(this)" class="radio_cs"><label for="互联网服务" style="cursor:pointer;">互联网服务</label><input type="text" value="13001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="互联网金融创新" onchange="checkedVal(this)" class="radio_cs"><label for="互联网金融创新" style="cursor:pointer;">互联网金融创新</label><input type="text" value="15001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="网络游戏" onchange="checkedVal(this)" class="radio_cs"><label for="网络游戏" style="cursor:pointer;">网络游戏</label><input type="text" value="19001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="移动互联网" onchange="checkedVal(this)" class="radio_cs"><label for="移动互联网" style="cursor:pointer;">移动互联网</label><input type="text" value="21001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="电子商务" onchange="checkedVal(this)" class="radio_cs"><label for="电子商务" style="cursor:pointer;">电子商务</label><input type="text" value="25001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="网络媒体" onchange="checkedVal(this)" class="radio_cs"><label for="网络媒体" style="cursor:pointer;">网络媒体</label><input type="text" value="31001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="互联网人才服务" onchange="checkedVal(this)" class="radio_cs"><label for="互联网人才服务" style="cursor:pointer;">互联网人才服务</label><input type="text" value="34001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr></table>							
+							<table id="domainSpan100100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="生物医疗设备" onchange="checkedVal(this)" class="radio_cs"><label for="生物医疗设备" style="cursor:pointer;">生物医疗设备</label><input type="text" value="37001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="介入医疗器械" onchange="checkedVal(this)" class="radio_cs"><label for="介入医疗器械" style="cursor:pointer;">介入医疗器械</label><input type="text" value="43001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生物医学材料" onchange="checkedVal(this)" class="radio_cs"><label for="生物医学材料" style="cursor:pointer;">生物医学材料</label><input type="text" value="44001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="组织工程产品与生物人工器官" onchange="checkedVal(this)" class="radio_cs"><label for="组织工程产品与生物人工器官" style="cursor:pointer;">组织工程产品与生物人工器官</label><input type="text" value="45001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="生化药物" onchange="checkedVal(this)" class="radio_cs"><label for="生化药物" style="cursor:pointer;">生化药物</label><input type="text" value="46001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="基因药物" onchange="checkedVal(this)" class="radio_cs"><label for="基因药物" style="cursor:pointer;">基因药物</label><input type="text" value="47001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="新型疫苗" onchange="checkedVal(this)" class="radio_cs"><label for="新型疫苗" style="cursor:pointer;">新型疫苗</label><input type="text" value="48001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="现代中药" onchange="checkedVal(this)" class="radio_cs"><label for="现代中药" style="cursor:pointer;">现代中药</label><input type="text" value="49001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="生物环保产品生产与利用" onchange="checkedVal(this)" class="radio_cs"><label for="生物环保产品生产与利用" style="cursor:pointer;">生物环保产品生产与利用</label><input type="text" value="50001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="环境监测与处理" onchange="checkedVal(this)" class="radio_cs"><label for="环境监测与处理" style="cursor:pointer;">环境监测与处理</label><input type="text" value="51001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="农业、林业新品种" onchange="checkedVal(this)" class="radio_cs"><label for="农业、林业新品种" style="cursor:pointer;">农业、林业新品种</label><input type="text" value="52001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="绿色农用生物制品" onchange="checkedVal(this)" class="radio_cs"><label for="绿色农用生物制品" style="cursor:pointer;">绿色农用生物制品</label><input type="text" value="53001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="生物保健产品" onchange="checkedVal(this)" class="radio_cs"><label for="生物保健产品" style="cursor:pointer;">生物保健产品</label><input type="text" value="54001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="海洋生物技术产品" onchange="checkedVal(this)" class="radio_cs"><label for="海洋生物技术产品" style="cursor:pointer;">海洋生物技术产品</label><input type="text" value="55001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生物基高分子新材料" onchange="checkedVal(this)" class="radio_cs"><label for="生物基高分子新材料" style="cursor:pointer;">生物基高分子新材料</label><input type="text" value="57001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生物基绿色化学品" onchange="checkedVal(this)" class="radio_cs"><label for="生物基绿色化学品" style="cursor:pointer;">生物基绿色化学品</label><input type="text" value="60001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="新型酶制剂" onchange="checkedVal(this)" class="radio_cs"><label for="新型酶制剂" style="cursor:pointer;">新型酶制剂</label><input type="text" value="63001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生物柴油" onchange="checkedVal(this)" class="radio_cs"><label for="生物柴油" style="cursor:pointer;">生物柴油</label><input type="text" value="64001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="燃料乙醇" onchange="checkedVal(this)" class="radio_cs"><label for="燃料乙醇" style="cursor:pointer;">燃料乙醇</label><input type="text" value="67001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生物质发电" onchange="checkedVal(this)" class="radio_cs"><label for="生物质发电" style="cursor:pointer;">生物质发电</label><input type="text" value="70001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="专业技术服务" onchange="checkedVal(this)" class="radio_cs"><label for="专业技术服务" style="cursor:pointer;">专业技术服务</label><input type="text" value="73001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="延伸服务" onchange="checkedVal(this)" class="radio_cs"><label for="延伸服务" style="cursor:pointer;">延伸服务</label><input type="text" value="75001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="专业服务" onchange="checkedVal(this)" class="radio_cs"><label for="专业服务" style="cursor:pointer;">专业服务</label><input type="text" value="78001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="技术外包服务" onchange="checkedVal(this)" class="radio_cs"><label for="技术外包服务" style="cursor:pointer;">技术外包服务</label><input type="text" value="80001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr></table>
+							<table id="domainSpan300100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="太阳能电池及组件" onchange="checkedVal(this)" class="radio_cs"><label for="太阳能电池及组件" style="cursor:pointer;">太阳能电池及组件</label><input type="text" value="38001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="太阳能玻璃" onchange="checkedVal(this)" class="radio_cs"><label for="太阳能玻璃" style="cursor:pointer;">太阳能玻璃</label><input type="text" value="39001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="逆变器" onchange="checkedVal(this)" class="radio_cs"><label for="逆变器" style="cursor:pointer;">逆变器</label><input type="text" value="40001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="超级电容" onchange="checkedVal(this)" class="radio_cs"><label for="超级电容" style="cursor:pointer;">超级电容</label><input type="text" value="41001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="飞轮储能" onchange="checkedVal(this)" class="radio_cs"><label for="飞轮储能" style="cursor:pointer;">飞轮储能</label><input type="text" value="42001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="储能系统" onchange="checkedVal(this)" class="radio_cs"><label for="储能系统" style="cursor:pointer;">储能系统</label><input type="text" value="56001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="动力电池隔膜" onchange="checkedVal(this)" class="radio_cs"><label for="动力电池隔膜" style="cursor:pointer;">动力电池隔膜</label><input type="text" value="58001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="正极材料" onchange="checkedVal(this)" class="radio_cs"><label for="正极材料" style="cursor:pointer;">正极材料</label><input type="text" value="59001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="负极材料" onchange="checkedVal(this)" class="radio_cs"><label for="负极材料" style="cursor:pointer;">负极材料</label><input type="text" value="61001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="电动汽车充电设备" onchange="checkedVal(this)" class="radio_cs"><label for="电动汽车充电设备" style="cursor:pointer;">电动汽车充电设备</label><input type="text" value="62001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr></table>							
+							<table id="domainSpan400100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="平板显示材料" onchange="checkedVal(this)" class="radio_cs"><label for="平板显示材料" style="cursor:pointer;">平板显示材料</label><input type="text" value="65001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="微电子材料" onchange="checkedVal(this)" class="radio_cs"><label for="微电子材料" style="cursor:pointer;">微电子材料</label><input type="text" value="66001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="新能源材料" onchange="checkedVal(this)" class="radio_cs"><label for="新能源材料" style="cursor:pointer;">新能源材料</label><input type="text" value="68001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生物组织工程材料" onchange="checkedVal(this)" class="radio_cs"><label for="生物组织工程材料" style="cursor:pointer;">生物组织工程材料</label><input type="text" value="69001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="生物可降解材料" onchange="checkedVal(this)" class="radio_cs"><label for="生物可降解材料" style="cursor:pointer;">生物可降解材料</label><input type="text" value="71001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="超材料" onchange="checkedVal(this)" class="radio_cs"><label for="超材料" style="cursor:pointer;">超材料</label><input type="text" value="72001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="纳米材料" onchange="checkedVal(this)" class="radio_cs"><label for="纳米材料" style="cursor:pointer;">纳米材料</label><input type="text" value="74001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="先进高分子" onchange="checkedVal(this)" class="radio_cs"><label for="先进高分子" style="cursor:pointer;">先进高分子</label><input type="text" value="76001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="节能环保材料" onchange="checkedVal(this)" class="radio_cs"><label for="节能环保材料" style="cursor:pointer;">节能环保材料</label><input type="text" value="77001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="新型无机非金属材料" onchange="checkedVal(this)" class="radio_cs"><label for="新型无机非金属材料" style="cursor:pointer;">新型无机非金属材料</label><input type="text" value="79001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr></span>
+							<table id="domainSpan1201001" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="节能产品" onchange="checkedVal(this)" class="radio_cs"><label for="节能产品" style="cursor:pointer;">节能产品</label><input type="text" value="128001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="节能技术和装备" onchange="checkedVal(this)" class="radio_cs"><label for="节能技术和装备" style="cursor:pointer;">节能技术和装备</label><input type="text" value="129001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="节能服务业" onchange="checkedVal(this)" class="radio_cs"><label for="节能服务业" style="cursor:pointer;">节能服务业</label><input type="text" value="130001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="环境治理" onchange="checkedVal(this)" class="radio_cs"><label for="环境治理" style="cursor:pointer;">环境治理</label><input type="text" value="131001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="资源循环利用" onchange="checkedVal(this)" class="radio_cs"><label for="资源循环利用" style="cursor:pointer;">资源循环利用</label><input type="text" value="132001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="环保服务业" onchange="checkedVal(this)" class="radio_cs"><label for="环保服务业" style="cursor:pointer;">环保服务业</label><input type="text" value="133001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr></table>
+							<table id="domainSpan700100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="运动控制与伺服" onchange="checkedVal(this)" class="radio_cs"><label for="运动控制与伺服" style="cursor:pointer;">运动控制与伺服</label><input type="text" value="86001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="工业特种计算机" onchange="checkedVal(this)" class="radio_cs"><label for="工业特种计算机" style="cursor:pointer;">工业特种计算机</label><input type="text" value="87001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="电机技术" onchange="checkedVal(this)" class="radio_cs"><label for="电机技术" style="cursor:pointer;">电机技术</label><input type="text" value="88001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="集装箱" onchange="checkedVal(this)" class="radio_cs"><label for="集装箱" style="cursor:pointer;">集装箱</label><input type="text" value="89001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="海洋油气勘探" onchange="checkedVal(this)" class="radio_cs"><label for="海洋油气勘探" style="cursor:pointer;">海洋油气勘探</label><input type="text" value="92001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="特种船舶与游艇" onchange="checkedVal(this)" class="radio_cs"><label for="特种船舶与游艇" style="cursor:pointer;">特种船舶与游艇</label><input type="text" value="93001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="海洋石化检测与控制设备" onchange="checkedVal(this)" class="radio_cs"><label for="海洋石化检测与控制设备" style="cursor:pointer;">海洋石化检测与控制设备</label><input type="text" value="96001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="汽车减速器" onchange="checkedVal(this)" class="radio_cs"><label for="汽车减速器" style="cursor:pointer;">汽车减速器</label><input type="text" value="100001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="汽车检测设备" onchange="checkedVal(this)" class="radio_cs"><label for="汽车检测设备" style="cursor:pointer;">汽车检测设备</label><input type="text" value="102001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="激光设备" onchange="checkedVal(this)" class="radio_cs"><label for="激光设备" style="cursor:pointer;">激光设备</label><input type="text" value="103001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="仪器仪表" onchange="checkedVal(this)" class="radio_cs"><label for="仪器仪表" style="cursor:pointer;">仪器仪表</label><input type="text" value="104001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="服务与教育机器人" onchange="checkedVal(this)" class="radio_cs"><label for="服务与教育机器人" style="cursor:pointer;">服务与教育机器人</label><input type="text" value="105001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr></span>
+							<table id="domainSpan900100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="生命信息设备与配套产品" onchange="checkedVal(this)" class="radio_cs"><label for="生命信息设备与配套产品" style="cursor:pointer;">生命信息设备与配套产品</label><input type="text" value="106001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="生命信息专业服务" onchange="checkedVal(this)" class="radio_cs"><label for="生命信息专业服务" style="cursor:pointer;">生命信息专业服务</label><input type="text" value="107001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="个体化治疗" onchange="checkedVal(this)" class="radio_cs"><label for="个体化治疗" style="cursor:pointer;">个体化治疗</label><input type="text" value="108001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="亚健康人群保健及相关产品制造" onchange="checkedVal(this)" class="radio_cs"><label for="亚健康人群保健及相关产品制造" style="cursor:pointer;">亚健康人群保健及相关产品制造</label><input type="text" value="109001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr></table>
+							<table id="domainSpan1000100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="新型海工装备与特种船舶" onchange="checkedVal(this)" class="radio_cs"><label for="新型海工装备与特种船舶" style="cursor:pointer;">新型海工装备与特种船舶</label><input type="text" value="90001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="高附加值钻井平台配套模块及关键设备" onchange="checkedVal(this)" class="radio_cs"><label for="高附加值钻井平台配套模块及关键设备" style="cursor:pointer;">高附加值钻井平台配套模块及关键设备</label><input type="text" value="91001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="港口物流" onchange="checkedVal(this)" class="radio_cs"><label for="港口物流" style="cursor:pointer;">港口物流</label><input type="text" value="94001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="海上运输" onchange="checkedVal(this)" class="radio_cs"><label for="海上运输" style="cursor:pointer;">海上运输</label><input type="text" value="95001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="油气资源勘探开发" onchange="checkedVal(this)" class="radio_cs"><label for="油气资源勘探开发" style="cursor:pointer;">油气资源勘探开发</label><input type="text" value="97001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="海洋生物医药与保健品（红色）" onchange="checkedVal(this)" class="radio_cs"><label for="海洋生物医药与保健品（红色）" style="cursor:pointer;">海洋生物医药与保健品（红色）</label><input type="text" value="98001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="邮轮游艇及相关配套产业" onchange="checkedVal(this)" class="radio_cs"><label for="邮轮游艇及相关配套产业" style="cursor:pointer;">邮轮游艇及相关配套产业</label><input type="text" value="99001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="观光休闲" onchange="checkedVal(this)" class="radio_cs"><label for="观光休闲" style="cursor:pointer;">观光休闲</label><input type="text" value="101001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr></span>							
+							<table id="domainSpan1100100" class="domainSpan" style="display: none;"><tr><td><span class="tr_rules"><input type="radio" name="chk" id="无人机" onchange="checkedVal(this)" class="radio_cs"><label for="无人机" style="cursor:pointer;">无人机</label><input type="text" value="119001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="航空机载及电子系统" onchange="checkedVal(this)" class="radio_cs"><label for="航空机载及电子系统" style="cursor:pointer;">航空机载及电子系统</label><input type="text" value="120001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="登机桥" onchange="checkedVal(this)" class="radio_cs"><label for="登机桥" style="cursor:pointer;">登机桥</label><input type="text" value="121001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="车载卫星导航" onchange="checkedVal(this)" class="radio_cs"><label for="车载卫星导航" style="cursor:pointer;">车载卫星导航</label><input type="text" value="122001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="航空关联电子产业" onchange="checkedVal(this)" class="radio_cs"><label for="航空关联电子产业" style="cursor:pointer;">航空关联电子产业</label><input type="text" value="123001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="微小卫星研发设计制造" onchange="checkedVal(this)" class="radio_cs"><label for="微小卫星研发设计制造" style="cursor:pointer;">微小卫星研发设计制造</label><input type="text" value="124001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="车载导航" onchange="checkedVal(this)" class="radio_cs"><label for="车载导航" style="cursor:pointer;">车载导航</label><input type="text" value="125001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td><td><span class="tr_rules"><input type="radio" name="chk" id="北斗" onchange="checkedVal(this)" class="radio_cs"><label for="北斗" style="cursor:pointer;">北斗</label><input type="text" value="126001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr><tr></tr><tr><td><span class="tr_rules"><input type="radio" name="chk" id="芳纶材料" onchange="checkedVal(this)" class="radio_cs"><label for="芳纶材料" style="cursor:pointer;">芳纶材料</label><input type="text" value="127001" name="domain" style="display:none;">&nbsp;&nbsp;<span></span></span></td></tr></table>
+							<input value="" style="display: none;" id="rules" name="rules" type="text">
+							<!-- 反馈错误信息 -->
+							</td>
+							<td><span id="applyArea_msg"></span></td>
+							</tr>
+							<tr>
+								<td class="tr">成立日期</td>
+								<td class="red">*</td>
+								<td><input readonly="readonly" class="input_text app-cale validate" value="" id="regDate" name="regDate" type="text"><span req="1" id="regDate_msg" vmeta="1" class="font_nc">请按营业执照填写</span></td>
+							</tr>
+							<tr>
+								<td class="tr">注册资本(万元)</td>
+								<td class="red">*</td>
+								<td><input value="" class="input_text validate" id="regCapital" name="regCapital" type="text">&nbsp;&nbsp;&nbsp;<span title="默认为人民币" class="tr">货币类型<span class="red">*</span></span>&nbsp;&nbsp;
+									<select id="lookupselect" name="lookupselect" style="width: 124px;" class="input_text">
+										<option value="人民币">人民币</option>
+										<option value="港币">港币</option>
+										<option value="美元">美元</option>
+									</select><span maxval="99999999" minval="1" req="1" id="regCapital_msg" vmeta="1" class="font_nc">请按营业执照填写</span></td>
+							</tr>
+							<tr>
+								<td class="tr">代码类型:</td>
+								<td class="red">*</td>
+								<td><input onclick="radioSel(this)" id="entprCode_btn" checked="checked" class="radio_cs" name="code" type="radio"><label style="cursor: pointer;" value="entprCode_btn" for="entprCode_btn">组织机构代码</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input onclick="radioSel(this)" id="creditCode_btn" class="radio_cs" name="code" type="radio"><label style="cursor: pointer;" value="creditCode_btn" for="creditCode_btn">统一社会信用代码</label></td>
+							</tr>
+							<tr class="cl1">
+								<td class="tr">组织机构代码</td>
+								<td class="red">*</td>
+								<td><input value="" class="input_text validate" id="entprCode" name="entprCode" type="text"><span max="32" req="1" id="entprCode_msg" vmeta="1" class="font_nc">请按组织机构代码证</span></td>
+							</tr>
+							<tr class="cl2 dis">
+								<td class="tr">统一社会信用代码</td>
+								<td class="red">*</td>
+								<td><input value="" disabled="disabled" class="input_text" id="entprCreditCode" name="entprCreditCode" type="text"><span max="32" req="1" id="entprCode2_msg" vmeta="1" class="font_nc">请按统一社会信用代码证</span></td>
+							</tr>
+							<tr>
+								<td class="tr">联系人姓名</td>
+								<td class="red">*</td>
+								<td><input value="" class="input_text validate" id="contact" name="contact" type="text"><span req="1" id="contact_msg" vmeta="1" class="font_nc"></span></td>
+							</tr>
+							<tr>
+								<td class="tr">联系人邮箱</td>
+								<td class="red">*</td>
+								<td><input value="" class="input_text validate" id="contactEmail" name="contactEmail" type="text"><span reg="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" req="1" id="contactEmail_msg" vmeta="1" class="font_nc"></span></td>
+							</tr>
+							<tr>
+								<td class="tr">联系人手机</td>
+								<td class="red">*</td>
+								<td><input value="" class="input_text validate" id="contactMobile" name="contactMobile" type="text"><span req="1" id="contactMobile_msg" vmeta="1" class="font_nc" reg = "^1(3|4|5|7|8)\d{9}$"></span></td>
+							</tr>
+							<tr>
+								<td class="tr">验证码</td>
+								<td class="red">*</td>
+								<td><input value="" class="input_text w60 validate" id="ranCode" name="ranCode" type="text"><span id="pin" class="block_span ml10 mr10"><img alt="code" id="imgRand" style="margin-left: 2px;" onclick="chgRanCode()" class="block_span ml10 mr10" src="http://www.webtest.com/Account/ValidateImg"  align="absmiddle" height="24" width="68"></span> 看不清，
+									<a onclick="chgRanCode()" id="chgRan" href="javascript:void(0)">换一个</a><span req="1" id="entprDesc_msg" vmeta="1" class="font_nc"></span><input id="checkRanCode" asyn="false" uri="/home/register.checkrancode" ajax="checkRanCode" type="hidden">
+									<a style="display: none;" href="http://www.htefol.org/home/register.ranimage">ranCode Image output</a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td>
+									<a target="_top" href="http://www.htefol.org/home/helpcenter/SVR_AGREEMENT">《平台会员服务协议》</a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td><input onclick="return checkForm()" value="同意服务条款并注册" class="submit" id="submit_0" name="submit_0" type="button"></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				<div class="h40"></div>
+			</div>
+		</div><input id="domainList" asyn="false" uri="/home/register.domainlist" ajax="domainList" type="hidden">
+		<div class="foot">
+			<div class="containCon">
+				<div class="Copyright">
+					<p class="fLeftLinka mb10">
+						<a href="http://www.htefol.org/home/NewsType/POLICY"><span>融资政策 </span></a>
+						<a href="http://www.htefol.org/home/NewsType/TECH"><span>科技动态</span></a>
+						<a href="http://www.htefol.org/home/NewsType/ACTIVITY"><span>活动通知</span></a>
+						<a href="http://www.htefol.org/home/helpcenter/PLM_STATEMENT">平台声明</a>
+					</p>
+					<p class="tc">
+						深圳南北互联网金融有限公司版权所有 Copyright 2014
+						<br>
+						<a class="tc Copyright" target="_bank" href="http://www.miibeian.gov.cn/">粤ICP备16006876号</a><br>技术支持电话 0755-66601548
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--加载中-->
+		<div id="loading" style="display: none;">
+			<img src="../img/loading-0.gif"/>
+		</div>
+		<!--警告弹窗-->		
+		<div class="bgbox" id="warning" style="display: none; overflow: hidden;">
+			<div class="pop div-box awardMoney" style="display: block; width: 300px; height: 60px;">
+				<div class="clear"></div>
+				<div style="text-align: center;font-size: 16px;" class="font">111</div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="closepop(this)" class="button" href="javascript:void(0);">确认</a></span></div>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+		</div>		
+		
+	</body>
+	<!--<script src="../js/sea.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		seajs.use(['register'], function(app) {
+			app.test()
+		})
+	</script>-->
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jedate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//日期插件
+		jeDate({
+		    dateCell:"#regDate",
+		    format:"YYYY-MM-DD",
+		    isTime:false, 
+		})
+		//单选按钮选中事件
+		function checkedVal (ele) {
+			$('.regTable table span').removeClass('checkFont');
+			$(ele).parent().addClass('checkFont');
+		}
+		//所属产业选择事件
+		function onchangeVal (ele) {
+			$('.regTable table').hide();
+			$('.regTable table span').removeClass('checkFont');
+			$('.regTable table span :radio').prop('checked',false);
+			$('#domainSpan'+$(ele).val()).show();
+		}
+		//选择组织机构事件
+		function radioSel(obj){
+				var $e= $(obj);
+				var code = $e.attr("id");
+		    if ( document.all && "object" == typeof( window.external ) ){    
+				code = obj.id;
+		    }
+			if(code=="creditCode_btn"){
+				$(".cl1").addClass("dis");
+				$(".cl2").removeClass("dis");
+				$("#entprCreditCode").addClass("validate");
+				$("#entprCreditCode").removeAttr("disabled")
+				$("#entprCode").attr("disabled","disabled");
+				$("#entprCode").removeClass("validate");
+			}else{	
+				$(".cl1").removeClass("dis");
+				$(".cl2").addClass("dis");
+				$("#entprCode").removeAttr("disabled")
+				$("#entprCode").addClass("validate");
+				$("#entprCreditCode").removeClass("validate");
+				$("#entprCreditCode").attr("disabled","disabled");
+			}
+		}
+	//获取验证码
+	function chgRanCode () {
+		$('#imgRand').attr('src','http://www.webtest.com/Account/ValidateImg?'+new Date().getTime());
+	}
+	
+	//表单验证预事件
+	$(function () {
+		$(".validate").blur(function(){
+			if(this.id != 'regDate')
+				validate(this);
+		});	
+	})	
+	//表单验证事件
+	function validate(elem){
+		var $e= $(elem);
+		var title=$e.closest("tr").find("td[class='tr']").html();
+		var $span = $e.closest("td").find("span[vmeta='1']");
+		
+		var val = $.trim($e.val()); 
+		$e.val(val);
+		
+		$span.removeClass("font_nc").removeClass("font_err");
+		if(doValidate($e, title, $span, val)){
+			$span.css("display", "none");
+			if(elem.id=="password2" && val != $("#accountPswd").val()){
+				$span.addClass("font_err").css("display", "");
+				$span.html(" 两次密码不一致!");
+			}
+			return true;
+		}else{
+			$span.addClass("font_err").css("display", "");
+			return false;
+		}
+	}
+	
+	function doValidate($e, title, $span, val){
+		var blankVal = "";
+		if("lookupType" == $e[0].id){
+			blankVal = "-1";
+		}
+		var req = $span.attr("req");
+		if("1" == req && val==blankVal){
+			$span.html(title+" 不能为空");
+			return false;
+		}
+		var pattern = new RegExp("[~'!$%^&+=:|]");  
+		if(val != null && val!=""){
+			if(pattern.test(val)){
+				$span.html(title+" 非法字符串");
+				return false;
+			}
+		}
+		var min = $span.attr("min");
+		var max = $span.attr("max");
+		if(min || max){
+			if(min && parseInt(min) > val.length){
+				$span.html(title+"最小长度为：" + min);
+				return false;
+			}
+			if(max && parseInt(max) < val.length){
+				$span.html(title+"最大长度为：" + max);
+				return false;
+			}
+		}
+		
+		var minVal = $span.attr("minVal");
+		if(minVal){
+			if(parseFloat(minVal) > parseFloat(val)){
+				$span.html(title+" 必须输入大于"+minVal+"的数字");
+				return false;
+			}
+		}
+		
+		var maxVal = $span.attr("maxVal");
+		if(maxVal){
+			if(parseFloat(maxVal) < parseFloat(val)){
+				$span.html(title+" 必须输入小于"+maxVal+"的数字");
+				return false;
+			}
+		}
+		
+		var expr = $span.attr("reg");
+		if(expr){
+			 reg = new RegExp(expr, 'g');
+			 if(!reg.test(val)){
+			 	$span.html(title+"无效");
+				return false;
+			 }
+		}
+		if($span.attr("tel")){
+			if(!isMobile(val)){
+				$span.html(title+"无效");
+				return false;
+			}
+		}
+		if ($e.attr('id')=='regCapital') {
+			var value = $e.val()*1;
+			$e.val(value.toFixed(2));
+		}
+		if($e.attr("id") == "ranCode"){
+			var ret = false;
+			var code = $("#ranCode").val();
+//			Ajax.checkRanCode.req([code], function(d){
+//				ret = d[0];
+//			});
+			$.ajax({
+				type:"post",
+				url:"http://www.webtest.com/Account/ValidateImgCode",
+				xhrFields: {
+	                withCredentials: true,
+	                useDefaultXhrHeader: false
+				},
+				//contentType:'text/plain',这是个坑
+				crossDomain: true,
+				async:false,
+				data:{imgCode:code},
+				success:function (data) {
+					ret = data.Code
+					console.log(ret);
+					if(!ret){
+						$span.html("验证码不正确");
+						chgRanCode();
+					}
+									
+				}
+			});
+			return ret;	
+		}
+		
+		return true;
+	}
+	
+	function checkForm(){
+		var result = true;
+		$(".validate").each(function(i,e){
+			if(!validate(e)){
+				result = false;
+			}
+		});
+		var rules =[];
+		var count = 0;
+		$(".tr_rules").each(function(i,e){ 
+			var $e = $(e); 
+			var domain = $e.find("input[name='domain']");
+			var chk = $e.find("input[name='chk']")[0].checked;
+			rules.push(chk+"||"+domain.val());
+			if(chk){
+				count = count+1;
+			}
+		});
+		$("#rules").val(rules.join("~&|@!"));
+		if(count<1){
+			$("#applyArea_msg").html("请选择领域!").addClass("font_err");
+			return false;
+		}else{
+			$("#applyArea_msg").html("").removeClass("font_err");
+		}
+		if (result) {
+			loading(true);
+			var data = {
+				Account:$.trim($('#accountName').val()),
+				Password:$.trim($('#accountPswd').val()),
+				CompName:$.trim($('#entprName').val()),
+				CompAddr:$.trim($('#regLocation').val()),
+				Industry:$.trim($('#indusId option:selected').html()),
+				AppArea:$.trim($('.checkFont label').html()),
+				CreateDate:$.trim($('#regDate').val()),
+				RegisterMoney:$.trim($('#regCapital').val()),
+				CurType:$.trim($('#lookupselect').val()),
+				Code:$.trim($('#'+$('input[name="code"]:checked ')[0].id.split('_')[0]).val()),
+				CodeType:$.trim($('input[name="code"]:checked ').next('label').html()),
+				ContactName:$.trim($('#contact').val()),
+				ContactEmail:$.trim($('#contactEmail').val()),
+				ContactMobile:$.trim($('#contactMobile').val()),
+			}
+			$.ajax({
+				type:"post",
+				url:"http://www.webtest.com/Account/Register",
+//				xhrFields: {
+//	                withCredentials: true,
+//	                useDefaultXhrHeader: false
+//				},
+//				contentType:'text/plain',
+//				crossDomain: true,				
+				async:true,
+				data:data,
+				success:function (n) {
+					loading(false);
+					console.log(n.Code);
+					if (n.Code) {
+						window.location.href = 'http://www.mytask.com/index.html'
+					}else{
+						$('#accountPswd').val('');
+						$('#password2').val('');
+						//alert($('#accountName').val()+'已存在!')
+						showWarning($('#accountName').val()+'已存在!');
+					}
+				}
+			});
+		}
+	}
+	
+	</script>
+</html>

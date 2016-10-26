@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/ecoaquery.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="current">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu" data-flag = '1'>
+						<!-- <span class="icon_info_company"></span> -->
+						企业评价
+					</a>
+					<ul>
+						<li class="">
+							<a href="RatingResult.html"><span class="icon_sub"></span> 评价结果
+							</a>
+						</li>
+						<li class="current">
+							<a href="CreditApply1.html"><span class="icon_sub"></span> 发起评价
+							</a>
+						</li>
+						<li class="">
+							<a href="MyDraftQuery.html"><span class="icon_sub"></span> 我的草稿
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>评价管理</em></li>
+					<li><em>企业评价</em></li>
+					<li class="noarrow"><em>发起评价</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<div class="content-box">
+					<!-- Start content-box-header -->
+					<div class="content-box-header">
+						<h3>
+企业财务状况
+<span style="font-size: 13px; color: red; font-weight: bold;">
+(财务数据请填写当年累积数)
+</span></h3></div>
+					<!-- End .content-box-header -->
+					<div class="content-box-content">
+						<div class="client_info">
+							<form style="display: none;" onsubmit="javascript:return Tapestry.waitForPage(event);" action="http://www.htefol.org/mgnt/rating/ecoaquery.periodfrom" method="post" id="periodFrom">
+								<div style="display: none;" class=""><input value="apply/4676001" name="t:ac" type="hidden"><input value="F4jA6HCz7iFCnrEX8MfS1KX328I=:H4sIAAAAAAAAAJXQvUoDQRQF4JuAEEkn2Fj4A9rONqbRKqCCsGhk8QHuzt5dR2dnxpm7JmlstfYBfALxJVLY+Q4+gK2ViONqp4i2Bw7f4dw9w9x4FZbrynDikZWpkl1p8aghP90q0ZFXtggeBtZXAh3KExIc48B+OhDSetIqFzkGEsM8hih5T5Eu1jPixm0cz/pPiw+vXeik0JfWsLf6AGtiWEhP8QITjVHM2Ed4e+IYeiWOWvNPq4b/XTXyVlIIWZPXKgRlzey+2Cxfbh+7ABM3XoOVn80vkXREd35Fpa2dNWQ4iFSZs1bi7+6hur55W7oy7TM9qVVs7BfncAmdjxvmP8GM9Dse3SGKogEAAA==" name="t:formdata" type="hidden"></div>
+								<h4>当前财务期间</h4><input style="display: none;" value="true" id="forceAppr"><span title="默认显示为当前评价单据季度" class="ml_20 mt_20 mb_20"><select disabled="disabled" class="text_input w_140" id="faPeriod" name="faPeriod"><option selected="selected" value="201606">2016年第二季度</option></select><img style="display: none;" id="faPeriod_icon" class="t-error-icon" alt="" src="spacer.gif"><a href="#" style="display: none;" title="默认显示为当前评价单据季度" class="button mr_20 ml_40" onclick="save();" id="periodSel">
+更
+&nbsp;&nbsp;
+改
+</a>&nbsp;&nbsp;<span class="info2" style="color: red;"></span></span><br></form><span class="mt_10 mb_10"><h4>当前财务期间</h4><span style="margin-left: 20px; font-size: 13px; font-weight: bold;" class="mt_10 mb_10 ml_20">2016年第二季度</span></span>
+							<form onsubmit="javascript:return Tapestry.waitForPage(event);" action="http://www.htefol.org/mgnt/rating/ecoaquery.editfrom" method="post" id="editFrom">
+								<div style="display: none;" class=""><input value="apply/4676001" name="t:ac" type="hidden"><input value="DGbnuBNxMn4/aNt/x4hHUkhSoHs=:H4sIAAAAAAAAAJWRu0rEQBSGzy4IK9sJNhZeYG2Txm20WlBhIXghaH8yOcbRZGacOYnZxlbrfQCfQHyJLex8Bx/A1krEScBKV7SamR9+vu+ceXiFhet1WC0yxaFFlioL94TG45LsZNtYqhyTcRZ2tc0CNCjOKWA05NhOhoHQlnKZ+LMwWpFiF0RSXcZlUkgeHFktyLn25ZzU6lDeTT9WblUXOhH0RC59Y5wyLEUXWGGYo6fHbL3ETm0Yeg0/9vz5hopqbg2v4AbAV5qgrWzA2s8VhxVJlVL91VlsknGTzOeQv1WYO7+J4a+bSNBRMEp8iIL3JeXpICYuzebJrP+y/PTejt4XWrHV+QEW1Eh02mkbxqln/Mli9F+Lb58xe0y3zt7un7sAtfkEtXtOsggCAAA=" name="t:formdata" type="hidden"></div>
+								<div style="display: none;" class="noticeErro errorBlock">
+									<h3><span class="notice_l"></span>
+保存数据时，出现如下错误：
+</h3>
+									<ol></ol>
+								</div>
+								<h4 class="mb_10 tip_icon"><span>资产负债表</span><!--#C60 --><span style="font-size: 13px; color: red; font-weight: bold; float: right;">(单位:人民币万元)</span></h4>
+								<table class="mt_10 mb_30 verticalList">
+									<tbody id="TotalAssets">
+										<tr>
+											<th style="width: 30%;">
+												指标名称
+											</th>
+											<th style="width: 17%;">2014年末</th>
+											<th style="width: 17%;">2015年末</th>
+											<th style="width: 17%;">2015年6月(当年累积)</th>
+											<th>2016年6月(当年累积)</th>
+										</tr>
+										<tr>
+											<th>
+												货币资金
+											</th>
+											<td  class="p2y-1"><input value="0.00" readonly="readonly" readonly="readonly" onchange="updateVals(this);" id="p2y-1001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-1"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-1001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-1"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-1001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-1"><input value="0.00" onchange="updateVals(this)" id="1001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												短期投资
+											</th>
+											<td  class="p2y-2"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-2001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-2"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-2001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-2"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-2001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-2"><input value="0.00" onchange="updateVals(this)" id="2001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												应收票据
+											</th>
+											<td  class="p2y-3"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-3001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-3"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-3001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-3"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-3001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-3"><input value="0.00" onchange="updateVals(this)" id="3001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												应收帐款
+											</th>
+											<td  class="p2y-4"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-4001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-4"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-4001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-4"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-4001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-4"><input value="0.00" onchange="updateVals(this)" id="4001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												预付帐款
+											</th>
+											<td  class="p2y-5"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-5001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-5"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-5001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-5"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-5001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-5"><input value="0.00" onchange="updateVals(this)" id="5001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												其他应收
+											</th>
+											<td  class="p2y-6"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-6001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-6"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-6001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-6"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-6001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-6"><input value="0.00" onchange="updateVals(this)" id="6001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												存货
+											</th>
+											<td  class="p2y-7"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-7001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-7"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-7001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-7"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-7001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-7"><input value="0.00" onchange="updateVals(this)" id="7001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												待摊（含长期待摊费用）
+											</th>
+											<td  class="p2y-8"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-8001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-8"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-8001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-8"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-8001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-8"><input value="0.00" onchange="updateVals(this)" id="8001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												长期投资
+											</th>
+											<td  class="p2y-9"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-9001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-9"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-9001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-9"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-9001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-9"><input value="0.00" onchange="updateVals(this)" id="9001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												固定资产（含在建工程）
+											</th>
+											<td  class="p2y-10"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-10001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-10"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-10001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-10"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-10001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-10"><input value="0.00" onchange="updateVals(this)" id="10001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												无形资产及其他资产
+											</th>
+											<td  class="p2y-11"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-11001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-11"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-11001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-11"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-11001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-11"><input value="0.00" onchange="updateVals(this)" id="11001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												总资产
+											</th>
+											<td  class="p2y-12"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-12001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-12"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-12001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-12"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-12001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-12"><input value="0.00" onchange="updateVals(this)" id="12001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												借款
+											</th>
+											<td  class="p2y-13"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-13001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-13"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-13001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-13"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-13001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-13"><input value="0.00" onchange="updateVals(this)" id="13001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												应付票据
+											</th>
+											<td  class="p2y-14"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-14001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-14"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-14001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-14"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-14001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-14"><input value="0.00" onchange="updateVals(this)" id="14001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												应付帐款
+											</th>
+											<td  class="p2y-15"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-15001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-15"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-15001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-15"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-15001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-15"><input value="0.00" onchange="updateVals(this)" id="15001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												预收帐款
+											</th>
+											<td  class="p2y-16"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-16001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-16"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-16001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-16"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-16001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-16"><input value="0.00" onchange="updateVals(this)" id="16001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												应交税金
+											</th>
+											<td  class="p2y-17"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-17001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-17"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-17001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-17"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-17001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-17"><input value="0.00" onchange="updateVals(this)" id="17001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												其他应付（含其他应付款、应付职工薪酬等）
+											</th>
+											<td  class="p2y-18"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-18001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-18"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-18001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-18"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-18001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-18"><input value="0.00" onchange="updateVals(this)" id="18001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												实收资本
+											</th>
+											<td  class="p2y-19"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-19001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-19"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-19001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-19"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-19001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-19"><input value="0.00" onchange="updateVals(this)" id="19001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												资本公积
+											</th>
+											<td  class="p2y-20"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-20001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-20"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-20001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-20"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-20001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-20"><input value="0.00" onchange="updateVals(this)" id="20001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												留存收益（含盈余公积）
+											</th>
+											<td  class="p2y-21"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-21001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-21"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-21001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-21"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-21001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-21"><input value="0.00" onchange="updateVals(this)" id="21001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												负债及权益
+											</th>
+											<td  class="p2y-22"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-22001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-22"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-22001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-22"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-22001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-22"><input value="0.00" onchange="updateVals(this)" id="22001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+									</tbody>
+								</table>
+								<h4 class="mb_10 tip_icon"><span>损益表</span><!--#C60 --><span style="font-size: 13px; color: red; font-weight: bold; float: right;">(单位:人民币万元)</span></h4>
+								<table class="mt_10 mb_30 verticalList">
+									<tbody>
+										<tr>
+											<th style="width: 30%;">
+												指标名称
+											</th>
+											<th style="width: 17%;">2014年末</th>
+											<th style="width: 17%;">2015年末</th>
+											<th style="width: 17%;">2015年6月(当年累积)</th>
+											<th>2016年6月(当年累积)</th>
+										</tr>
+										<tr>
+											<th>
+												收入
+											</th>
+											<td  class="p2y-1"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-23001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-1"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-23001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-1"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-23001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-1"><input value="1.00" onchange="updateVals(this)" id="23001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												成本税金
+											</th>
+											<td  class="p2y-2"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-24001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-2"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-24001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-2"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-24001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-2"><input value="0.00" onchange="updateVals(this)" id="24001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												管理费用
+											</th>
+											<td  class="p2y-3"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-25001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-3"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-25001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-3"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-25001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-3"><input value="0.00" onchange="updateVals(this)" id="25001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												销售费用
+											</th>
+											<td  class="p2y-11"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-26001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-11"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-26001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-11"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-26001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-11"><input value="0.00" onchange="updateVals(this)" id="26001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												财务费用
+											</th>
+											<td  class="p2y-4"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-27001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-4"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-27001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-4"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-27001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-4"><input value="0.00" onchange="updateVals(this)" id="27001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												其他业务利润
+											</th>
+											<td  class="p2y-5"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-28001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-5"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-28001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-5"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-28001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-5"><input value="0.00" onchange="updateVals(this)" id="28001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												外收净额
+											</th>
+											<td  class="p2y-6"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-29001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-6"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-29001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-6"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-29001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-6"><input value="0.00" onchange="updateVals(this)" id="29001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												投资收益
+											</th>
+											<td  class="p2y-7"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-30001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-7"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-30001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-7"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-30001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-7"><input value="0.00" onchange="updateVals(this)" id="30001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												利润总额
+											</th>
+											<td  class="p2y-8"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-31001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-8"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-31001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-8"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-31001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-8"><input value="0.00" onchange="updateVals(this)" id="31001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												所得税
+											</th>
+											<td  class="p2y-9"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-32001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-9"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-32001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-9"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-32001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-9"><input value="0.00" onchange="updateVals(this)" id="32001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												净利润
+											</th>
+											<td  class="p2y-10"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-33001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-10"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-33001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-10"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-33001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-10"><input value="0.00" onchange="updateVals(this)" id="33001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+									</tbody>
+								</table>
+								<h4 class="mb_10 tip_icon"><span>现金流量表</span><!--#C60 --><span style="font-size: 13px; color: red; font-weight: bold; float: right;">(单位:人民币万元)</span></h4>
+								<table class="mt_10 mb_30 verticalList">
+									<tbody>
+										<tr>
+											<th style="width: 30%;">
+												指标名称
+											</th>
+											<th style="width: 17%;">2014年末</th>
+											<th style="width: 17%;">2015年末</th>
+											<th style="width: 17%;">2015年6月(当年累积)</th>
+											<th>2016年6月(当年累积)</th>
+										</tr>
+										<tr>
+											<th>
+												经营活动产生的现金流量
+											</th>
+											<td  class="p2y-1"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-34001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-1"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-34001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-1"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-34001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-1"><input value="0.00" onchange="updateVals(this)" id="34001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												投资活动产生的现金流量
+											</th>
+											<td  class="p2y-2"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-35001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-2"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-35001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-2"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-35001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-2"><input value="0.00" onchange="updateVals(this)" id="35001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+										<tr>
+											<th>
+												融资活动产生的现金流量
+											</th>
+											<td  class="p2y-3"><input value="0.00" readonly="readonly" onchange="updateVals(this);" id="p2y-36001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="py-3"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="py-36001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pym-3"><input value="0.00" readonly="readonly" onchange="updateVals(this)" id="pym-36001" style="text-align: right;" name="amount" class="text_input"></td>
+											<td  class="pm-3"><input value="0.00" onchange="updateVals(this)" id="36001" style="text-align: right;" name="amount" class="text_input"></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="client_button"><span class="align-left"><a href="creditapply2.html" class="button mr_20" id="prevStep">
+上一步
+</a><a onclick="save(true);" href="javascript:;" class="button mr_20" id="nextStep">
+下一步
+</a><a onclick="save(false);" href="javascript:;" class="button mr_20" id="saveIndex">
+暂
+&nbsp;&nbsp;
+存
+</a></span></div><input value="" style="display: none;" id="ecoaVals" name="ecoaVals" type="text"><img style="display: none;" id="ecoaVals_icon" class="t-error-icon" alt="" src="spacer.gif"></form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/rating/ecoaquery.mgnt.chgpswd?t:ac=apply/4676001" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+		<!--加载中-->
+		<div id="loading" style="display: none;">
+			<img src="../img/loading-0.gif"/>
+		</div>
+		
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var timers = setTimeout(function () {
+			loading(true);
+		},50)
+		$('#TotalAssets tr:first-child th:eq(1)').html(new Date().getFullYear()-2+'年末');
+		$('#TotalAssets tr:first-child th:eq(2)').html(new Date().getFullYear()-1+'年末');
+		$('#TotalAssets tr:first-child th:eq(3)').html(new Date().getFullYear()-1+'年'+new Date().getMonth()+'月（当年积累）');
+		$('#TotalAssets tr:first-child th:eq(4)').html(new Date().getFullYear()+'年'+new Date().getMonth()+'月（当年积累）');
+		//json日期格式转换为正常格式
+		function jsonDateFormat(jsonDate) {
+		    try {
+		        var date = new Date(jsonDate);
+		        var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+		        var day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+		        var hours = date.getHours();
+		        var minutes = date.getMinutes();
+		        var seconds = date.getSeconds();
+		        var milliseconds = date.getMilliseconds();
+		        return date.getFullYear() + "-" + month + "-" + day+" "+hours+":"+minutes+":"+seconds+"."+milliseconds;
+		    } catch (ex) {
+		        return "";
+		    }
+		}	
+		//报错数据闪烁
+		function errorTips (ele) {
+			var x = 0,time;
+			clearInterval(time);
+			time = setInterval(function () {
+				x++;
+				x%2?ele.addClass('focusRed'):ele.removeClass('focusRed');
+				x>5&&clearInterval(time);
+			},250)
+		}
+		//统计总资产
+		function totolTotalAssets (n,flag) {
+			var totolNum = 0;
+			var firstNum = flag?1:13;
+			var endNum = flag?11:21;
+			for (var i = firstNum; i<=endNum; i++) {
+				totolNum+=$('#TotalAssets tr:eq('+i+') input:eq('+n+')').val()*1;
+			}
+			return totolNum;
+		}
+		//数据算法
+		function updateVals (ele) {
+			var $e = $(ele);
+			var idKey = $e.attr('id').split('-')[$e.attr('id').split('-').length-1]*1;
+			tofixed2(ele,true);
+			if (idKey<=12001) {
+				console.log($('#TotalAssets tr input').index($e));
+				var $index = $('#TotalAssets tr input').index($e)%4;
+				getData($('#TotalAssets tr:eq(12) input:eq('+$index+')'),totolTotalAssets($index,true));
+				return
+			}
+			if (idKey<=22001) {
+				var $index = $('#TotalAssets tr input').index($e)%4;
+				console.log(totolTotalAssets($index,false));
+				getData($('#TotalAssets tr:eq(22) input:eq('+$index+')'),totolTotalAssets($index,false));
+				return				
+			}
+		}
+		//保留两位小数
+		function tofixed2 (ele,flag) {
+			var $e = flag?$(ele):ele;
+			var val =  $e.val()*1;
+			if (isNaN(val)) {
+				val = 0;
+				errorTips($e);
+			}
+			$e.val(val.toFixed(2));
+		}
+		//渲染数据
+		function getData (ele,Int) {
+			ele.val(Int);
+			tofixed2(ele,false);
+		}
+		//键值转换
+		function changeKey (key) {
+			var yearName = '';
+			switch (key){
+				case 0:
+					yearName = 'p2y-';
+					return yearName;
+					break;
+				case 1:
+					yearName = 'py-';
+					return yearName;
+					break;
+				case 2:
+					yearName = 'pym-';
+					return yearName;
+					break;
+				case 3:
+					yearName = '';
+					return yearName;
+					break;					
+				default:
+					break;
+			}
+		}
+		//获取数据
+		var userObj = {};
+		var arr = [];
+		var isChange = GetParam(window.location.href,'isChange');
+		var hrefComID = GetParam(window.location.href,'CompID');
+		$(function () {
+			if (!(isChange*1)&&isChange!==undefined) {
+				$('input').attr('readonly','readonly').attr('disabled','disabled');
+				$('select').attr('readonly','readonly').attr('disabled','disabled');
+				$('textarea').attr('readonly','readonly').attr('disabled','disabled');
+				$('#saveIndex').hide();
+				$('#prevStep').removeAttr('onclick').attr('href','http://www.mytask.com/html/creditapply2.html?CompID='+hrefComID+'&isChange='+isChange);
+				$('#nextStep').removeAttr('onclick').attr('href','http://www.mytask.com/html/ecoascore.html?CompID='+hrefComID+'&isChange='+isChange);
+			}
+			
+			$.ajax({
+				type:"get",
+				url:"http://www.webtest.com/Rating/FinList",
+				async:true,
+				data:{compId:hrefComID||JSON.parse(sessionStorage.getItem('userName_lsjr')).ID},
+				success:function (n) {
+					var obj = n.Data;
+					console.log(obj);
+					userObj = {
+						ID:obj[3].ID,
+						CompID:obj[3].CompID,
+						DataVersion:obj[3].DataVersion,
+						ChangeTime:jsonDateFormat(new Date().getTime()),
+						DataState:obj[3].DataState,
+					};
+					for (var i=0; i<obj.length; i++) {
+						delete obj[i].ID;
+						delete obj[i].CompID;
+						delete obj[i].DataVersion;
+						delete obj[i].ChangeTime;
+						delete obj[i].DataState;
+						var num = 0;
+						var infos = obj[i];
+						for (var j in infos) {
+							num++;
+							var ele = $('#'+changeKey(i)+num+'001');
+							var Int = obj[i][j];
+							getData(ele,Int);
+							arr.push(j);
+						}
+					}
+					loading(false);
+					clearInterval(timers);
+				}
+			});
+		})
+		//提交数据
+		function save (flag) {
+			loading(true);
+			if ($('#12001').val()*1!==$('#22001').val()*1) {
+				$('.errorBlock').show();
+				$('.errorBlock ol').html('');
+				var oli = $('<li>今年【资产负债】不平,请确认填写!</li>');
+				$('.errorBlock ol').append(oli);
+				loading(false);
+			}else{
+				$('.errorBlock').hide();
+				var data = {};
+				console.log(userObj);
+				arr = arr.slice(0,36);
+				for (var i=0; i<arr.length; i++) {
+					data[arr[i]] = $('#'+(i+1)+'001').val();
+				}
+				data = $.extend(true, data, userObj);
+				console.log(data);
+				$.ajax({
+					type:"post",
+					url:"http://www.webtest.com/Rating/Finance",
+					async:true,
+					data:data,
+					success:function (n) {
+						loading(false);
+						console.log(n);
+						if (flag) {
+							window.location.href = 'http://www.mytask.com/html/ecoascore.html';
+						}else{
+							alert('数据保存成功');
+						}
+					}
+				});				
+			}
+		}
+	</script>
+</html>

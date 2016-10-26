@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/MyDraftQuery.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="current">
+						<a href="http://www.htefol.org/mgnt/rating/RatingResult"><span>评价管理</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/Index"><span>与我有关</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu" data-flag = '1'>
+						<!-- <span class="icon_info_company"></span> -->
+						企业评价
+					</a>
+					<ul>
+						<li class="">
+							<a href="RatingResult.html"><span class="icon_sub"></span> 评价结果
+							</a>
+						</li>
+						<li class="">
+							<a href="CreditApply1.html"><span class="icon_sub"></span> 发起评价
+							</a>
+						</li>
+						<li class="current">
+							<a href="MyDraftQuery.html"><span class="icon_sub"></span> 我的草稿
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>评价管理</em></li>
+					<li><em>企业评价</em></li>
+					<li class="noarrow"><em>我的草稿</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<section class="content_wrap cf">
+					<div class="content-box">
+						<div class="content-box-header">
+							<h3>我的草稿</h3></div>
+						<div class="content-box-content">
+							<table class="mb10">
+								<!--thead -->
+								<thead>
+									<tr>
+										<th>评价申请编号</th>
+										<th>草稿保存时间</th>
+										<th>评价状态</th>
+										<th>评价类型</th>
+										<th>财务期间</th>
+										<th width="100">操作</th>
+									</tr>
+								</thead>
+								<!--tbody -->
+								<tbody class="trbg">
+									<!-- 循环遍历 -->
+									<tr class="">
+										<td>PJ20160815006</td>
+										<td>
+											2016-09-19 19:22
+										</td>
+										<td>用户撤销</td>
+										<td>
+											企业评价
+										</td>
+										<td>2016年第二季度</td>
+										<td>
+											<a href="http://www.htefol.org/mgnt/rating/mydraftquery.draft/4676001">
+												修改
+											</a>
+											<a class="ml_15" onclick="return confirm('确认执行删除操作？');" href="http://www.htefol.org/mgnt/rating/mydraftquery.deletemydraft/4676001">
+												删除
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pagination">
+								<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/rating/mydraftquery.pager.actionlink/1"><span>首页</span></a>
+								<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/rating/mydraftquery.pager.actionlink_0/0"><span>上一页</span></a><span class="page-cur">1</span>
+								<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/rating/mydraftquery.pager.actionlink_1/2"><span>下一页</span></a>
+								<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/rating/mydraftquery.pager.actionlink_2/1"><span>尾页</span></a><span class="page-skip">
+共1条记录
+</span></div>
+						</div>
+						<!-- End .content-box-content -->
+					</div>
+				</section>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/rating/mydraftquery.mgnt.chgpswd" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

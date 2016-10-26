@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/creditundone.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="current">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu" data-flag = '1'>
+						<!-- <span class="icon_info_company"></span> -->
+						企业评价
+					</a>
+					<ul>
+						<li class="">
+							<a href="RatingResult.html"><span class="icon_sub"></span> 评价结果
+							</a>
+						</li>
+						<li class="current">
+							<a href="CreditApply1.html"><span class="icon_sub"></span> 发起评价
+							</a>
+						</li>
+						<li class="">
+							<a href="MyDraftQuery.html"><span class="icon_sub"></span> 我的草稿
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>评价管理</em></li>
+					<li><em>企业评价</em></li>
+					<li class="noarrow"><em>发起评价</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<section class="content_wrap cf">
+					<div class="content-box">
+						<!-- Start content-box-header -->
+						<div class="content-box-header">
+							<h3>评价指标情况</h3></div>
+						<!-- End .content-box-header -->
+						<div class="content-box-content">
+							<div class="client_info">
+								<div class="fs-20 pb_30" align="left" id="err">
+									<br> 如果您想修改填报内容请点击“继续填写”，如果您确认填报内容，请点击“强制跳过” 谢谢！
+									<br><br> 以下没有填写完成的指标项：
+									<br>
+</div>
+								<div class="client_button"><span class="align-left"><a class="button mr_20" href="http://www.mytask.com/html/creditapply2.html" onclick="saveIndex(false)">继续填写</a><a onclick="saveIndex(true)" style="color: rgb(255, 170, 170) ! important;" class="button mr_20" href="###">
+强制跳过
+</a></span></div>
+							</div>
+						</div>
+						<!-- End .content-box-content -->
+					</div>
+				</section>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/rating/creditundone.mgnt.chgpswd?t:ac=apply/4676001" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+		<!--其他确认弹出窗-->
+		<div class="bgbox" id="comfirm" style="display: none; overflow: hidden;">
+			<div class="pop div-box awardMoney" style="display: block; width: 300px; height: 60px;">
+				<div class="clear"></div>
+				<div style="text-align: center;font-size: 16px;" class="font"></div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changeState()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop(this)" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+		</div>		
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//渲染数据
+		$(function () {
+			var date = new Date();
+			var userifos = JSON.parse(sessionStorage.getItem('userName_lsjr'));
+			var data = {
+				dataVersion:date.getFullYear() + (date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()),
+				compId:userifos.ID,
+			}
+			$.ajax({
+				type:"get",
+				url:"http://www.webtest.com/Rating/ValidateSubmit",
+				async:true,
+				data:data,
+				success:function (n) {
+					var arr = n.Data;
+					console.log(arr);
+					for (var i=0; i<arr.length; i++) {
+						var ostrong = $('<strong style="margin-left: '+arr[i].Level*20+'px;" class="orangeFont">'+arr[i].Name+'</strong><br />');
+						$('#err').append(ostrong);
+					}
+				}
+			});
+		})
+		//提交数据
+		function saveIndex(flag) {
+		//	$('#IsSetResearch input').eq(0).prop('checked',true)
+		//console.log($('#IsSetResearch input:checked').index());
+			var date = new Date();
+			var data = {
+				DataVersion:date.getFullYear() + (date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()),
+				CompID:8,			
+			}
+			//data = $.extend(true, data, userObj);
+			console.log(data);
+			$.ajax({
+				type:"get",
+				url:"http://www.webtest.com/Rating/GetScore",
+				async:true,
+				data:data,
+				success:function (n) {
+					console.log(n);
+					if (n.Code) {
+						if (flag) {
+							$('#comfirm').fadeIn().find('.font').html('目前你的评价等级为<b style="color:#f00;font-weight:bold">'+n.Message+'</b>，确认要强制跳过吗');
+						}
+					}
+				}
+			});
+		}
+		function changeState  () {
+			window.location.href = 'http://www.mytask.com/html/RatingResult.html';
+		}
+	</script>
+</html>

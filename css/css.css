@@ -1,0 +1,46 @@
+/* CSS Document */
+
+.containCon{ width:1000px; margin:0 auto;}
+h1,h2,h3,h4{font-family: 'Microsoft Yahei',sans-serif; }
+
+/**-头部-**/
+.head{ height:62px; border-bottom:1px solid #e2e2e2; box-shadow:0px 0px 3px 1px #eaeaea;}
+.head .containCon{  position:relative; height:56px;}
+.navMain{ position:absolute; right:0; bottom:-1px; }
+.navMain li { display:block; float:left;}
+.navMain li a{ display:block; height:48px; line-height:48px; padding:0 20px; float:left; color:#666; font-family: 'Microsoft Yahei',sans-serif; font-size:16px;}
+.navMain li.current{ border-bottom:3px solid #0092d6;}
+.logoMain{height:42px; display:block;}
+.head .containCon .logoMain{ position:absolute; left:10px; top:10px;}
+
+/**-help-**/
+.helpR{border:1px solid #ddd; margin-top:20px; min-height:146px; _height:146px; }
+.titleHelp{border-bottom:2px solid #0093f5; padding-left:15px; }
+.titleHelp h4{ font-size:18px; color:#0093f5;  padding:10px 0 10px 30px;   background:url(../images/helpIocn.png) left center no-repeat;}
+.helpText{ padding:20px 0 0 20px; line-height:22px;}
+.helpText dl dt{ padding-bottom:5px;}
+.helpText dl dd a{ padding-left:13px; color:#999;}
+
+
+/**-友情链接-**/
+.linkCon{ border:1px solid #ddd; padding-bottom:10px;}
+.linkCon  h4{ font-size:18px; color: #333; padding:15px 0 5px 15px;}
+
+/**-foot-**/
+.footTop{ border-top:1px solid #ddd; margin-top:20px; padding:30px 0 0 30px; height:80px;}
+.fLeftLinka{ text-align:center}
+.fLeftLinka a{ font-size:16px; color: #404040;font-family: 'Microsoft Yahei',sans-serif; margin-right:20px;}
+.fLeftCon{ float:left;}
+.fRightCon{ float:right; color:#999; padding-right:20px; font-family: 'Microsoft Yahei',sans-serif;}
+.fRightCon .tel{ font-size: 32px;color: #c00;}
+.m-ftcontact ul li{ float:left;}
+.txtL{font-size:16px; font-family: 'Microsoft Yahei',sans-serif; margin-right:10px; padding: 12px 0 0 0;}
+.m-ftcontact ul li a {display: block;width: 48px;height: 48px;background: url(../images/seviceIcons.png);text-indent: -9999px;}
+
+.m-ftcontact ul li a.qq {background-position: -192px -48px;}
+.m-ftcontact ul li a.weibo {background-position: -48px -48px;}
+.m-ftcontact ul li a.weixin {background-position: -96px -48px;}
+.m-ftcontact ul li a.email {background-position: -144px -48px;}
+
+ 
+.Copyright{ padding: 20px; color: #999; border-top:1px solid #ddd; margin-top:30px;}

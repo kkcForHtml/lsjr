@@ -1,0 +1,123 @@
+/* ::::: http://www.htefol.org/asset/ifp/css/home/css/base.css ::::: */
+
+body, html, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0px; padding: 0px; }
+table { border-collapse: collapse; border-spacing: 0px; }
+body, button, input, select, textarea { font: 12px/1.5 arial,宋体b8b体; }
+fieldset, img { border: medium none; }
+ol, ul { list-style: outside none none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q::before, q::after { content: ""; }
+.block_span { display: inline-block; vertical-align: middle; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.fr { float: right; display: inline; }
+.mt20 { margin-top: 20px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.ml10 { margin-left: 10px; }
+.pt5 { padding-top: 5px; }
+body { color: rgb(64, 64, 64); }
+h1 { font-size: 16px; }
+a { color: rgb(39, 118, 197); text-decoration: none; font-family: Arial,sans-serif; }
+a:hover { text-decoration: underline; }
+.songti, .songti a { font-family: "宋体"; }
+.red { color: rgb(255, 0, 0); }
+.radio_cs { vertical-align: text-bottom; margin-bottom: 1px; }
+/* ::::: http://www.htefol.org/asset/ifp/css/home/css/css.css ::::: */
+
+.containCon { width: 1000px; margin: 0px auto; }
+h1, h2, h3, h4 { font-family: "Microsoft Yahei",sans-serif; }
+.head { height: 72px; border-bottom: 1px solid rgb(226, 226, 226); box-shadow: 0px 0px 3px 1px rgb(234, 234, 234); }
+.head .containCon { position: relative; height: 72px; }
+.navMain { position: absolute; right: 0px; bottom: -1px; }
+.navMain li { display: block; float: left; }
+.navMain li a { display: block; height: 48px; line-height: 48px; padding: 0px 20px; float: left; color: rgb(102, 102, 102); font-family: "Microsoft Yahei",sans-serif; font-size: 16px; }
+.logoMain { width: 206px; height: 42px; display: block; }
+.head .containCon .logoMain { position: absolute; left: 10px; top: 15px; }
+.fLeftLinka { text-align: center; }
+.fLeftLinka a { font-size: 16px; color: rgb(64, 64, 64); font-family: "Microsoft Yahei",sans-serif; margin-right: 20px; }
+.Copyright { padding: 20px; color: rgb(153, 153, 153); border-top: 1px solid rgb(221, 221, 221); margin-top: 30px; }
+/* ::::: http://www.htefol.org/asset/ifp/css/home/css/regedit.css ::::: */
+
+body { background-color: rgb(255, 255, 255); }
+.hTitle { height: 55px; line-height: 55px; margin-bottom: 40px; border-bottom: 1px solid rgb(221, 221, 221); }
+.box_title { font-size: 24px; color: rgb(22, 27, 32); font-family: "Microsoft Yahei",sans-serif; border-bottom: 3px solid rgb(59, 154, 199); float: left; padding: 0px 10px; }
+.box_title2 { font-size: 22px; font-family: "Microsoft Yahei",sans-serif; float: left; padding: 0px 30px; }
+#regedit { background: rgb(243, 243, 243) none repeat scroll 0% 0%; padding: 10px 30px 20px; }
+.input_text { width: 200px; height: 30px; padding-left: 5px; font-size: 14px; border: 1px solid rgb(204, 204, 204); border-radius: 2px; box-shadow: 1px 1px 1px 0px rgb(234, 234, 234) inset; vertical-align: middle; line-height: 30px; }
+.regTable { margin-left: 10px; margin-top: 20px; }
+.regTable td { padding: 8px 2px; vertical-align: middle; }
+.regTable .tr { font-size: 14px; min-width: 85px; white-space: nowrap; }
+.regTable .w60 { width: 60px; }
+.container { width: 880px; margin: 0px auto; overflow: hidden; border-radius: 10px; }
+.submit { height: 36px; display: inline-block; outline: medium none; width: 205px; background: transparent url('../img/btnbg.png') no-repeat scroll 0% 0%; border: medium none; color: rgb(255, 255, 255); font-weight: bold; font-size: 14px; cursor: pointer; line-height: 36px; }
+.submit:hover, .submit:focus { background: transparent url('../img/btnbg.png') repeat-x scroll 0px -36px; }
+.font_nc { color: rgb(171, 180, 177); font-size: 12px; padding-left: 10px; }
+/*新增样式*/
+.checkFont {
+    font-weight: bold;
+}
+.font_err {
+    color: red;
+    font-size: 12px;
+    padding: 5px 0 5px 30px;
+    background: url(../img/check-erro2.gif) top left no-repeat;
+}
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/default.css ::::: */
+
+DIV.t-exception-report DT::after { content: ":"; }
+DIV.t-beaneditor-row LABEL::after { content: ":"; }
+DL.t-beandisplay DT::after { content: ":"; }
+IMG { border: medium none; }
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/jquery/themes/ui-lightness/jquery-ui.css ::::: */
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; display: table; }
+.ui-helper-clearfix::after { clear: both; }
+button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/tapestry-console.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/t5-alerts.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/tree.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/ctx/asset/base/js/easyui/themes/easyui.css ::::: */
+
+.app-cale { cursor: pointer; background: transparent url('../img/datepicker.gif') no-repeat scroll right center; }
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/jquery/form.css ::::: */
+
+.dis { display: none; }
+/*loaing*/
+#loading{position: fixed;top: 0;left: 0;right: 0;bottom: 0;margin: auto;background: rgba(255,255,255,0.5);border-radius: 10px; z-index: 100;}
+#loading img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin:auto;
+	border-radius: 10px;
+	width: 60px;
+	height: 24px;
+}
+.bgbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0,0,0,0.5);
+    z-index: 101;
+    display: none;	
+}
+.awardMoney{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 120px;
+    z-index: 100;	
+	
+}

@@ -1,0 +1,267 @@
+<!--Position -->
+
+<nav class="main_nav">
+	<ul>
+		<li><em class="home"></em></li>
+		<li><em>与我有关</em></li>
+		<li><em>与我有关</em></li>
+		<li class="noarrow"><em>企业信息</em></li>
+	</ul>
+</nav>
+<!--内容区域 -->
+<section class="content_wrap cf">
+	<div class="class com.zte.rate.ui.components.ifp.EntprEdit">
+		<!--内容区域 -->
+		<form vcheck="1" action="http://www.htefol.org/mgnt/aboutme/entprinfo.entpredit.editfrom" method="post" id="editFrom">
+			<div style="display: none;" class=""><input value="IYA+chmvH9nu2PXmHP81ghsbqy0=:H4sIAAAAAAAAAJ2Xy24TMRSGTaWo0BRVQuINAJVeJpc2vcAqakCqFKFKAbboxHZSgzMePJ42bHgUngDxEl2w4x14ALasWOAZM9PQjhQf78a/cr7PMznjk3z9RRqXO2RrNo1NC8YqMzPeehGbRJ/GE/WM51ecCRMVVzHMeKpJT+lpBAnQcx4ZSHhq9KdeRJXmUoyjMaQ86o9tCNS8FFyyRyNusuTxm6vmz4ff/6yQO0PSpCo2WslXlmjIg+F7uICWhHjaGhkt4unzeWLIvUKafwS9xT52i2daUZ6mo2w8E2kqVHz1je1Pfn/5sULIPPHyGz43kxyWfiSfCbH7rxJcfV7euIzIjn/Ju3YpbS5kWEaIuFMj7mAZIeJujbiLZYSI92rEe1hGiHi/RryPZYSIezXiHpYRIj6oER9gGSHiwxrxIZYRIj6qER9hGU7cJtHSIjWZCMqBMW0Pv1J936V9l+I5Tr9FNpeWaT5lYHgpXrXrgV1jap3Mez5QxSqdmy8nNsHVO2WXtD1LiutF8YYTF3mhD2D5N5d9UFJRMHaoVc1ls+G/DMtw4l2y7VNEIREGZOlds9GJi5AEzO2CvKFt5lnpRTKcuEV2lxZJpT5kScolp6Y0ry+GaIp/o8XFVwPSwJzxpNJvlPlrmA9sHsIK2sR/3b6wCe9uv8HCfAv01mNYL8LyGWApePfi3Vfu4taxFP+2d32jgQlVtf1ChmX4n+EiZlkqqh+9q8X6lGFqnWyTPFn+YmaSV3OqUaz860Lm8XHNPD7GMpx4mzz1KgJ7+pTWu2WAqvZ/ZWcg4kQrllFjW5ZWr2yen7l8YPMQlv+cKLd9/Sdm7TpCEgKsndvWDpLg31nnSjKuLyRk1QnRdNnbPMMyCvFfBEt3CcUPAAA=" name="t:formdata" type="hidden"></div>
+			<div class="content-box">
+				<!-- Start content-box-header -->
+				<div class="content-box-header">
+					<h3>企业基本信息</h3></div>
+				<!-- End .content-box-header -->
+				<div class="content-box-content">
+					<div class="client_info">
+						<div style="display: none;" class="noticeErro errorBlock">
+							<h3><span class="notice_l"></span>
+保存数据时，出现如下错误：
+</h3>
+							<ol></ol>
+						</div><span class="copyval"><h4 class="mb_10 tip_icon">基本信息</h4><table class="mt_10 mb_30"><tbody><tr><th><span class="fontRed">* </span> 企业名称 :
+						</th>
+						<td colspan="5"><input vcheck="{field:'企业名称',type:'len*',expr:'[2,128]'}" class="text_input w_450" value="深圳市汇碳科技有限公司" id="entprName" name="entprName" type="text"></td>
+						</tr>
+						<tr>
+							<th>企业法定代表人:</th>
+							<td style="width: 15%;"><input class="text_input w_200" value="徐朝霞" id="textfield" name="textfield" type="text"></td>
+							<th>身份证号码 :</th>
+							<td style="width: 15%;"><input class="text_input w_200" value="432427197002210403" id="textfield_0" name="textfield_0" type="text"></td>
+							<th>法人手机号:</th>
+							<td><input class="text_input w_200" value="13509681718" id="textfield_1" name="textfield_1" type="text"></td>
+						</tr>
+						<tr>
+							<th><span class="fontRed">* </span> 企业联系人 :
+							</th>
+							<td><input vcheck="{field:'企业联系人',type:'len*',expr:'[2,128]'}" class="text_input w_200" value="徐哲" id="textfield_2" name="textfield_2" type="text"></td>
+							<th>联系人部门 :</th>
+							<td><input class="text_input w_200" value="市场部" id="textfield_3" name="textfield_3" type="text"></td>
+							<th>联系人职务 :</th>
+							<td><input class="text_input w_200" value="客户经理" id="textfield_4" name="textfield_4" type="text"></td>
+						</tr>
+						<tr>
+							<th><span class="fontRed">* </span> 联系人手机号 :
+							</th>
+							<td><input vcheck="{field:'联系人手机号 ',type:'reg*',expr:/^((\+86)|(86))?1\d{10}$/}" class="text_input w_200" value="18898616404" id="textfield_5" name="textfield_5" type="text"></td>
+							<th>联系人办公电话:</th>
+							<td><input vcheck="{field:'办公电话 ',type:'reg',expr:/^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/,msg:'办公电话正确格式为: 区号-号码，例如：0755-1234567'}" class="text_input w_200" value="0755-86546256" id="textfield_6" name="textfield_6" type="text"></td>
+							<th>联系人传真 :</th>
+							<td><input value="" vcheck="{field:'联系人传真 ',type:'reg',expr:/^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/,msg:'联系人传真正确格式为:区号-号码，例如：0755-1234567'}" class="text_input w_200" id="textfield_7" name="textfield_7" type="text"></td>
+						</tr>
+						<tr>
+							<th><span class="fontRed">* </span> 联系人E-mail :
+							</th>
+							<td><input vcheck="{field:'E-mail',type:'reg*',expr:/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/}" class="text_input w_200" value="772581298@qq.com" id="textfield_8" name="textfield_8" type="text"></td>
+							<th><span class="fontRed">* </span> 公司地址:
+							</th>
+							<td><input vcheck="{field:'公司地址',type:'len*'}" class="text_input w_200" value="深圳市南山区深南大道10128号南山数字文化产业基地东塔楼604室" id="officeAddress" name="officeAddress" type="text"></td>
+							<th><span class="fontRed">* </span> 注册时间 :
+							</th>
+							<td><input readonly="readonly" vcheck="{field:'注册时间 ',type:'*'}" class="text_input w_200 app-cale" value="2013-08-26" id="regDate" name="regDate" type="text" onclick=testShow(this)></td>
+						</tr>
+						<tr title="有统一社会信用代码则填写,没有可不填写">
+							<th><span class="fontRed">* </span> 组织机构代码 :
+							</th>
+							<td><input value="" style="background-color: rgb(221, 221, 221);" readonly="readonly" class="text_input w_200" id="entprCode" name="entprCode" type="text"></td>
+							<th><span class="fontRed">* </span> 统一社会信用代码:
+							</th>
+							<td><input style="background-color: rgb(221, 221, 221);" readonly="readonly" class="text_input w_200" value="91440300077528436T" id="entprCreditCode" name="entprCreditCode" type="text"></td>
+							<th><span class="fontRed">* </span> 注册地点 :
+							</th>
+							<td><input vcheck="{field:'注册地点 ',type:'len*',expr:'[2,128]'}" class="text_input w_200" value="深圳市南山区粤海街道高新南四道虚拟大学院A309室" id="regLocation" name="regLocation" type="text"></td>
+						</tr>
+						<tr>
+							<th><span class="fontRed">* </span> 注册资本 (万元):
+							</th>
+							<td><input vcheck="{field:'注册资本 ',type:'num*',expr:'[1,99999999)'}" class="text_input w_200" value="1000" id="regCapital" name="regCapital" type="text"></td>
+							<th>实收资本 (万元):</th>
+							<td><input vcheck="{field:'实收资本',type:'num'}" class="text_input w_200" value="60" id="realCapital" name="realCapital" type="text"></td>
+							<th>
+								货币类型:
+							</th>
+							<td>
+								<select id="lookupselect" name="lookupselect" class="text_input w_200">
+									<option value="港币">港币</option>
+									<option value="美元">美元</option>
+									<option selected="true" value="人民币">人民币</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>企业主管税务所(国税) :</th>
+							<td><input class="text_input w_200" value="深圳市南山区国税局" id="nationalTaxDept" name="nationalTaxDept" type="text"></td>
+							<th>国税登记号 :</th>
+							<td><input class="text_input w_200" value="914403003597184300" id="nationalTaxCode" name="nationalTaxCode" type="text"></td>
+							<th></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>企业主管税务所(地税) :</th>
+							<td><input class="text_input w_200" value="深圳市南山区地税局" id="localTaxDept" name="localTaxDept" type="text"></td>
+							<th>地税登记号 :</th>
+							<td><input class="text_input w_200" value="914403003597184300" id="localTaxCode" name="localTaxCode" type="text"></td>
+							<th></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="fontRed">* </span> 注册类型 :
+							</th>
+							<td colspan="3">
+								<div><input class="radio_cs" name="lookupradio" value="LX001" id="LX001" type="radio"><label for="LX001">国有企业</label><input class="radio_cs" name="lookupradio" value="LX002" id="LX002" type="radio"><label for="LX002">国有控股企业</label><input class="radio_cs" checked="checked" label="民营企业" name="lookupradio" value="LX003" id="LX003" type="radio"><label for="LX003">民营企业</label><input class="radio_cs" name="lookupradio" value="LX004" id="LX004" type="radio"><label for="LX004">民营控股企业</label><input class="radio_cs" name="lookupradio" value="LX005" id="LX005" type="radio"><label for="LX005">外商独资企业</label><input class="radio_cs" name="lookupradio" value="LX006" id="LX006" type="radio"><label for="LX006">中外合资企业</label><input class="radio_cs" name="lookupradio" value="LX007" id="LX007" type="radio"><label for="LX007">中外合作企业</label><input class="radio_cs" name="lookupradio" value="LX008" id="LX008" type="radio"><label for="LX008">其他</label></div>
+							</td>
+							<th><span class="fontRed">* </span> 所属产业 :
+							</th>
+							<td>
+								<select vcheck="{field:'所属产业 ',type:'*'}" class="text_input validate" onclick="onchangeVal()" id="indusId" name="indusId">
+									<option value=""></option>
+									<option value="600100">新一代信息技术</option>
+									<option value="200100">互联网</option>
+									<option value="100100">生物</option>
+									<option value="300100">新能源</option>
+									<option value="400100">新材料</option>
+									<option value="500100">文化创意</option>
+									<option selected="true" value="1201001">节能环保</option>
+									<option value="700100">高端装备</option>
+									<option value="900100">生命健康</option>
+									<option value="1000100">海洋</option>
+									<option value="1100100">航空航天</option>
+									<option value="1200100">其他产业</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="fontRed">* </span> 应用领域 :</th>
+							<td colspan="5">
+								<table border="" cellspacing="" cellpadding="">
+									<tr style="border: 0px none;">
+										<td style="border: 0px none;"><span class="tr_rules"><input onchange="checkedVal()" name="chk" id="节能产品" class="radio_cs" type="radio"><label for="节能产品">节能产品</label><input value="128001" name="domain" style="display: none;" type="text">&nbsp;&nbsp;<span></span></span>
+										</td>
+										<td style="border: 0px none;"><span class="tr_rules"><input onchange="checkedVal()" name="chk" id="节能技术和装备" class="radio_cs" type="radio"><label for="节能技术和装备">节能技术和装备</label><input value="129001" name="domain" style="display: none;" type="text">&nbsp;&nbsp;<span></span></span>
+										</td>
+										<td style="border: 0px none;"><span class="tr_rules"><input onchange="checkedVal()" name="chk" id="节能服务业" class="radio_cs" type="radio"><label for="节能服务业">节能服务业</label><input value="130001" name="domain" style="display: none;" type="text">&nbsp;&nbsp;<span></span></span>
+										</td>
+										<td style="border: 0px none;"><span class="tr_rules"><input onchange="checkedVal()" name="chk" id="环境治理" class="radio_cs" type="radio"><label for="环境治理">环境治理</label><input value="131001" name="domain" style="display: none;" type="text">&nbsp;&nbsp;<span></span></span>
+										</td>
+										<td style="border: 0px none;"><span class="tr_rules"><input onchange="checkedVal()" name="chk" id="资源循环利用" class="radio_cs" type="radio"><label for="资源循环利用">资源循环利用</label><input value="132001" name="domain" style="display: none;" type="text">&nbsp;&nbsp;<span></span></span>
+										</td>
+										<td style="border: 0px none;"><span class="tr_rules checkFont"><input onchange="checkedVal()" name="chk" id="环保服务业" checked="checked" class="radio_cs" type="radio"><label for="环保服务业">环保服务业</label><input value="133001" name="domain" style="display: none;" type="text">&nbsp;&nbsp;<span></span></span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+						<h4 class="mb_10 tip_icon">股本结构</h4>
+						<table id="myHolderTab" class="mt_10 mb_30 verticalList">
+							<tbody>
+								<tr>
+									<th>
+										序号
+									</th>
+									<th><span class="fontRed">* </span> 股东名称
+									</th>
+									<th><span class="fontRed">* </span> 出资额（万元）
+									</th>
+									<th><span class="fontRed">* </span> 出资形式
+									</th>
+									<th><span class="fontRed">* </span> 持股比例（%）
+									</th>
+								</tr>
+								<tr name="shareHolders">
+									<td>1</td>
+									<td><input value="徐朝霞" name="name" class="text_input"></td>
+									<td><input vcheck="{field:'出资额',type:'num',expr:'[1,100000000]'}" value="54" name="amount" class="text_input"></td>
+									<td><input value="货币资金" name="capitalType" class="text_input"></td>
+									<td><input vcheck="{field:'持股比例',type:'num',expr:'[0,100000000]'}" value="90" name="rate" class="text_input"></td>
+								</tr>
+								<tr name="shareHolders">
+									<td>2</td>
+									<td><input value="罗贤有" name="name" class="text_input"></td>
+									<td><input vcheck="{field:'出资额',type:'num',expr:'[1,100000000]'}" value="6" name="amount" class="text_input"></td>
+									<td><input value="货币资金" name="capitalType" class="text_input"></td>
+									<td><input vcheck="{field:'持股比例',type:'num',expr:'[0,100000000]'}" value="10" name="rate" class="text_input"></td>
+								</tr>
+								<tr name="shareHolders">
+									<td>3</td>
+									<td><input value="" name="name" class="text_input"></td>
+									<td><input value="" vcheck="{field:'出资额',type:'num',expr:'[1,100000000]'}" name="amount" class="text_input"></td>
+									<td><input value="" name="capitalType" class="text_input"></td>
+									<td><input value="" vcheck="{field:'持股比例',type:'num',expr:'[0,100000000]'}" name="rate" class="text_input"></td>
+								</tr>
+								<tr name="shareHolders">
+									<td>4</td>
+									<td><input value="" name="name" class="text_input"></td>
+									<td><input value="" vcheck="{field:'出资额',type:'num',expr:'[1,100000000]'}" name="amount" class="text_input"></td>
+									<td><input value="" name="capitalType" class="text_input"></td>
+									<td><input value="" vcheck="{field:'持股比例',type:'num',expr:'[0,100000000]'}" name="rate" class="text_input"></td>
+								</tr>
+								<tr name="shareHolders">
+									<td>5</td>
+									<td><input value="" name="name" class="text_input"></td>
+									<td><input value="" vcheck="{field:'出资额',type:'num',expr:'[1,100000000]'}" name="amount" class="text_input"></td>
+									<td><input value="" name="capitalType" class="text_input"></td>
+									<td><input value="" vcheck="{field:'持股比例',type:'num',expr:'[0,100000000]'}" name="rate" class="text_input"></td>
+								</tr>
+								<tr name="shareHolders">
+									<td>6</td>
+									<td><input value="" name="name" class="text_input"></td>
+									<td><input value="" vcheck="{field:'出资额',type:'num',expr:'[1,100000000]'}" name="amount" class="text_input"></td>
+									<td><input value="" name="capitalType" class="text_input"></td>
+									<td><input value="" vcheck="{field:'持股比例',type:'num',expr:'[0,100000000]'}" name="rate" class="text_input"></td>
+								</tr>
+								<tr>
+									<th>实际控制人</th>
+									<td colspan="4"><input value="" vcheck="{field:'实际控制人',type:'len',expr:'[1,16]'}" class="text_input" id="textfield_9" name="textfield_9" type="text"></td>
+								</tr>
+							</tbody>
+						</table>
+						<h4 class="mb_10 tip_icon">描述信息</h4>
+						<table class="mt_10 mb_30">
+							<tbody>
+								<tr>
+									<th><span class="fontRed">* </span> 公司简介 :
+									</th>
+									<td colspan="3"><textarea style="resize: none;" vcheck="{field:'公司简介',type:'*'}" class="text_input" rows="5" id="textarea" name="textarea">深圳市汇碳科技有限公司（下面简称：汇碳科技），成立于2013年8月26日。公司以促进中国的节能环保和绿色发展为使命，致力于通过碳资产的管理和开发，以节能减排为目标的技术方案对接服务，为环境保护贡献自己的一份力量。</textarea></td>
+								</tr>
+								<tr>
+									<th>
+										主营业务主要产品 :
+									</th>
+									<td colspan="3"><textarea style="resize: none;" class="text_input" rows="5" id="mainProductDesc" name="mainProductDesc">碳资产管理，合同能源管理，清洁能源及环保工程的技术开发、转让、咨询，企业管理咨询，股权投资基金管理（不得以任何方式公开募集和发行基金），国内贸易，经营进出口业务，工业设计。</textarea></td>
+								</tr>
+								<tr>
+									<th>主要供应商 :</th>
+									<td colspan="3"><textarea style="resize: none;" class="text_input" rows="5" id="textarea_0" name="textarea_0"></textarea></td>
+								</tr>
+								<tr>
+									<th>主要客户 :</th>
+									<td colspan="3"><textarea style="resize: none;" class="text_input" rows="5" id="textarea_1" name="textarea_1"></textarea></td>
+								</tr>
+							</tbody>
+						</table>
+						</span>
+						<div class="client_button"><span class="align-left"><a onclick="$('#editFrom').submit();" class="button mr_20" href="javascript:void(0)">保存</a></span></div>
+					</div>
+				</div>
+				<!-- End .content-box-content --><input value="" style="display: none;" id="holderVlaue" name="holderVlaue" type="text"></div>
+		</form><input id="domainList" asyn="false" uri="/mgnt/aboutme/entprinfo.entpredit.domainlist" ajax="domainList" type="hidden"></div>
+</section>
+<script type="text/javascript">
+	function testShow (ele) {
+			jeDate({
+			    dateCell:ele,
+			    format:"YYYY-MM-DD",
+			    isTime:false, 
+			})
+		
+	}
+</script>

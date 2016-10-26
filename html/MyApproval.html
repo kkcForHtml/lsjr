@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/MyApproval.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="current">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu">
+						<!-- <span class="icon_info_company"></span> -->
+						与我有关
+					</a>
+					<ul>
+						<li class="">
+							<a href="EntprInfo.html"><span class="icon_sub"></span> 企业信息
+							</a>
+						</li>
+						<li class="">
+							<a href="myapply.html"><span class="icon_sub"></span> 我的申请
+							</a>
+						</li>
+						<li class="current">
+							<a href="MyApproval.html"><span class="icon_sub"></span> 我的单据
+							</a>
+						</li>
+						<li class="">
+							<a href="LoanSettleQuery.html"><span class="icon_sub"></span> 贷款结清管理
+							</a>
+						</li>
+						<li class="">
+							<a href="AccountInfo.html"><span class="icon_sub"></span> 账号信息
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>与我有关</em></li>
+					<li><em>与我有关</em></li>
+					<li class="noarrow"><em>我的单据</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<div class="indexTitle mtop20"><b class="f"></b><span>我的审批</span></div>
+				<form onsubmit="javascript:return Tapestry.waitForPage(event);" action="http://www.htefol.org/mgnt/aboutme/myapproval.myquery" method="post" id="myQuery">
+					<div style="display: none;" class=""><input value="kwRbhh89BIn1SPKKWJVfhxtzv9Q=:H4sIAAAAAAAAAJXQvUrEQBQF4LsLgrhWgo2lRMuJhdtoFRBBiD8QrOVmco2j8+fMzf40tlr7AD6B+BJb2PkOPoCtlYjZbRRE0fbA4Tuc+xeYGyawamrLKZauYUPp/jjzPrgB6i2yjYmkSXIM0HehFuhRnpFg9BQ5jPtCukBalaLESCIr2xAl7yrSVVIQN37teNJ7Xn5860Inh550loPTB2iIYSk/xwGmGm2dFhyUrbdHnmHhU/3ztuy/246CkxRj0ZRGxaicnTxUm6evd09dgJEfrkPyk6uVvYjTGp9stPLOr7J0xjtLlqPI296M4+/4obq5fV+5trOT5qVWbWOvuoQr6EwfWfxqfgCeX+zptAEAAA==" name="t:formdata" type="hidden"></div>
+					<div class="search_condition">
+						<div class="search_simple"><label>任务名称：</label>
+							<select class="text_input w_140" enum="com.zte.rate.biz.model.CommonEnum$ApprAction" id="enumselect" name="enumselect">
+								<option value=""></option>
+								<option value="WAIT">待办</option>
+								<option value="AGREE">同意</option>
+								<option value="SUBMIT">提交</option>
+							</select><img style="display: none;" id="enumselect_icon" class="t-error-icon" alt="" src="../img/spacer.gif">
+							<a href="#" class="search_btn" id="linksubmit_0">查询</a>
+						</div>
+					</div>
+				</form>
+				<div class="content-box">
+					<div class="content-box-content">
+						<table class="mb10">
+							<thead>
+								<tr>
+									<th>申请编号</th>
+									<th>申请日期</th>
+									<th>申请单位</th>
+									<th>单据类型</th>
+									<th>申请人</th>
+									<th>任务状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody class="trbg">
+								<!-- 循环遍历 -->
+								<tr>
+									<td>
+										<a style="cursor:pointer" onclick="showNodeLog(2033001)" herf="javascript:void(0)">
+											PJ20160728005
+										</a>
+									</td>
+									<td>2016-08-12</td>
+									<td>深圳市汇碳科技有限公司</td>
+									<td>
+										企业评价
+									</td>
+									<td>汇碳科技</td>
+									<td>
+										用户提单
+									</td>
+									<td>
+										<a href="http://www.htefol.org/mgnt/aboutme/apprcrr/8738001/myApproval">
+											审核/查看
+										</a>
+									</td>
+								</tr>
+								<tr class="tr_bg">
+									<td>
+										<a style="cursor:pointer" onclick="showNodeLog(2033001)" herf="javascript:void(0)">
+											PJ20160728005
+										</a>
+									</td>
+									<td>2016-08-03</td>
+									<td>深圳市汇碳科技有限公司</td>
+									<td>
+										企业评价
+									</td>
+									<td>汇碳科技</td>
+									<td>
+										用户提单
+									</td>
+									<td>
+										<a href="http://www.htefol.org/mgnt/aboutme/apprcrr/8492001/myApproval">
+											审核/查看
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagination">
+							<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/aboutme/myapproval.pager.actionlink/1"><span>首页</span></a>
+							<a class="page-prev unclick-l" onclick="return false;" href="http://www.htefol.org/mgnt/aboutme/myapproval.pager.actionlink_0/0"><span>上一页</span></a><span class="page-cur">1</span>
+							<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/aboutme/myapproval.pager.actionlink_1/2"><span>下一页</span></a>
+							<a class="page-next unclick-r" onclick="return false;" href="http://www.htefol.org/mgnt/aboutme/myapproval.pager.actionlink_2/1"><span>尾页</span></a><span class="page-skip">
+共2条记录
+</span></div>
+					</div>
+				</div>
+				<div class="pop div-box" id="sp"><input id="billIdLink" asyn="false" uri="/mgnt/aboutme/myapproval.wfrbilllogview.billidlink" ajax="billIdLink" type="hidden">
+					<div class="title"><strong class="font14">审批记录</strong></div>
+					<div class="clear"></div>
+					<div class="box">
+						<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+							<tbody>
+								<tr class="background_th" id="replaceId">
+									<th width="120">审批节点</th>
+									<th width="120">操作人</th>
+									<th width="120">操作时间</th>
+									<th>处理意见</th>
+									<!-- <th width="40">得分</th> -->
+									<!-- <th width="50">状态</th> -->
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div align="center">
+						<div class="client_button mt_10"><span class="align-left"><a class="button mr_20" href="http://www.htefol.org/mgnt/aboutme/.close">关闭</a></span></div>
+					</div>
+					<div class="clear"></div>
+					<a onclick="closepop(this)" class="close"></a>
+				</div>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/aboutme/myapproval.mgnt.chgpswd" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

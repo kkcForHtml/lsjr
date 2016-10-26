@@ -1,0 +1,134 @@
+/* ::::: http://www.htefol.org/asset/ifp/css/mgnt/css/zteict_reset.css ::::: */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0px; padding: 0px; border: 0px none; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul, menu { list-style: outside none none; }
+blockquote::before, blockquote::after, q::before, q::after { content: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+caption, th { text-align: left; }
+input, img { vertical-align: middle; }
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; vertical-align: middle; }
+a { text-decoration: none; color: rgb(53, 121, 205); }
+a:hover { text-decoration: underline; }
+:focus { outline: 0px none; }
+.clear { clear: both; }
+.cf::after, .cf::before { content: ""; display: table; }
+.cf::after { clear: both; }
+.cf {  }
+.orangeFont { color: rgb(220, 93, 80); }
+em { font-style: normal; }
+.pl_5 { padding-left: 5px; }
+.mr_20 { margin-right: 20px; }
+.mt_10 { margin-top: 10px; }
+.w_200 { width: 200px; }
+/* ::::: http://www.htefol.org/asset/ifp/css/mgnt/css/manage.css ::::: */
+
+html, body { width: 100%; height: 96.8%; margin: 0px; }
+body { min-width: 1000px; line-height: 20px; font-family: Microsoft YaHei,Tahoma,sans-serif; font-size: 12px; color: rgb(64, 64, 64); background: rgb(229, 229, 229) url('../img/side_barbg.jpg') repeat-y scroll left top; }
+.top_nav { float: right; margin-right: 35px; z-index: 1; right: 0px; }
+.menuList { margin-right: 50px; margin-top: 9px; float: right; height: 38px; position: relative; display: inline-block; z-index: 3; }
+.menuList li { float: right; height: 38px; width: 88px; margin-right: 10px; }
+.menuList a { float: right; padding-left: 10px; line-height: 38px; height: 38px; background: transparent url('../img/headermenubg.png') no-repeat scroll left -100px; }
+.menuList span { float: right; padding-right: 10px; line-height: 38px; height: 38px; background: transparent url('../img/headermenubg.png') no-repeat scroll right -100px; color: rgb(255, 255, 255); font-family: "微软雅黑"; font-size: 16px; }
+.menuList .current a { color: rgb(6, 149, 244); background-position: left 0px; }
+.menuList .current span { color: rgb(6, 149, 244); background-position: right 0px; }
+.menuList a:hover span { text-decoration: underline; }
+.buld_bg { width: 623px; height: 47px; background: transparent url('../img/build_bg.jpg') no-repeat scroll 0% 0%; position: absolute; top: 0px; z-index: 0; left: 220px; }
+.top_nav li { float: left; margin-left: 8px; }
+.top_nav li a { color: rgb(255, 255, 255); padding-left: 25px; }
+.top_nav li a:hover { text-decoration: none; color: rgb(240, 240, 240); }
+.top_nav a.my_info, .top_nav a.help, .top_nav a.quit, .top_nav a.info, .wel, .top_nav a.audit { background: transparent url('../img/icon.png') no-repeat scroll 0% 0%; }
+.top_nav a.quit { background-position: left -85px; }
+.main_nav ul li { float: left; padding-right: 2px; height: 34px; background: transparent url('../img/arrow_right.png') no-repeat scroll right -1px; }
+.main_nav ul li.noarrow { background: transparent none repeat scroll 0% 0%; }
+.main_nav ul li em { display: block; padding: 0px 18px 0px 12px; color: rgb(64, 64, 64); }
+.main_nav ul li em.home, .main_nav ul li a.home { width: 16px; height: 14px; padding: 0px; margin: 0px 13px 0px 10px; display: inline-block; background: transparent url('../img/icon.png') no-repeat scroll right top; }
+.content_wrap { margin: 5px auto 0px; padding: 0px 5px; }
+.content-box { background: rgb(255, 255, 255) none repeat scroll 0px 0px; border: 1px solid rgb(217, 217, 217); margin: 0px 0px 50px; }
+.content-box-header { background: rgb(240, 240, 240) none repeat scroll 0px 0px; border-bottom: 1px solid rgb(217, 217, 217); height: 30px; padding-bottom: 2px; padding-left: 8px; padding-top: 4px; position: relative; }
+.content-box-header h3 { float: left; padding: 4px 7px; font-size: 16px; }
+.content-box-content { overflow: hidden; padding: 10px 15px 15px; }
+input.text_input, select, textarea { background-color: rgb(255, 255, 255); border: 1px solid rgb(213, 213, 213); color: rgb(51, 51, 51); font-family: "Microsoft YaHei",Arial,"","Segoe UI",sans-serif; font-size: 12px; padding: 5px 0px; vertical-align: middle; }
+.icon_problem, .icon_knowledge, .icon_business, .icon_state, .icon_system, span.icon_sub, .icon_user, .icon_cloud, .icon_city_man, .icon_city_traffic, .icon_save_city, .icon_info_search, .icon_info_company { width: 16px; height: 16px; background: transparent url('../img/icon_menu.png') no-repeat scroll left top; margin-right: 15px; display: block; float: left; margin-top: 3px; }
+span.icon_sub { background-position: left -101px; margin-right: 10px; margin-top: 0px; }
+table { width: 100%; }
+table th {  }
+table th, table td { height: 35px; line-height: 220%; padding: 0px 10px; border-bottom: 1px solid rgb(238, 238, 238); vertical-align: middle; }
+table th { border-bottom: 2px solid rgb(238, 238, 238); font-weight: bold; }
+.content-box-content h4 { background: transparent url('../img/icon_menu.png') no-repeat scroll left -185px; clear: both; font-size: 18px; margin: 15px 0px 10px; color: rgb(102, 102, 102); font-weight: normal; padding-left: 20px; }
+.client_info { padding: 0px 10px 10px; }
+.client_info p { padding: 5px 0px; }
+.client_info table { border-collapse: collapse; width: 100%; }
+.client_info table th, .client_info table td { border: 1px solid rgb(236, 236, 236); padding: 3px 5px; }
+.client_info table th { background-color: rgb(247, 247, 247); text-align: right; width: 18%; }
+.client_info .client_button { border-top: 1px solid rgb(236, 236, 236); margin-top: 10px; padding-top: 10px; text-align: center; }
+.button, .button_small, .button_onekey { background-color: rgb(39, 149, 221); border: 1px solid rgb(12, 128, 204); color: rgb(255, 255, 255) ! important; display: inline-block; padding: 6px 10px; vertical-align: middle; border-radius: 5px; font-size: 16px; }
+.button:hover { text-decoration: none; background-color: rgb(12, 128, 204); }
+.pop { width: 600px; background-color: rgb(255, 255, 255); z-index: 10; display: none; border-radius: 5px; }
+.div-box { border: 1px solid rgb(204, 204, 204); padding: 10px 20px; position: relative; }
+.div-box .title { padding-bottom: 5px; }
+.div-box a.close { position: absolute; right: 10px; top: 10px; display: block; width: 11px; height: 11px; background: transparent url('../img/icons2.gif') no-repeat scroll 0px -727px; }
+.div-box a.close:hover { background-position: 0px -747px; }
+.box { border: 1px solid rgb(204, 204, 204); }
+.client_info table .text_input { width: 100%; }
+.noticeErro { background: rgb(255, 239, 239) none repeat scroll 0% 0%; border: 1px solid rgb(233, 164, 164); padding: 15px 30px; position: relative; height: 1%; line-height: 22px; }
+.noticeErro h3 { font-size: 14px; margin-bottom: 10px; }
+.notice_l { width: 12px; height: 12px; vertical-align: middle; display: inline-block; margin: -3px 5px 0px 0px; background: transparent url('../img/noticelb.gif') no-repeat scroll 0% 0%; }
+.client_info table.broadwiseList th { font-weight: normal; border: 1px solid rgb(221, 221, 221); }
+.client_info table.broadwiseList td { line-height: 220%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(221, 221, 221); }
+.client_info .broadwiseList td { padding: 5px; }
+.fontGrayTa { color: rgb(153, 153, 153); margin-left: 5px; }
+.titleTC { padding: 10px 15px; font-size: 16px; }
+.partConT { border-left: 3px solid rgb(0, 148, 204); margin-top: 15px; background-color: rgb(243, 243, 243); }
+input.focusRed, textArea.focusRed, select.focusRed {
+    background: #ffd4d4;
+}
+/* ::::: http://www.htefol.org/asset/ifp/css/mgnt/css/layout.css ::::: */
+
+header .banner { background: transparent url('../img/bluebg.png') repeat-x scroll 0% 0%; height: 47px; position: relative; line-height: 47px; }
+header .logo { display: block; position: absolute; z-index: 1; width: 260px; height: 45px; background: transparent url('../img/mana_logo.png') no-repeat scroll 0% 0%; float: left; margin-left: 6px; }
+header .banner .wel_info { color: rgb(255, 255, 255); }
+.main_nav { background: transparent url('../img/main_navbg.png') repeat-x scroll 0% 0%; height: 34px; line-height: 34px; }
+.side_bar { float: left; height: 100%; width: 211px; }
+#main-nav { padding: 0px; width: 210px; }
+#main-nav li { border-bottom: 1px solid rgb(196, 196, 196); list-style: outside none none; }
+#main-nav ul li a { border-bottom: 1px solid transparent; border-top: 1px solid transparent; color: rgb(129, 129, 129); display: block; font-size: 12px; height: 16px; line-height: 16px; padding: 10px 10px 10px 26px; }
+#main-nav ul li a:hover, #main-nav li ul li.current a { text-decoration: none; color: rgb(51, 51, 51); }
+#main-nav li a.nav-top-item { background: transparent url('../img/bg-menu-item.gif') repeat-x scroll right center; color: rgb(64, 64, 64); cursor: pointer; display: block; font-size: 14px; height: 20px; line-height: 20px; padding: 10px 10px 10px 13px; text-decoration: none; }
+#main-nav ul { font-size: 12px; margin: 0px; padding: 0px; }
+#main-nav li ul li { border-bottom: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#main-nav li ul li:hover, #main-nav li ul li.current { background-color: rgb(255, 255, 255); border-right: 3px solid rgb(252, 119, 0); }
+.main_content { margin: 0px 0px 0px 212px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; background: rgb(229, 229, 229) url('../img/bg.png') repeat scroll 0% 0%; }
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/default.css ::::: */
+
+DIV.t-exception-report DT::after { content: ":"; }
+DIV.t-beaneditor-row LABEL::after { content: ":"; }
+DL.t-beandisplay DT::after { content: ":"; }
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/jquery/themes/ui-lightness/jquery-ui.css ::::: */
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; display: table; }
+.ui-helper-clearfix::after { clear: both; }
+button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/tapestry-console.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/t5-alerts.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/core/tree.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/ctx/asset/base/js/easyui/themes/easyui.css ::::: */
+
+/* ::::: http://www.htefol.org/assets/2fac4509424c714f/jquery/form.css ::::: */
+/*loaing*/
+#loading{position: fixed;top: 0;left: 0;right: 0;bottom: 0;margin: auto;background: rgba(255,255,255,0.5);border-radius: 10px; z-index: 100;}
+#loading img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin:auto;
+	border-radius: 10px;
+	width: 60px;
+	height: 24px;
+}

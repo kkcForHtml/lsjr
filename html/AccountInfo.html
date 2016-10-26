@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/AccountInfo.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="current">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu">
+						<!-- <span class="icon_info_company"></span> -->
+						与我有关
+					</a>
+					<ul>
+						<li class="">
+							<a href="EntprInfo.html"><span class="icon_sub"></span> 企业信息
+							</a>
+						</li>
+						<li class="">
+							<a href="myapply.html"><span class="icon_sub"></span> 我的申请
+							</a>
+						</li>
+						<li class="">
+							<a href="MyApproval.html"><span class="icon_sub"></span> 我的单据
+							</a>
+						</li>
+						<li class="">
+							<a href="LoanSettleQuery.html"><span class="icon_sub"></span> 贷款结清管理
+							</a>
+						</li>
+						<li class="current">
+							<a href="AccountInfo.html"><span class="icon_sub"></span> 账号信息
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>与我有关</em></li>
+					<li><em>与我有关</em></li>
+					<li class="noarrow"><em>账号信息</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<section class="content_wrap cf">
+					<div class="content-box">
+						<!-- Start content-box-header -->
+						<div class="content-box-header">
+							<h3>帐号基本信息</h3></div>
+						<!-- End .content-box-header -->
+						<div class="content-box-content">
+							<div class="client_info">
+								<form autocomplete="off" vcheck="1" action="http://www.htefol.org/mgnt/aboutme/accountinfo.accountform" method="post" id="accountForm">
+									<div style="display: none;" class=""><input value="2eeS6G5XKVWci7YDGrEuYwGvkAE=:H4sIAAAAAAAAAJVRu0oDURQ8CUbEdIKNoFE07W5jGq0WRAgEFRY/4Ozds+vV+1jvPZvExlZrP8AvEH8ihZ3/4AfYWom4m2AlkVieYebMMPP0Dq3RNmzp3HCIiS1ZUxgJYUvDfZPZA9IolXfQsy4PsEBxQQFjQZ7dTS8Q1pGSSZCgpyBKKhAFH0tS6V5MXBbd80n7bf3lswmNAbSFNeysOkFNDGuDSxxiqNDkYcxOmvxwXDC0poYLRYr+G+nMWUHex2WipffSmslzup99PL42AcbFaAc6cz21TaQifw23AAzLs3MBRS1ojbqwO5dns0wKwjR1P99XZ1BUQQsqZy4d2JzL9TikqrKjPysTVhfWkGEfDKS5mvbEv1s7lfcPXxt3ZjrqilCyUvTTOkOjXnAprry+AeV7ZEVYAgAA" name="t:formdata" type="hidden"></div>
+									<div style="display: none;" class="noticeErro errorBlock">
+										<h3><span class="notice_l"></span>
+保存数据时，出现如下错误：
+</h3>
+										<ol></ol>
+									</div>
+									<table class="mt_10 mb_30">
+										<tbody>
+											<tr>
+												<th width="20%">帐号名称:</th>
+												<td width="30%">
+													汇碳科技
+												</td>
+												<th width="20%">所属企业:</th>
+												<td width="30%">
+													深圳市汇碳科技有限公司
+												</td>
+											</tr>
+											<tr>
+												<th>邮箱地址:</th>
+												<td><input vcheck="{field:'邮箱地址',type:'reg*',expr:/^\S+@\S+$/}" class="text_input" value="772581298@qq.com" id="email" name="email" type="text"></td>
+												<th>手机号码:</th>
+												<td><input vcheck="{field:'手机号码',type:'reg*',expr:/^((\+86)|(86))?1\d{10}$/}" class="text_input" value="18898616404" id="mobile" name="mobile" type="text"></td>
+											</tr>
+											<tr>
+												<th width="20%">办公地点:</th>
+												<td colspan="3"><input class="text_input" value="深圳市南山区粤海街道高新南四道虚拟大学院A309室" id="officeAddr" name="officeAddr" type="text"></td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="client_button"><span class="align-left"><a href="#" class="button mr_20" id="Save">保存
+</a><a class="button mr_20" href="passwordupdate.html">
+密码
+</a></span></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/aboutme/accountinfo.mgnt.chgpswd" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+</html>

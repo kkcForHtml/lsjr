@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<link rel="stylesheet" type="text/css" href="../css/creditapply5.css" media="all">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：汇碳科技
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="javascript:;">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="current">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu" data-flag = '1'>
+						<!-- <span class="icon_info_company"></span> -->
+						企业评价
+					</a>
+					<ul>
+						<li class="">
+							<a href="RatingResult.html"><span class="icon_sub"></span> 评价结果
+							</a>
+						</li>
+						<li class="current">
+							<a href="CreditApply1.html"><span class="icon_sub"></span> 发起评价
+							</a>
+						</li>
+						<li class="">
+							<a href="MyDraftQuery.html"><span class="icon_sub"></span> 我的草稿
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>评价管理</em></li>
+					<li><em>企业评价</em></li>
+					<li class="noarrow"><em>发起评价</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<div class="content-box">
+					<!-- Start content-box-header -->
+					<div class="content-box-header">
+						<h3>评价指标情况</h3></div>
+					<!-- End .content-box-header -->
+					<div class="content-box-content">
+						<div class="client_info">
+							<form onsubmit="javascript:return Tapestry.waitForPage(event);" action="http://www.htefol.org/mgnt/rating/creditapply4.editfrom" method="post" id="editFrom">
+								<div style="display: none;" class=""><input value="apply/4676001/524498001" name="t:ac" type="hidden"><input value="x4sGRuKCOYmDm7zdjsTndFAhRkY=:H4sIAAAAAAAAAI3OsU7DMBDG8SuCqogNNhig0DlZYIEFBAOVIkDKxubGp9TgnI19pOnCWuY+Bw/AS/EKCNuICRUxnXTSX9/v7QM2ZkPYb2ri3AlWVOeXDqXiC2v1/Ph0qqRE8g7OjaszYUU1xYyFRc9ufpJVxqFWk3AbawiJfXaditGdMxV6Xz5PGuW9MnS/ONjp9t77a9ArYKsyxM7oG9Egw3bxIFqRaxHWS3YBcdZZhv73+OwIhit91mHrGW0QXv1XWCh6TC7+rbxVr8vP3QUl5aDSKhRj+QQv0IukQdwrw96fKMKOEyp266GKj1SN4HBl5UWLiiR2P9lm/Izj5wsfDp86pwEAAA==" name="t:formdata" type="hidden"></div>
+								<div style="display: none;" class="noticeErro errorBlock">
+									<h3><span class="notice_l"></span>
+保存数据时，出现如下错误：
+</h3>
+									<ol></ol>
+								</div>
+								<h4>02企业创新能力评价指标</h4>
+								<div class="partConT">
+									<h5 style="margin-bottom: 8px;" class="titleTC"><b>0201组织与人才</b></h5></div>
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020101创新机构设置
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;">公司是否设置研发机构？</th>
+												<td id="IsSetResearch">
+													<!--<p class="fontGrayTa"></p>-->
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input id="138001" style="cursor: pointer;" excludes="" name="83001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false"  type="radio"><label style="cursor: pointer;" id="lbl_138001" for="138001">是</label>&nbsp;&nbsp;<input id="139001" style="cursor: pointer;" excludes="84001,85001,86001,87001" name="83001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="radio"><label style="cursor: pointer;" id="lbl_139001" for="139001">否</label>&nbsp;&nbsp;<br><span style="display: none;" id="explain_83001">
+补充说明：
+<input value="" maxlength="200" name="83001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_83001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_1.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="如是，请选择认定级别">研发机构是否认定为深圳市企业技术中心？</th>
+												<td id="IsSZResearch">
+												
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input id="140001" style="cursor: pointer;" excludes="85001,86001,87001" name="84001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="radio"><label style="cursor: pointer;" id="lbl_140001" for="140001">是</label>&nbsp;&nbsp;<input id="141001" style="cursor: pointer;" excludes="85001,86001,87001" name="84001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="radio"><label style="cursor: pointer;" id="lbl_141001" for="141001">否</label><br><span style="display: none;" id="explain_84001">
+补充说明：
+<input value="" maxlength="200" name="84001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_84001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_2.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020102创新队伍建设
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="包括高级职称人员和博士">研发团队拥有的高级职称人员及博士比例</th>
+												<td>
+													<p class="fontGrayTa">包括高级职称人员和博士</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="Doctor" maxlength="12" name="88001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_88001">
+补充说明：
+<input value="" maxlength="200" name="88001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_88001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_6.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;">研发团队核心成员平均行业经验年限</th>
+												<td>
+													<p class="fontGrayTa"></p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="Experience" maxlength="12" name="89001" onblur="eix.displayNumber(this);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_89001">
+补充说明：
+<input value="" maxlength="200" name="89001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_89001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_7.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="partConT">
+									<h5 style="margin-bottom: 8px;" class="titleTC"><b>0202体系与机制</b></h5></div>
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020201创新投入机制
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="请根据公司最近1个季度的真实情况填报">科技活动经费支出额占产品销售收入的比例</th>
+												<td>
+													<p class="fontGrayTa">请根据公司最近1个季度的真实情况填报</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="Proportion" maxlength="12" name="90001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_90001">
+补充说明：
+<input value="" maxlength="200" name="90001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_90001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_8.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;">科技活动经费支出比例年增长率</th>
+												<td>
+													<p class="fontGrayTa"></p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="Funds" maxlength="12" name="91001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_91001">
+补充说明：
+<input value="" maxlength="200" name="91001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_91001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_9.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020202人才激励机制
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="填写C值：A=研发团队年人均收入，B=企业年人均收入，C=A/B">研发团队年人均收入与企业年人均收入之比</th>
+												<td>
+													<p class="fontGrayTa">填写C值：A=研发团队年人均收入，B=企业年人均收入，C=A/B</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="IncomeRatio" maxlength="12" name="92001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_92001">
+补充说明：
+<input value="" maxlength="200" name="92001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_92001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_10.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="研发团队人员培训费占总收入的比例">研发团队人员培训费占总收入的比重</th>
+												<td>
+													<p class="fontGrayTa">研发团队人员培训费占总收入的比例</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="TrainRatio" maxlength="12" name="151001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_151001">
+补充说明：
+<input value="" maxlength="200" name="151001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_151001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_11.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020203外部资源利用
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr class="changeInput">
+												<th rowspan="3" style="text-align: left;" title="如是，请注明合作方名称及开发机构名称">公司是否与高等院校、科研院所合办开发机构？合办机构数量？</th>
+												<td id="Org">
+													<p class="fontGrayTa">如有，请注明合作方名称及开发机构名称</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input id="150001" style="cursor: pointer;" excludes="" name="93001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false"  type="radio"><label style="cursor: pointer;" id="lbl_150001" for="150001">有</label>&nbsp;&nbsp;<input id="151001" style="cursor: pointer;" excludes="" name="93001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="radio"><label style="cursor: pointer;" id="lbl_151001" for="151001">无</label>&nbsp;&nbsp;<br><span style="display: none;" id="explain_93001">
+补充说明：（每个名称用英文的逗号“,”分割，如：xxx,xxx,xxxx....）
+<input value="" maxlength="200" name="93001" ixtype="explain" class="text_input w_200" type="text"></span><!--<span ixtype="accry" style="display: none;" id="accry_93001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;display: none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_12.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr class="changeInput">
+												<th rowspan="3" style="text-align: left;" title="高水平专家指学术界有地位有重要学术头衔的专家（如院士、长江学者、千人计划、孔雀计划、973首席等）">公司是否有外聘高水平专家？及外聘专家数量？</th>
+												<td id="Expert">
+													<p class="fontGrayTa">高水平专家指学术界有地位有重要学术头衔的专家（如院士、长江学者、千人计划、孔雀计划、973首席等）</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input id="154001" style="cursor: pointer;" excludes="" name="94001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false"  type="radio"><label style="cursor: pointer;" id="lbl_154001" for="154001">有</label>&nbsp;&nbsp;<input id="155001" style="cursor: pointer;" excludes="" name="94001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="radio"><label style="cursor: pointer;" id="lbl_155001" for="155001">无</label>&nbsp;&nbsp;<br><span style="display: none;" id="explain_94001">
+补充说明：（每个名称用英文的逗号“,”分割，如：xxx,xxx,xxxx....）
+<input value="" maxlength="200" name="94001" ixtype="explain" class="text_input w_200" type="text"></span><!--<span ixtype="accry" style="display: none;" id="accry_94001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none; display: none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_13.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;">公司是否建立博士后工作站？</th>
+												<td id="IsBuildDocutor">
+													<p class="fontGrayTa"></p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input id="130001" style="cursor: pointer;" excludes="" name="80001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false"  type="radio"><label style="cursor: pointer;" id="lbl_130001" for="130001">是</label>&nbsp;&nbsp;<input id="131001" style="cursor: pointer;" excludes="" name="80001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="radio"><label style="cursor: pointer;" id="lbl_131001" for="131001">否</label>&nbsp;&nbsp;<br><span style="display: none;" id="explain_80001">
+补充说明：
+<input value="" maxlength="200" name="80001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_80001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_24.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;">公司是否承担国家、省市重点课题？</th>
+												<td id="IsMainClass">
+													<p class="fontGrayTa"></p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input id="132001" class="crr" style="cursor: pointer;" excludes="" name="81001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false"  type="checkbox"><label style="cursor: pointer;" id="lbl_132001" for="132001">国家级</label>&nbsp;&nbsp;<input id="133001" style="cursor: pointer;" excludes="" name="81001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="checkbox" class="crr"><label style="cursor: pointer;" id="lbl_133001" for="133001">省级</label>&nbsp;&nbsp;<input id="134001" style="cursor: pointer;" excludes="" name="81001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="false" type="checkbox" class="crr"><label style="cursor: pointer;" id="lbl_134001" for="134001">市级</label>&nbsp;&nbsp;<input id="135001" style="cursor: pointer;" excludes="" name="81001" x-readonly="false" ixtype="choice" onclick="eix.selectOptions(this);" accry="false" explain="false" oexcluded="true" type="checkbox"><label style="cursor: pointer;" id="lbl_135001" for="135001">以上皆否</label>&nbsp;&nbsp;<br><span style="display: none;" id="explain_81001">
+补充说明：
+<input value="" maxlength="200" name="81001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_81001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_25.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+								<div class="partConT">
+									<h5 style="margin-bottom: 8px;" class="titleTC"><b>0203技术与积累</b></h5></div>
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020301创新条件建设
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;">公司技术开发仪器设备的原值金额（单位：万元人民币）</th>
+												<td>
+													<p class="fontGrayTa"></p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="EquValue" maxlength="12" name="95001" onblur="eix.displayNumber(this);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_95001">
+补充说明：
+<input value="" maxlength="200" name="95001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_95001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_14.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="请根据公司最近1个季度相比去年同期的真实情况填报">公司技术开发仪器设备的原值增长率</th>
+												<td>
+													<p class="fontGrayTa">请根据公司最近1个季度相比去年同期的真实情况填报</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="EquInvest" maxlength="12" name="96001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_96001">
+补充说明：
+<input value="" maxlength="200" name="96001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_96001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_15.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+	
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020302技术积累储备
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="最近5年已授权的专利总数">企业拥有有效的发明专利数量</th>
+												<td>
+													<!--<p class="fontGrayTa">最近5年已授权的专利总数</p>-->
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="HavePantentCount" maxlength="12" name="152001" onblur="eix.displayNumber(this);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_152001">
+补充说明：
+<input value="" maxlength="200" name="152001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display;" id="accry_152001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_17.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="最近5年已授权的发明专利数量">拥有有效的实用新型及外观专利数</th>
+												<td>
+													<!--<p class="fontGrayTa">最近5年已授权的发明专利数量</p>-->
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="NewPantentCount" maxlength="12" name="153001" onblur="eix.displayNumber(this);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_153001">
+补充说明：
+<input value="" maxlength="200" name="153001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display;" id="accry_153001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_18.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="partConT">
+									<h5 style="margin-bottom: 8px;" class="titleTC"><b>0204产出与效益</b></h5></div>
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020401技术创新产出
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="请根据公司最近1个季度的真实情况填报（新产品定义为公司最近2年新上市的产品）">当年获得授权发明专利数</th>
+												<td>
+													<!--<p class="fontGrayTa">请根据公司最近1个季度的真实情况填报（新产品定义为公司最近2年新上市的产品）</p>-->
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="CurrentPantentCount" maxlength="12" name="106001" onblur="eix.displayNumber(this);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_106001">
+补充说明：
+<input value="" maxlength="200" name="106001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_106001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_22.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="">当年获得授权实用新型及外观专利数</th>
+												<td>
+													<!--<p class="fontGrayTa">请根据公司最近1个季度的真实情况填报（新产品定义为公司最近2年新上市的产品）</p>-->
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="CurrentNewPantentCount" maxlength="12" name="107001" onblur="eix.displayNumber(this);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_107001">
+补充说明：
+<input value="" maxlength="200" name="107001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_107001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_23.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>									
+								<div style="padding: 5px 20px;">
+									<h6 class="titleLiSub">
+020402技术创新效益
+</h6></div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="公司新产品销售收入占产品销售收入的比例">公司新产品销售收入占产品销售收入的比重</th>
+												<td>
+													<p class="fontGrayTa">公司新产品销售收入占产品销售收入的比例</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="NewProduct_Income" maxlength="12" name="106001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_106001">
+补充说明：
+<input value="" maxlength="200" name="106001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_106001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_22.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="padding: 0px 20px;">
+									<table class="broadwiseList">
+										<tbody>
+											<tr>
+												<th rowspan="3" style="text-align: left;" title="公司新产品销售利润占产品销售利润的比例">公司新产品销售利润占产品销售利润的比重</th>
+												<td>
+													<p class="fontGrayTa">公司新产品销售利润占产品销售利润的比例</p>
+													<!-- <t:hidden id="data_${eindex.indexId}" /> --><input value="" id="NewProductProfit" maxlength="12" name="107001" onblur="eix.autoPercent(this,true);" ixtype="input" class="text_input w_200" type="text"><br><span style="display: none;" id="explain_107001">
+补充说明：
+<input value="" maxlength="200" name="107001" ixtype="explain" class="text_input w_200" type="text"></span><span ixtype="accry" style="display: none;" id="accry_107001"><!--<span class="orangeFont pl_5">相关证明材料</span>-->
+													<table style="border: 0px none;">
+														<tbody>
+															<tr class="hid" style="">
+																<td style="border: 0px none; padding: 0px; height: 23px;" height="23"><!--<iframe style="border: 0px none; height: 22px; width: 501px;" src="index_23.html" name="uploadIframe" frameborder="0"></iframe>--></td>
+															</tr>
+															<tr>
+																<td class="accryList" style="border: 0px none; padding: 0px; height: auto;" valign="top"></td>
+															</tr>
+														</tbody>
+													</table>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="client_button"><input id="retData" value="" name="hidden" type="hidden"><span class="align-left"><a href="creditapply4.html" onclick="saveIndex();" class="button mr_20" id="prevStep">
+上一步
+</a><a onclick="saveIndex(true);" class="button mr_20" style="cursor: pointer;" id="nextStep">
+下一步
+</a><a onclick="saveIndex(false)" class="button mr_20" style="cursor: pointer;" id="saveIndex">
+暂&nbsp;&nbsp;存
+</a></span></div>
+							</form>
+						</div>
+					</div>
+					<!-- End .content-box-content -->
+				</div>
+			</section>
+		</section><input id="chgPswd" asyn="true" uri="/mgnt/rating/creditapply4.mgnt.chgpswd?t:ac=apply/4676001/524498001" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" cellpadding="0" cellspacing="1" width="100%">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+		<!--加载中-->
+		<div id="loading" style="display: none;">
+			<img src="../img/loading-0.gif"/>
+		</div>
+		
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/xindex.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		//显示补充条件
+//		$('.changeInput input:radio').change(function () {
+//			//alert($(this).index());
+//			var $index = $(this).index();
+//			$index==7?$(this).parent().find('span').hide():$(this).parent().find('span').show();
+//		});
+		var timers = setTimeout(function () {
+			loading(true);
+		},50)
+		//json日期格式转换为正常格式
+		function jsonDateFormat(jsonDate) {
+			try {
+				var date = new Date(jsonDate);
+				var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+				var day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+				var hours = date.getHours();
+				var minutes = date.getMinutes();
+				var seconds = date.getSeconds();
+				var milliseconds = date.getMilliseconds();
+				return date.getFullYear() + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+			} catch(ex) {
+				return "";
+			}
+		}
+		//渲染数据
+		var userObj = {};
+		var isChange = GetParam(window.location.href,'isChange');
+		var hrefComID = GetParam(window.location.href,'CompID');				
+		(function () {			
+			var date = new Date();
+			var userifos = JSON.parse(sessionStorage.getItem('userName_lsjr'));
+			$.ajax({
+				type:"get",
+				url:"http://www.webtest.com/Rating/InnovateInfo",
+				async:true,
+				data:{
+					dataVersion:date.getFullYear() + (date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()),
+					compId:hrefComID||userifos.ID,
+				},
+				success:function (n) {
+					var obj = n.Data;
+					userObj.ID = obj.ID;
+					userObj.CompID = obj.CompID;
+					userObj.DataState = obj.DataState;
+					console.log(n);
+					obj.IsSetResearch!==''&&$('#IsSetResearch input:eq('+!obj.IsSetResearch*1+')').prop('checked',true);
+					obj.IsSZResearch!==''&&$('#IsSZResearch input:eq('+!obj.IsSZResearch*1+')').prop('checked',true);
+					$('#Doctor').val(obj.Doctor!=null?obj.Doctor+'%':obj.Doctor);
+					$('#Experience').val(obj.Experience);
+					$('#Proportion').val(obj.Proportion!=null?obj.Proportion+'%':obj.Proportion);
+					$('#Funds').val(obj.Funds!=null?obj.Funds+'%':obj.Funds);
+					$('#IncomeRatio').val(obj.IncomeRatio!=null?obj.IncomeRatio+'%':obj.IncomeRatio);
+					$('#TrainRatio').val(obj.TrainRatio!=null?obj.TrainRatio+'%':obj.TrainRatio);
+					$('#Org label:contains('+obj.Org+')').prev().prop('checked',true);
+					$('#Expert label:contains('+obj.Expert+')').prev().prop('checked',true);
+					obj.IsBuildDocutor!==''&&$('#IsBuildDocutor input:eq('+!obj.IsBuildDocutor*1+')').prop('checked',true);
+					var IsMainClass = obj.IsMainClass===null?'':obj.IsMainClass;
+					IsMainClass = IsMainClass.split('|');
+					for (var i=0; i<IsMainClass.length;i++) {
+						if (IsMainClass[i]!=='') {
+							$('#IsMainClass label:contains('+IsMainClass[i]+')').prev().prop('checked',true);
+						}						
+					};
+					$('#EquValue').val(obj.EquValue);
+					$('#EquInvest').val(obj.EquInvest!=null?obj.EquInvest+'%':obj.EquInvest);
+					$('#HavePantentCount').val(obj.HavePantentCount);
+					$('#NewPantentCount').val(obj.NewPantentCount);
+					$('#CurrentPantentCount').val(obj.CurrentPantentCount);
+					$('#CurrentNewPantentCount').val(obj.CurrentNewPantentCount);
+					$('#NewProduct_Income').val(obj.NewProduct_Income!=null?obj.NewProduct_Income+'%':obj.NewProduct_Income);
+					$('#NewProductProfit').val(obj.NewProductProfit!=null?obj.NewProductProfit+'%':obj.NewProductProfit);
+					if (!(isChange*1)&&isChange!==undefined) {
+						$('input').attr('readonly','readonly').attr('disabled','disabled');
+						$('select').attr('readonly','readonly').attr('disabled','disabled');
+						$('textarea').attr('readonly','readonly').attr('disabled','disabled');
+						$('#saveIndex').hide();
+						$('input:checked').next('label').css('font-weight','bold');
+						$('#prevStep').removeAttr('onclick').attr('href','http://www.mytask.com/html/creditapply4.html?CompID='+hrefComID+'&isChange='+isChange);
+						$('#nextStep').removeAttr('onclick').attr('href','http://www.mytask.com/html/creditapply6.html?CompID='+hrefComID+'&isChange='+isChange);
+					};						
+					
+					clearTimeout(timers);
+					loading(false);
+				}
+			});
+		})()
+		//提交数据
+		function saveIndex(flag) {
+			loading(true);
+			var date = new Date();
+			var data = {
+				DataVersion:date.getFullYear() + (date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()),
+				ChangeTime: jsonDateFormat(new Date().getTime()),
+				IsSetResearch:$('#IsSetResearch input:checked').index()>=0?!Boolean($('#IsSetResearch input:checked').index()):'',
+				IsSZResearch:$('#IsSZResearch input:checked').index()>=0?!Boolean($('#IsSZResearch input:checked').index()):'',
+				Doctor:isNaN(parseInt($.trim($('#Doctor').val())))?'':parseInt($.trim($('#Doctor').val())),
+				Experience:$.trim($('#Experience').val()),
+				Proportion:isNaN(parseInt($.trim($('#Proportion').val())))?'':parseInt($.trim($('#Proportion').val())),
+				Funds:isNaN(parseInt($.trim($('#Funds').val())))?'':parseInt($.trim($('#Funds').val())),
+				IncomeRatio:isNaN(parseInt($.trim($('#IncomeRatio').val())))?'':parseInt($.trim($('#IncomeRatio').val())),
+				TrainRatio:isNaN(parseInt($.trim($('#TrainRatio').val())))?'':parseInt($.trim($('#TrainRatio').val())),
+				Org:$.trim($('#Org input:checked').next('label').html()),
+				Expert:$.trim($('#Expert input:checked').next('label').html()),
+				IsBuildDocutor:$('#IsBuildDocutor input:checked').index()>=0?!Boolean($('#IsBuildDocutor input:checked').index()):'',
+				IsMainClass:$.trim($('#IsMainClass .crr').arrayChecked()),
+				EquValue:$.trim($('#EquValue').val()),
+				EquInvest:isNaN(parseInt($.trim($('#EquInvest').val())))?'':parseInt($.trim($('#EquInvest').val())),
+				HavePantentCount:$.trim($('#HavePantentCount').val()),
+				NewPantentCount:$.trim($('#NewPantentCount').val()),
+				CurrentPantentCount:$.trim($('#CurrentPantentCount').val()),
+				CurrentNewPantentCount:$.trim($('#CurrentNewPantentCount').val()),
+				NewProduct_Income:isNaN(parseInt($.trim($('#NewProduct_Income').val())))?'':parseInt($.trim($('#NewProduct_Income').val())),
+				NewProductProfit:isNaN(parseInt($.trim($('#NewProductProfit').val())))?'':parseInt($.trim($('#NewProductProfit').val())),
+				
+			}
+			data = $.extend(true, data, userObj);
+			console.log(data);
+			$.ajax({
+				type:"POST",
+				url:"http://www.webtest.com/Rating/SubmitInnovateInfo",
+				async:true,
+				data:data,
+				success:function (n) {
+					console.log(n);
+					loading(false);
+					if (n.Code) {
+						if (flag) {
+							window.location.href = 'http://www.mytask.com/html/creditapply6.html';
+						}else{
+							alert('保存数据成功！');
+						}
+					}
+				}
+			});
+		}
+	</script>
+</html>

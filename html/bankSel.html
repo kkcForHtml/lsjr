@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<title>南山科技金融在线平台</title>
+		<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator">
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<link media="all" href="../css/bankSel.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--Header -->
+		<header>
+			<!--banner -->
+			<div class="banner">
+				<a target="_top" class="logo" href="http://www.htefol.org/"></a>
+				<div class="buld_bg"></div>
+				<!--头部导航 -->
+				<ul class="top_nav">
+					<li class="wel_info">
+						<a style="cursor:pointer" onclick="showpop('#updatePwd')" title="点击这里修改密码" herf="javascript:void(0)">
+							用户：SUNCO
+						</a>
+					</li>
+					<li>
+						<a class="quit" href="http://www.htefol.org/mgnt/aboutme/apprcrr.mgnt.logout?t:ac=6015001/bankSel">退出系统</a>
+					</li>
+				</ul>
+				<ul class="menuList">
+					<!--<li class="">
+						<a href="http://www.htefol.org/mgnt/stake/AboutStake"><span>股权融资</span></a>
+					</li>
+					<li class="">
+						<a href="http://www.htefol.org/mgnt/debt/AboutDebt"><span>债权融资</span></a>
+					</li>-->
+					<li class="current">
+						<a href="RatingResult.html"><span>评价管理</span></a>
+					</li>
+					<li class="">
+						<a href="aboutme.html"><span>与我有关</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--Main nav -->
+		<aside class="side_bar">
+			<ul id="main-nav" class="twoLevelMenu">
+				<li>
+					<a href="javascript:%20void(0)" class="nav-top-item no-submenu">
+						<!-- <span class="icon_info_company"></span> -->
+						与我有关
+					</a>
+					<ul>
+					<ul style="position: relative;">
+						<li class="">
+							<a href="EntprInfo.html"><span class="icon_sub"></span> 企业信息
+							</a>
+						</li>
+						<li class="">
+							<a href="myapply.html"><span class="icon_sub"></span> 我的申请
+							</a>
+						</li>
+						<li class="current">
+							<a href="MyApproval.html"><span class="icon_sub"></span> 我的单据
+							</a>
+						</li>
+						<li class="">
+							<a href="LoanSettleQuery.html"><span class="icon_sub"></span> 贷款结清管理
+							</a>
+						</li>
+						<li class="">
+							<a href="AccountInfo.html"><span class="icon_sub"></span> 账号信息
+							</a>
+						</li>
+						<span id="slidetop" style="position: absolute; top: 0px; right: 0; display: block; height:39px; width: 3px; background: dodgerblue;">
+							
+						</span>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!--主内容 -->
+		<section class="main_content">
+			<!--Position -->
+			<nav class="main_nav">
+				<ul>
+					<li><em class="home"></em></li>
+					<li><em>与我有关</em></li>
+					<li><em>与我有关</em></li>
+					<li class="noarrow"><em>我的单据</em></li>
+				</ul>
+			</nav>
+			<!--内容区域 -->
+			<section class="content_wrap cf">
+				<!--内容区域 -->
+				<section class="content_wrap cf">
+					<div class="content-box">
+						<div class="content-box-header">
+							<h3>申请内容</h3></div>
+						<div class="content-box-content">
+							<div class="client_info">
+								<form vcheck="0" action="http://www.htefol.org/mgnt/aboutme/apprcrr.approvalbillform" method="post" id="approvalBillForm">
+									<div class="" style="display: none;"><input value="6015001/bankSel" name="t:ac" type="hidden"><input value="xYqmxu+2C+RsFCvVGc4lNieuyr4=:H4sIAAAAAAAAAJXQsUoDQRAG4EkgIqQL2ETttN1rTKPVoQjCocKRB9jbG8/Vvd11dtbExlZrH8AnEF8ihZ3v4APYWgVxk1ZRLOeH4ftnnt6hN9mE9baxnMnKRW4xy72nfaLdgCYwBYKRo0ZIL9U5CpYeU3ozEsoRGl2JSgYUeZVCqfhQo6m3SuTot8ez/tvay7wLnQL6ylkmZ45liwyD4kJey8xI22Qlk7bN3tQzrCQxjX8Xyv9b6JScwhDKWLU6BO3s7LneOft4fO0CTP1kA4Y/gtEvSIKDXz3lWu8sWg6i0PZyifB38kTfP3wO7+zyH6vK6LRxVF/BLXQWx/eiL9F8AWeO2uaRAQAA" name="t:formdata" type="hidden"></div>
+									<div style="display: none;" class="noticeErro errorBlock">
+										<h3><span class="notice_l"></span>
+保存数据时，出现如下错误：
+</h3>
+										<ol></ol>
+									</div>
+
+									<h4>意向产品与合作机构</h4>
+									<table style="margin-bottom:35px 0;" class="verticalList">
+										<tbody>
+											<tr>
+												<td class="cbx" width="10%">产品类型</td>
+												<td class="cbx" width="80%">合作机构</td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="2001" name="selStr1" type="checkBox"><label for="2001">创新研发贷</label>&nbsp;</td>
+												<td><input class="2001" id="2001_12001" name="selStr2" type="checkBox"><label for="2001_12001">深圳南北互联网金融服务有限公司</label>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="4001" name="selStr1" type="checkBox"><label for="4001">孵化贷</label>&nbsp;</td>
+												<td><input class="4001" id="4001_26001" name="selStr2" type="checkBox"><label for="4001_26001">深圳农村商业银行</label>&nbsp;&nbsp;<input class="4001" id="4001_20001" name="selStr2" type="checkBox"><label for="4001_20001">深圳市兴业融资担保有限公司</label>&nbsp;&nbsp;<input class="4001" id="4001_30001" name="selStr2" type="checkBox"><label for="4001_30001">浙商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_16001" name="selStr2" type="checkBox"><label for="4001_16001">深圳市高新投融资担保有限公司</label>&nbsp;&nbsp;<input class="4001" id="4001_6001" name="selStr2" type="checkBox"><label for="4001_6001">江苏银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_7001" name="selStr2" type="checkBox"><label for="4001_7001">北京银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_10001" name="selStr2" type="checkBox"><label for="4001_10001">杭州银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_13001" name="selStr2" type="checkBox"><label for="4001_13001">上海银行股份有限公司深圳分行</label>&nbsp;&nbsp;<br><input class="4001" id="4001_14001" name="selStr2" type="checkBox"><label for="4001_14001">交通银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_17001" name="selStr2" type="checkBox"><label for="4001_17001">包商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_2001" name="selStr2" type="checkBox"><label for="4001_2001">兴业银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_3001" name="selStr2" type="checkBox"><label for="4001_3001">广发银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_27001" name="selStr2" type="checkBox"><label for="4001_27001">平安银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_25001" name="selStr2" type="checkBox"><label for="4001_25001">华夏银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_24001" name="selStr2" type="checkBox"><label for="4001_24001">宁波银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_19001" name="selStr2" type="checkBox"><label for="4001_19001">招商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<br><input class="4001" id="4001_18001" name="selStr2" type="checkBox"><label for="4001_18001">深圳市力合智通融资担保有限公司</label>&nbsp;&nbsp;<input class="4001" id="4001_8001" name="selStr2" type="checkBox"><label for="4001_8001">中国银行股份有限公司深圳市分行</label>&nbsp;&nbsp;<input class="4001" id="4001_28001" name="selStr2" type="checkBox"><label for="4001_28001">中国光大银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_1001" name="selStr2" type="checkBox"><label for="4001_1001">广东南粤银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_29001" name="selStr2" type="checkBox"><label for="4001_29001">深圳南山宝生村镇银行股份有限公司</label>&nbsp;&nbsp;<input class="4001" id="4001_5001" name="selStr2" type="checkBox"><label for="4001_5001">中国建设银行股份有限公司深圳市分行</label>&nbsp;&nbsp;<input class="4001" id="4001_9001" name="selStr2" type="checkBox"><label for="4001_9001">上海浦东发展银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="4001" id="4001_15001" name="selStr2" type="checkBox"><label for="4001_15001">深圳市中小企业信用融资担保集团有限公司</label>&nbsp;&nbsp;<br></td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="3001" name="selStr1" type="checkBox"><label for="3001">成长贷</label>&nbsp;</td>
+												<td><input class="3001" id="3001_26001" name="selStr2" type="checkBox"><label for="3001_26001">深圳农村商业银行</label>&nbsp;&nbsp;<input class="3001" id="3001_20001" name="selStr2" type="checkBox"><label for="3001_20001">深圳市兴业融资担保有限公司</label>&nbsp;&nbsp;<input class="3001" id="3001_3001" name="selStr2" type="checkBox"><label for="3001_3001">广发银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_16001" name="selStr2" type="checkBox"><label for="3001_16001">深圳市高新投融资担保有限公司</label>&nbsp;&nbsp;<input class="3001" id="3001_19001" name="selStr2" type="checkBox"><label for="3001_19001">招商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_6001" name="selStr2" type="checkBox"><label for="3001_6001">江苏银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_7001" name="selStr2" type="checkBox"><label for="3001_7001">北京银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_10001" name="selStr2" type="checkBox"><label for="3001_10001">杭州银行股份有限公司深圳分行</label>&nbsp;&nbsp;<br><input class="3001" id="3001_13001" name="selStr2" type="checkBox"><label for="3001_13001">上海银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_14001" name="selStr2" type="checkBox"><label for="3001_14001">交通银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_17001" name="selStr2" type="checkBox"><label for="3001_17001">包商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_2001" name="selStr2" type="checkBox"><label for="3001_2001">兴业银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_27001" name="selStr2" type="checkBox"><label for="3001_27001">平安银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_25001" name="selStr2" type="checkBox"><label for="3001_25001">华夏银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_24001" name="selStr2" type="checkBox"><label for="3001_24001">宁波银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_18001" name="selStr2" type="checkBox"><label for="3001_18001">深圳市力合智通融资担保有限公司</label>&nbsp;&nbsp;<br><input class="3001" id="3001_8001" name="selStr2" type="checkBox"><label for="3001_8001">中国银行股份有限公司深圳市分行</label>&nbsp;&nbsp;<input class="3001" id="3001_28001" name="selStr2" type="checkBox"><label for="3001_28001">中国光大银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_1001" name="selStr2" type="checkBox"><label for="3001_1001">广东南粤银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_29001" name="selStr2" type="checkBox"><label for="3001_29001">深圳南山宝生村镇银行股份有限公司</label>&nbsp;&nbsp;<input class="3001" id="3001_5001" name="selStr2" type="checkBox"><label for="3001_5001">中国建设银行股份有限公司深圳市分行</label>&nbsp;&nbsp;<input class="3001" id="3001_9001" name="selStr2" type="checkBox"><label for="3001_9001">上海浦东发展银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="3001" id="3001_15001" name="selStr2" type="checkBox"><label for="3001_15001">深圳市中小企业信用融资担保集团有限公司</label>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="6001" name="selStr1" type="checkBox"><label for="6001">知识产权质押贷</label>&nbsp;</td>
+												<td><input class="6001" id="6001_20001" name="selStr2" type="checkBox"><label for="6001_20001">深圳市兴业融资担保有限公司</label>&nbsp;&nbsp;<input class="6001" id="6001_16001" name="selStr2" type="checkBox"><label for="6001_16001">深圳市高新投融资担保有限公司</label>&nbsp;&nbsp;<input class="6001" id="6001_3001" name="selStr2" type="checkBox"><label for="6001_3001">广发银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_6001" name="selStr2" type="checkBox"><label for="6001_6001">江苏银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_7001" name="selStr2" type="checkBox"><label for="6001_7001">北京银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_10001" name="selStr2" type="checkBox"><label for="6001_10001">杭州银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_13001" name="selStr2" type="checkBox"><label for="6001_13001">上海银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_14001" name="selStr2" type="checkBox"><label for="6001_14001">交通银行股份有限公司深圳分行</label>&nbsp;&nbsp;<br><input class="6001" id="6001_17001" name="selStr2" type="checkBox"><label for="6001_17001">包商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_2001" name="selStr2" type="checkBox"><label for="6001_2001">兴业银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_19001" name="selStr2" type="checkBox"><label for="6001_19001">招商银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_8001" name="selStr2" type="checkBox"><label for="6001_8001">中国银行股份有限公司深圳市分行</label>&nbsp;&nbsp;<input class="6001" id="6001_18001" name="selStr2" type="checkBox"><label for="6001_18001">深圳市力合智通融资担保有限公司</label>&nbsp;&nbsp;<input class="6001" id="6001_1001" name="selStr2" type="checkBox"><label for="6001_1001">广东南粤银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_29001" name="selStr2" type="checkBox"><label for="6001_29001">深圳南山宝生村镇银行股份有限公司</label>&nbsp;&nbsp;<input class="6001" id="6001_5001" name="selStr2" type="checkBox"><label for="6001_5001">中国建设银行股份有限公司深圳市分行</label>&nbsp;&nbsp;<br><input class="6001" id="6001_9001" name="selStr2" type="checkBox"><label for="6001_9001">上海浦东发展银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="6001" id="6001_15001" name="selStr2" type="checkBox"><label for="6001_15001">深圳市中小企业信用融资担保集团有限公司</label>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="7001" name="selStr1" type="checkBox"><label for="7001">三板贷</label>&nbsp;</td>
+												<td><input class="7001" id="7001_14001" name="selStr2" type="checkBox"><label for="7001_14001">交通银行股份有限公司深圳分行</label>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="8001" name="selStr1" type="checkBox"><label for="8001">银保贷</label>&nbsp;</td>
+												<td><input class="8001" id="8001_14001" name="selStr2" type="checkBox"><label for="8001_14001">交通银行股份有限公司深圳分行</label>&nbsp;&nbsp;<input class="8001" id="8001_21001" name="selStr2" type="checkBox"><label for="8001_21001">华安财产保险股份有限公司深圳公司</label>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td width="20%"><input  id="9001" name="selStr1" type="checkBox"><label style="" for="9001">科技保理贷
+</label>&nbsp;</td>
+												<td><input  class="9001" id="9001_22001" name="selStr2" type="checkBox"><label style="" for="9001_22001">金诺（天津）商业保理有限公司</label>&nbsp;&nbsp;<input class="9001" id="9001_23001" name="selStr2" type="checkBox"><label for="9001_23001">深圳鑫科国际商业保理有限公司</label>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td width="20%"><input id="10001" name="selStr1" type="checkBox"><label for="10001">集合信贷</label>&nbsp;</td>
+												<td><input class="10001" id="10001_16001" name="selStr2" type="checkBox"><label for="10001_16001">深圳市高新投融资担保有限公司</label>&nbsp;&nbsp;<input class="10001" id="10001_15001" name="selStr2" type="checkBox"><label for="10001_15001">深圳市中小企业信用融资担保集团有限公司</label>&nbsp;&nbsp;</td>
+											</tr>
+										</tbody>
+									</table><input style="display: none;" value="true" class="isEntpr" type="text"><input style="display: none;" id="selStr" name="selStr" value="" type="text">
+									<table class="mt_20"></table>
+									<table class="mt_20">
+										<tbody>
+											<tr style="display: none;">
+												<th width="35%">评价扣分：</th>
+												<td width="30%">
+													0
+												</td>
+												<th width="35%">扣分原因：</th>
+												<td>
+
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="client_button"><span class="align-left"></span>
+										<a onclick="upSelBank()" class="button mr_20" href="javascript:void(0)">修改</a>
+										<a onclick="checkSel();" class="button mr_20" href="javascript:void(0)">
+											保存
+										</a>
+										<a style="display:none;" class="button mr_20" id="upSel" href="#">修改</a>
+										<a class="button mr_20" href="http://www.mytask.com/html/RatingResult.html">返回
+										</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="pop div-box" id="sp"><input id="billIdLink" asyn="false" uri="/mgnt/aboutme/apprcrr.apprbilllogview.billidlink?t:ac=6015001/bankSel" ajax="billIdLink" type="hidden">
+					<div class="title"><strong class="font14">评价记录</strong></div>
+					<div class="clear"></div>
+					<div class="box">
+						<table class="table_list1 table_border_line" width="100%" cellspacing="1" cellpadding="0">
+							<tbody>
+								<tr class="background_th" id="replaceId">
+									<th width="130">时间</th>
+									<th>非财务得分</th>
+									<th>财务得分</th>
+									<th>总得分</th>
+									<th>等级</th>
+									<!-- 	<th>子等级</th> -->
+									<th>收入</th>
+									<th>授信额度</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div align="center">
+						<div class="client_button mt_10"><span class="align-left"><a class="button mr_20" href="http://www.htefol.org/mgnt/aboutme/apprcrr/6015001/.close">关闭</a></span></div>
+					</div>
+					<div class="clear"></div>
+					<a onclick="closepop(this)" class="close"></a>
+				</div>
+			</section>
+		</section>
+		<input id="chgPswd" asyn="true" uri="/mgnt/aboutme/apprcrr.mgnt.chgpswd?t:ac=6015001/bankSel" ajax="chgPswd" type="hidden">
+		<div class="pop div-box" id="updatePwd">
+			<div class="title"><strong class="font14">修改密码</strong></div>
+			<div class="clear"></div>
+			<div class="box">
+				<table class="table_list1 table_border_line" width="100%" cellspacing="1" cellpadding="0">
+					<tbody id="replacePwd">
+						<tr class="background_th">
+							<th>原密码</th>
+							<td><input class="text_input w_200" id="password" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>新密码</th>
+							<td><input class="text_input w_200" id="newPwd" type="password"></td>
+						</tr>
+						<tr class="background_th">
+							<th>确认密码</th>
+							<td><input class="text_input w_200" id="affirmPwd" type="password"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="center">
+				<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="changePswd()" class="button mr_20" href="javascript:void(0);">确认</a></span><span class="align-left"><a onclick="closepop()" class="button mr_20" href="javascript:void(0);">关闭</a></span></div>
+			</div>
+			<div class="clear"></div>
+			<a onclick="closepop(this)" class="close"></a>
+		</div>
+		<!--加载中-->
+		<div id="loading" style="display: none;">
+			<img src="../img/loading-0.gif" />
+		</div>
+
+		<!--警告弹窗-->
+		<div class="bgbox" id="warning" style="display: none; overflow: hidden;">
+			<div class="pop div-box awardMoney" style="display: block; width: 300px; height: 60px;">
+				<div class="clear"></div>
+				<div style="text-align: center;font-size: 16px;" class="font">111</div>
+				<div align="center">
+					<div class="client_button mt_10"><span id="chgPswdMsg" style="color: red; float: left;"></span><span class="align-left"><a onclick="closepop(this)" class="button" href="javascript:void(0);">确认</a></span></div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+		</div>
+
+	</body>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function closeBill() {
+			if(confirm("关闭后单据将终止审核，是否继续关闭？")) {
+				$("#close").click();
+				return true;
+			}
+			return false;
+		}
+
+		function upSelBank() {
+			$("input[name='selStr1']").each(function(i, z) {
+				var $z = $(z);
+				$z.removeAttr("disabled");
+			});
+
+			$("input[name='selStr2']").each(function(i, z) {
+				var $z = $(z);
+				$z.removeAttr("disabled");
+			});
+		}
+
+		function checkSel() {
+			var selList = "";
+			$("input[name='selStr1']").each(function(i, e) {
+				var $e = $(e);
+				if($e[0].checked) {
+					if(selList != "") {
+						selList += "~&|@!" + $e.attr("id");
+					} else {
+						selList += $e.attr("id");
+					}
+				}
+			});
+			var bankList = "";
+			var check = false;
+			$("input[name='selStr2']").each(function(j, z) {
+				var $z = $(z);
+				var arr = $z.attr("id").split('_');
+				var $c = $("#" + arr[0] + "");
+				if($z[0].checked) {
+					if(!$c[0].checked) {
+						//alert("请选择合作银行对应的产品类型!");
+						showWarning('请选择合作银行对应的产品类型!')
+						check = true;
+						return !check;
+					}
+					bankList += $z.attr("id") + "~$|@!";
+				}
+				if($c[0].checked) {
+					var i = 0;
+					$("." + $c.attr("id") + "").each(function(k, x) {
+						var $x = $(x);
+						if($x[0].checked) {
+							i++;
+						}
+					});
+					if(i == 0) {
+						//alert("请选择对应产品类型的合作银行!");
+						showWarning('请选择对应产品类型的合作银行')
+						check = true;
+						return !check;
+					}
+				}
+			});
+			$("#upSelStr").val(selList + "|##|" + bankList);
+			
+			if(!check) {
+				//数据提交
+				var product = [];
+				$('.verticalList tr').each(function (i,ele) {
+					var $e = $(ele).find('input');
+					var ary = [];
+					if ($e.eq(0).prop('checked')) {
+						$e.each(function (i,o) {
+							if ($(o).prop('checked')) {
+								ary.push($(o).next('label').html());
+							}
+							
+						})
+						product.push(ary)
+					}
+				})
+				product = JSON.stringify(product)
+				var data = {
+					id:GetParam(window.location.href,'CompID'),
+					product:product,
+				}
+				console.log(data);
+				$.ajax({
+					type:"post",
+					url:"http://www.webtest.com/Rating/JROperate",
+					async:true,
+					data:data,
+					success:function (n) {
+						console.log(n);
+					}
+				});
+				$('input').attr('disabled', 'disabled');
+			}
+		}
+
+		$(function() {
+			$("#approvalBillForm").submit(function() {
+				var $s = $(".isEntpr");
+				if($s.val() == 'false') {
+					var selList = "";
+					$("input[name='selStr1']").each(function(i, e) {
+						var $e = $(e);
+						if($e[0].checked) {
+							if(selList != "") {
+								selList += "~&|@!" + $e.attr("id");
+							} else {
+								selList += $e.attr("id");
+							}
+						}
+					});
+					var bankList = "";
+					var check = false;
+					$("input[name='selStr2']").each(function(j, z) {
+						var $z = $(z);
+						var arr = $z.attr("id").split('_');
+						var $c = $("#" + arr[0] + "");
+						if($z[0].checked) {
+							if(!$c[0].checked) {
+								//alert("请选择合作银行对应的产品类型!");
+								showWarning('请选择合作银行对应的产品类型');
+								check = true;
+								return !check;
+							}
+							bankList += $z.attr("id") + "~$|@!";
+						}
+						if($c[0].checked) {
+							var i = 0;
+							$("." + $c.attr("id") + "").each(function(k, x) {
+								var $x = $(x);
+								if($x[0].checked) {
+									i++;
+								}
+							});
+							if(i == 0) {
+								//alert("请选择对应产品类型的合作银行!");
+								showWarning('请选择对应产品类型的合作银行');
+								check = true;
+								return !check;
+							}
+						}
+					});
+					$("#selStr").val(selList + "|##|" + bankList);
+					return !check;
+				}
+			});
+		});
+		//
+		//
+		//self
+		$('input').attr('disabled', 'disabled');
+		$('label').css('cursor', 'pointer');
+		$('input').click(function () {
+			$(this).next('label').css('font-weight','bold');
+		});
+		//侧边栏效果
+		$('#slidetop').css('top',$('#main-nav ul .current').index()*39);
+		$('#main-nav ul li').hover(function () {
+			var that = $(this);
+			$('#slidetop').stop().animate({top:that.index()*39},200)
+		},function () {
+			$('#slidetop').stop().animate({top:$('#main-nav ul .current').index()*39},200)			
+		})
+		//数据渲染
+		//数据提交
+		$(function () {
+			var data = {
+				
+			}
+			console.log($('#approvalBillForm input:checked').serializeArray());
+		})
+		console.log(JSON.parse(decodeURIComponent(GetParam(window.location.href,'Product'))));
+	</script>
+
+</html>

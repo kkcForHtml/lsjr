@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<ul><li>1</li><ul>
+			<li>2</li>
+		</ul>
+		<input type="text" name="txt" class="txt" value="1" style="display: none;" />
+		<input type="text" name="txt" class="txt" value="2" style="display:none;" />
+		
+		<input type="checkbox" name="" id="" value="1" checked="checked"  />
+		<label>1</label>
+		<input type="checkbox" name="" id="" value="2"  />
+		<label>2</label>
+		
+		<input type="checkbox" name="" id="" value="3" />
+		<label>3</label>
+		<input type="text" id="10001" value="" />
+		<span data-flag = '1' style="display: block; height: 100px;">1111</span>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		(function($){
+    $.fn.extend({
+        arrayVal: function(){
+            var self = $(this);
+            var result = [];
+
+            if(self.length > 0){
+                self.each(function(i, o){
+                    result.push($(o).val());
+
+                });
+
+            }
+            return result;
+
+        },
+        arrayHtml: function(){
+            var self = $(this);
+            var result = [];
+
+            if(self.length > 0){
+                self.each(function(i, o){
+                    result.push($(o).html());
+
+                });
+
+            }
+            return result;
+
+        },
+        arrayChecked:function () {
+        	var self = $(this);
+        	var result = [];
+        	var str = '';
+        	if (self.length>0) {
+        		self.each(function (i,o) {
+        			if ($(o).prop('checked')) {
+        				result.push($(o).next().html());
+        				str+=$(o).next().html()+'|';
+        			}else{
+        				result.push('');
+        				str+=''+'|';
+        			}
+        		})
+        	}
+        	str = str.slice(0,str.length-1);
+        	return str;
+        }
+    });
+
+})(jQuery)
+			console.log($('ul li').arrayHtml());
+			
+			
+			console.log($('ul').find('li'));
+			console.log($('input:checked').index());
+			
+			//console.log(Boolean($('input:checked').index()-2>0?$('input:checked').index():));
+			console.log(isNaN('1a'));
+			$('#10001').val(null)
+			if (!null) {
+				//alert(1)
+			}
+			function err (a,n) {
+				if (a) {
+					//alert(1)
+				}
+				if (!n) {
+					//alert(2)
+				}
+			}
+			err(1)
+			console.log($('.txt:checked').val());
+		$('span').click(function () {
+			var flag = $(this).attr('data-flag')*1;
+			flag?$(this).attr('data-flag',0).html('>').parent().next().hide():$(this).attr('data-flag',1).html('<').parent().next().show();
+		})
+			
+		</script>
+	</body>
+</html>

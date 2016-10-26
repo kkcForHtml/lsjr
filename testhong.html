@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ssi-uploader.css"/>
+	</head>
+	<body>
+		<div id="scroll" style="height: 200px; width: 100px; overflow: scroll;">
+			
+		</div>
+		<div style="position: absolute; top: 50%; left: 50%;"><input type="file" name="test" multiple id="test" value="" /></div>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ssi-uploader.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#test').ssi_uploader({
+				url: 'http://www.webtest.com/FileUpload/FileUpload',
+				locale:'cn',
+				onUpload:function (n) {
+					console.log(n);
+				}
+			});
+			
+			for (var i=0; i<10;i++) {
+				var op = $('<p>1111111111111111111111111111111111111111111111111111111111111111111111111</p>');
+				$('#scroll').append(op);
+			}
+			$('#scroll').scroll(function () {
+				console.log($(this).scrollTop(),$(this).scrollLeft());
+				
+			})
+		</script>
+	</body>
+</html>
